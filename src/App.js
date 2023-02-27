@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import dragon1 from './components/assets/dragon1.png';
 import './App.css';
-import Navigation from './components/Navigation';
+import Navigation from './components/UI/Navigation/Navigation';
 
 function App() {
   return (

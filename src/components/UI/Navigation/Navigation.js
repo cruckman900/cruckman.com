@@ -6,7 +6,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 
-import dragon1 from './assets/dragon1.png';
+import dragon1 from '../../assets/dragon1.png';
 
 import styles from './Navigation.module.css';
 
