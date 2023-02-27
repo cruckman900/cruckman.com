@@ -1,0 +1,35 @@
+.Navbar {
+    background: #b18030;
+    background: linear-gradient(180deg, #260000, #b18030 20%, #260000 );
+}
+
+.NavbarBrand i {
+    font-size: 20pt;
+    font-weight: 600;
+    margin-left: 8px;
+    color: #d0b670;
+    text-shadow: 2px 2px 3px #000000;
+}
+
+.NavbarBrand img {
+    margin-top: -12px;
+}
+
+.NavLink :link {
+    color: white;
+    text-shadow: 2px 2px 3px #000000;
+}
+
+.NavLink :hover {
+    color: #b18030;
+}
+
+@media (max-width: 350px) {
+    .NavbarBrand i {
+        font-size: 14pt;
+    }
+
+    .NavbarBrand img {
+        margin-top: -5px;
+    }
+}
