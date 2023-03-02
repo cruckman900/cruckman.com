@@ -1,27 +1,45 @@
 import React from 'react';
-import logo from './logo.svg';
+
 import dragon1 from './assets/dragon1.png';
-import './App.css';
+
 import Navigation from './components/UI/Navigation/Navigation';
+import Weather from './components/Weather';
+
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
+import styles from './App.module.css';
 
 function App() {
   return (
-    <div className="App">
+    <div className={styles.App}>
       <Navigation />
-      <header className="App-header">
-        <img src={dragon1} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Container fluid className={styles.Container}>
+        <Row className={styles.RowBody}>
+          <Col xs={2} className={`${styles.Col} ${styles.ColLeft}`}>
+            <div>Cookies and milk</div>
+            <Weather></Weather>
+          </Col>
+          <Col className={styles.Col}>
+            <img src={dragon1} alt="logo" className={`${styles.AppLogo}`} />
+            <p>
+              Edit <code>src/App.js</code> and save to reload.
+            </p>
+            <a
+              className={styles.AppLink}
+              href="https://reactjs.org"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Learn React
+            </a>
+          </Col>
+        </Row>
+      </Container>
+      <footer className={styles.Footer}>
+
+      </footer>
     </div>
   );
 }

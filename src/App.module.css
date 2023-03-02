@@ -1,0 +1,66 @@
+.App {
+  text-align: center;
+  height: calc(100vh - 66px);
+}
+
+.AppLogo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .AppLogo {
+    animation: App-logo-spin infinite 15s linear;
+  }
+}
+
+.AppLink {
+  color: #61dafb;
+}
+
+.Container {
+  margin-top: 66px;
+}
+
+.RowBody {
+  height: calc(100vh - 164px);
+}
+
+.Col {
+  background: linear-gradient(180deg, #b18030, #f0eec7 20%, #b18030 );
+  /* border-right: 1px solid #b18030;
+  border-top: 1px solid #b18030; */
+  /* border-bottom: 1px solid #260000;
+  border-left: 1px solid #260000; */
+}
+
+.ColLeft {
+  background: linear-gradient(180deg, #000000, #260000 20%, #000000 );
+  color: #b18030;
+}
+
+.Footer {
+  background: linear-gradient(0deg, #260000, #000000, #000000 );
+  height: calc(100vh - 90vh);
+}
+
+@media (max-width: 350px) {
+  .Container {
+    margin-top: 60px;
+  }
+  .ColLeft, .Footer {
+    display: none;
+  }
+  .RowBody {
+    height: calc(100vh - 6px);
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
