@@ -15,8 +15,8 @@
     margin-top: -12px;
 }
 
-.NavLink :link {
-    color: white;
+.NavLink {
+    color: #d0b670;
     text-shadow: 2px 2px 3px #000000;
 }
 
@@ -31,5 +31,10 @@
 
     .NavbarBrand img {
         margin-top: -5px;
+    }
+
+    .NavLink {
+        color: black;
+        text-shadow: none;
     }
 }

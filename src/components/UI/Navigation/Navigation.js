@@ -6,12 +6,12 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 
-import dragon1 from '../../assets/dragon1.png';
+import dragon1 from '../../../assets/dragon1.png';
 
 import styles from './Navigation.module.css';
 
 const Navigation = () => {
-  const expand = 'xxl';
+  const expand = 'xl';
 
   return (
     <>
@@ -19,7 +19,7 @@ const Navigation = () => {
           <Container fluid>
             <Navbar.Brand className={`${styles.NavbarBrand}`} href="#">
               <span>
-                <img src={dragon1} width="35" height="35" alt="logo" />
+                <img src={dragon1} width="40" height="40" alt="logo" />
                 <i>Christopher Ruckman</i>
               </span>
             </Navbar.Brand>
@@ -31,7 +31,7 @@ const Navigation = () => {
             >
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                  Offcanvas
+                  LinearDescent
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
