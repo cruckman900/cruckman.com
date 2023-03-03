@@ -1,0 +1,72 @@
+.header {
+    background: #260000;
+    color: #b18030;
+    border-radius: 10px 10px 0 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.LeftColumn {
+    background: #b18030;
+    border: solid 1px #b18030;
+    color: #260000;
+}
+
+.temp {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-shadow: 1px 1px black;
+}
+
+.blue {
+    color: blue;
+}
+
+.orange {
+    color: orange;
+}
+
+.red {
+    color: red;
+}
+
+.iconSlightGrey {
+    color: gainsboro;
+}
+
+.iconGrey {
+    color: slategrey;
+}
+
+.iconBlue {
+    color: steelblue;
+}
+
+.iconHot {
+    color: yellow;
+}
+
+.nudgeUp15p {
+    position: relative;
+    top: 15%;
+    transform: translateY(-15%);
+}
+
+.nudgeDown50 {
+    position: relative;
+    top: 50%;
+    transform: translateY(20%);
+}
+
+.interpret {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        font-size: 1.2rem;
+    }
+    .temp {
+        font-size: 1rem;
+    }
+}
