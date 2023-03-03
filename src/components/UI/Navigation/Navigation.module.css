@@ -16,12 +16,8 @@
 }
 
 .NavLink {
+    font-weight: bold;
     color: #d0b670;
-    text-shadow: 2px 2px 3px #000000;
-}
-
-.NavLink :hover {
-    color: #b18030;
 }
 
 @media (max-width: 350px) {

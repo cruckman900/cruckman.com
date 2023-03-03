@@ -1,14 +1,13 @@
 import React from "react";
-import Card from '../Card/Card';
+import styles from './LeftbarLabelledContainer.module.css';
 
 const LeftbarLabelledContainer = (props) => {
     console.log('props', props);
     return (
         <div>
             <div className={props.className}>
-                <h3>{props.Title}</h3>
+                <div className={styles.category}>{props.Title}</div>
             </div>
-            <Card></Card>
         </div>
     );
 };

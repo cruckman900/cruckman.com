@@ -15,9 +15,9 @@ const Navigation = () => {
 
   return (
     <>
-        <Navbar key={expand} variant="dark" expand={expand} className={`${styles.Navbar} mb-3`} fixed="top">
+        <Navbar key={expand} variant="light" expand={expand} className={`${styles.Navbar} mb-3`} fixed="top">
           <Container fluid>
-            <Navbar.Brand className={`${styles.NavbarBrand}`} href="#">
+            <Navbar.Brand className={`${styles.NavbarBrand}`} href="/home">
               <span>
                 <img src={dragon1} width="40" height="40" alt="logo" />
                 <i>Christopher Ruckman</i>
@@ -35,10 +35,11 @@ const Navigation = () => {
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
-                <Nav className="justify-content-end flex-grow-1 pe-3">
+                <Nav className="justify-content-end flex-grow-1 pe-3" variant="tabs" defaultActiveKey="/home" justify>
                   <Nav.Link className={`${styles.NavLink}`} href="#action1"><span>Home</span></Nav.Link>
                   <Nav.Link className={`${styles.NavLink}`} href="#action2"><span>Online Resume</span></Nav.Link>
                   <NavDropdown
+                    menuVariant='dark'
                     title="Interests"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                   >

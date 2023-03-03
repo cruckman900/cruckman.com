@@ -1,0 +1,11 @@
+.floatStart, .floatEnd {
+    font-weight: bold;
+}
+
+.floatStart {
+    margin-left: 5rem;
+}
+
+.floatEnd {
+    text-align: end;
+}
