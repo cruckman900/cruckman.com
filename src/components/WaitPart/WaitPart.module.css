@@ -19,8 +19,8 @@
 }
 
 .WelcomeDiv, .body {
-  float: left;
-  text-align: left;
+  float: inline-start;
+  text-align: start;
   font-size: 1.2rem;
   font-weight: 600;
   color: #260000;
