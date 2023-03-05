@@ -60,7 +60,7 @@ const Navigation = () => {
                   </Offcanvas.Title>
                 </Offcanvas.Header>
                 <Offcanvas.Body>
-                  <Nav className="justify-content-end flex-grow-1 pe-3" variant="tabs" defaultActiveKey="#" justify>
+                  <Nav className="justify-content-end flex-grow-1 pe-3" variant="tabs" defaultActiveKey="/" justify>
                     <Nav.Link as={Link} to={"/"}>
                       <span className={styles.ddlink}><FontAwesomeIcon icon={myIcons['house']} fontSize="1.0rem" />&nbsp;&nbsp;HOME</span>
                     </Nav.Link>
