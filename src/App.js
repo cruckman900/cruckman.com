@@ -10,14 +10,14 @@ import styles from './App.module.css';
 function App() {
   return (
     <div className={styles.App}>
-      <Navigation/>
+      {/* <Navigation /> */}
       <Container fluid className={styles.Container}>
         <Row className={styles.RowBody}>
           <Col xs={2} className={`${styles.Col} ${styles.ColLeft}`}>
             <Weather />
           </Col>
           <Col className={styles.Col}>
-            <WaitPart />
+            <Navigation />
           </Col>
         </Row>
       </Container>

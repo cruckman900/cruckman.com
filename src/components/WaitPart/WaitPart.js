@@ -1,7 +1,7 @@
 import { React, useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 import dragon1 from '../../assets/dragon1.png';
-import Resume from '../StaticPages/Resume/Resume';
+// import Resume from '../StaticPages/Resume/Resume';
 import styles from './WaitPart.module.css';
 
 function WaitPart() {
@@ -29,9 +29,9 @@ useEffect(() => {
             <p>Hola hola hola</p>
         </div>
       </Container>
-      <div id="resume" className={styles.body}>
+      {/* <div id="resume" className={styles.body}>
           <Resume />
-      </div>
+      </div> */}
     </div>
   );
 };
