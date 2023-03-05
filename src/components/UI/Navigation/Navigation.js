@@ -1,10 +1,13 @@
 import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import Offcanvas from 'react-bootstrap/Offcanvas';
+import { Nav, Navbar, NavDropdown, Offcanvas }from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { 
+  faHouse, faBook, faImage, faMusic, faUser, faPersonFalling, 
+  faPen, faFilm, faGhost, faCode, faCodeBranch, faVideo, faQuestion
+} from '@fortawesome/free-solid-svg-icons';
 
 import dragon1 from '../../../assets/dragon1.png';
 
@@ -12,6 +15,22 @@ import styles from './Navigation.module.css';
 
 const Navigation = () => {
   const expand = 'xl';
+  
+  const myIcons = {
+    user: faUser,
+    house: faHouse,
+    image: faImage,
+    personFalling: faPersonFalling,
+    pen: faPen,
+    book: faBook,
+    film: faFilm,
+    music: faMusic, 
+    ghost: faGhost,
+    code: faCode,
+    codeBranch: faCodeBranch,
+    video: faVideo, 
+    question: faQuestion
+  }
 
   return (
     <>
@@ -36,24 +55,79 @@ const Navigation = () => {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3" variant="tabs" defaultActiveKey="/home" justify>
-                  <Nav.Link className={`${styles.NavLink}`} href="#action1"><span>Home</span></Nav.Link>
-                  <Nav.Link className={`${styles.NavLink}`} href="#action2"><span>Online Resume</span></Nav.Link>
+                  <Nav.Link href="/home">
+                    <span className={styles.ddlink}><FontAwesomeIcon icon={myIcons['house']} fontSize="1.0rem" />&nbsp;&nbsp;HOME</span>
+                  </Nav.Link>
+                  <Nav.Link href="#action2">
+                    <span className={styles.ddlink}><FontAwesomeIcon icon={myIcons['book']} fontSize="1.0rem" />&nbsp;&nbsp;ONLINE RESUME</span>
+                  </Nav.Link>
                   <NavDropdown
                     menuVariant='dark'
-                    title="Interests"
+                    title={<span className={styles.ddlink}><FontAwesomeIcon icon={myIcons['image']} fontSize="1.0rem" />&nbsp;&nbsp;INTERESTS</span>}
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                   >
-                    <NavDropdown.Item href="#action4"><span>2D/3D Art (CG)</span></NavDropdown.Item>
-                    <NavDropdown.Item href="#action5"><span>Music (Guitar)</span></NavDropdown.Item>
-                    <NavDropdown.Item href="#action6"><span>Martial Arts</span></NavDropdown.Item>
-                    <NavDropdown.Item href="#action7"><span>Video Editing</span></NavDropdown.Item>
-                    <NavDropdown.Item href="#action8"><span>Game Dev (Unity)</span></NavDropdown.Item>
-                    <NavDropdown.Item href="#action9"><span>Software Development</span></NavDropdown.Item>
+                    <NavDropdown.Item href="#action4">
+                      <Row>
+                        <Col className={styles.ddlink}><FontAwesomeIcon icon={myIcons['image']} fontSize="1.0rem" /></Col>
+                        <Col className={styles.ddlink}>2D/3D ART (CG)</Col>
+                      </Row>
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action5">
+                      <Row>
+                        <Col className={styles.ddlink}><FontAwesomeIcon icon={myIcons['music']} fontSize="1.0rem" /></Col>
+                        <Col className={styles.ddlink}>MUSIC (Guitar)</Col>
+                      </Row>
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action6">
+                      <Row>
+                        <Col className={styles.ddlink}><FontAwesomeIcon icon={myIcons['personFalling']} fontSize="1.0rem" /></Col>
+                        <Col className={styles.ddlink}>MARTIAL ARTS</Col>
+                      </Row>
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action7">
+                      <Row>
+                        <Col className={styles.ddlink}><FontAwesomeIcon icon={myIcons['pen']} fontSize="1.0rem" /></Col>
+                        <Col className={styles.ddlink}>CREATIVE WRITING</Col>
+                      </Row>
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action7">
+                      <Row>
+                        <Col className={styles.ddlink}><FontAwesomeIcon icon={myIcons['film']} fontSize="1.0rem" /></Col>
+                        <Col className={styles.ddlink}>AUDIO/VIDEO</Col>
+                      </Row>
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action8">
+                      <Row>
+                        <Col className={styles.ddlink}><FontAwesomeIcon icon={myIcons['ghost']} fontSize="1.0rem" /></Col>
+                        <Col className={styles.ddlink}>GAME DEV</Col>
+                      </Row>
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action9">
+                      <Row>
+                        <Col className={styles.ddlink}><FontAwesomeIcon icon={myIcons['code']} fontSize="1.0rem" /></Col>
+                        <Col className={styles.ddlink}>SOFTWARE DEV</Col>
+                      </Row>
+                    </NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action10"><span>GitHub Links</span></NavDropdown.Item>
-                    <NavDropdown.Item href="#action11"><span>YouTube Links</span></NavDropdown.Item>
+                    <NavDropdown.Item href="#action10">
+                      <Row>
+                        <Col className={styles.ddlink}><FontAwesomeIcon icon={myIcons['codeBranch']} fontSize="1.0rem" /></Col>
+                        <Col className={styles.ddlink}>GitHub LINKS</Col>
+                      </Row>
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action11">
+                      <Row>
+                        <Col className={styles.ddlink}><FontAwesomeIcon icon={myIcons['video']} fontSize="1.0rem" /></Col>
+                        <Col className={styles.ddlink}>YouTube LINKS</Col>
+                      </Row>
+                    </NavDropdown.Item>
                   </NavDropdown>
-                  <Nav.Link className={`${styles.NavLink}`} href="#action3"><span>About</span></Nav.Link>
+                  <Nav.Link className={`${styles.NavLink}`} href="#action3">
+                    <span className={styles.ddlink}><FontAwesomeIcon icon={myIcons['question']} fontSize="1.0rem" />&nbsp;&nbsp;ABOUT</span>
+                  </Nav.Link>
+                  <Nav.Link className={styles.NavLink} href="#12action">
+                    <span className={styles.ddlink}><FontAwesomeIcon icon={myIcons['user']} fontSize="1.0rem" />&nbsp;&nbsp;LOGIN/REGISTER</span>
+                  </Nav.Link>
                </Nav>
                 <Form className="d-flex">
                   <Form.Control
@@ -70,6 +144,6 @@ const Navigation = () => {
         </Navbar>
     </>
   );
-}
+};
 
 export default Navigation;

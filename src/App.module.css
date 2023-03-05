@@ -4,6 +4,7 @@
 }
 
 .Container {
+  overflow: auto;
   margin-top: 66px;
 }
 
@@ -34,5 +35,11 @@
   }
   .RowBody {
     height: calc(100vh - 6px);
+  }
+}
+
+@media print {
+  .ColLeft, .Footer {
+    display: none;
   }
 }

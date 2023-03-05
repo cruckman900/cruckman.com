@@ -22,7 +22,7 @@ useEffect(() => {
       <div id="welcome">
         <h2>Welcome to my site!</h2>
         <img src={dragon1} alt="logo" style={{display: 'inline-block'}} className={`${styles.AppLogo}`} />
-      </div>
+      </div>\
       <Container fluid className={styles.body}>
         <div id="description" className={styles.body}>
             <h2>You can call me Chris.  I'm not much into formalities.</h2>

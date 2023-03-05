@@ -10,8 +10,8 @@ import { faSun } from "@fortawesome/free-solid-svg-icons";
 
 function Weather() {
     const url = 'https://api.open-meteo.com/v1/forecast';
-    const lat = 'latitude=40.185736';
-    const lng = 'longitude=80.690065';
+    const lat = 'latitude=40.183277';
+    const lng = 'longitude=-80.690971';
     const currWeather = 'current_weather=true';
     const hourly = 'hourly=temperature_2m,weathercode';
     const tempUnit = 'temperature_unit=fahrenheit';

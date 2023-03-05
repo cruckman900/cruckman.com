@@ -15,7 +15,7 @@
     margin-top: -12px;
 }
 
-.NavLink {
+#NavDD {
     font-weight: bold;
     color: #d0b670;
 }
@@ -33,4 +33,13 @@
         color: black;
         text-shadow: none;
     }
+}
+
+.ddlink {
+    color: #d0b670;
+    font-weight: 500;
+}
+
+hr {
+    background-color: #d0b670;
 }

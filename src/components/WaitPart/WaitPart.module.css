@@ -25,3 +25,15 @@
   font-weight: 600;
   color: #260000;
 }
+
+@media print {
+  .WelcomeDiv {
+    display: none;
+  }
+  welcome {
+    display: none;
+  }
+  description {
+    display: none;
+  }
+}

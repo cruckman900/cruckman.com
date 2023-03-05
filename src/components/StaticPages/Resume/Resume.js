@@ -12,9 +12,9 @@ const Resume = () => {
             <ResumeHeader name="Christopher Linn Ruckman" title="Software Engineer" contactInfo="Rayland, OH 43943 | (740) 827-2743 | cruckman900@gmail.com"></ResumeHeader>
             <LeftbarLabelledContainer Title="Technical Skills"></LeftbarLabelledContainer>
                 <IndentedBlock>
-                    <div><Label>Languages</Label>: C#, JavaScript, VB.NET, PHP, ActionScript, JAVA, Kotlin, HTML, CSS, ReactJS</div>
+                    <div><Label>Languages</Label>: C#, JavaScript, VB.NET, PHP, ActionScript, Java, Kotlin, HTML, CSS, ReactJS</div>
                     <div><Label>Technologies</Label>: ASP.NET MVC/Core/Web Forms/Web API, Entity Framework, LINQ, SignalR, jQuery, Bootstrap, Telerik Controls, KendoUI</div>
-                    <div><Label>Databases</Label>: MS SQL SErver, MySQL, SQLite, Room Database</div>
+                    <div><Label>Databases</Label>: MS SQL Server, MySQL, SQLite, Room Database</div>
                     <div><Label>Debug/Testing/Performance</Label>: Charles Proxy, JUnit, Espresso</div>
                     <div><Label>Version Control</Label>: Visual Source Safe, TFS, Git, GitHub</div>
                     <div><Label>Project Management</Label>: JIRA</div>
