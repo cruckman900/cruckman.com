@@ -1,5 +1,3 @@
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
 import { Nav, Navbar, NavDropdown, Offcanvas }from 'react-bootstrap';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
@@ -42,7 +40,7 @@ const Navigation = () => {
       <>
           <Navbar key={expand} variant="light" expand={expand} className={`${styles.Navbar} mb-3`} fixed="top">
             <Container fluid>
-              <Navbar.Brand className={`${styles.NavbarBrand}`} href="#">
+              <Navbar.Brand className={`${styles.NavbarBrand}`} href="/">
                 <span>
                   <img src={dragon1} width="40" height="40" alt="logo" />
                   <i>Christopher Ruckman</i>
@@ -56,16 +54,16 @@ const Navigation = () => {
               >
                 <Offcanvas.Header closeButton>
                   <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                    LinearDescent
+                    Main Menu
                   </Offcanvas.Title>
                 </Offcanvas.Header>
                 <Offcanvas.Body>
-                  <Nav className="justify-content-end flex-grow-1 pe-3" variant="tabs" defaultActiveKey="/" justify>
-                    <Nav.Link as={Link} to={"/"}>
+                  <Nav className="justify-content-end flex-grow-1 pe-3" variant="tabs" defaultActiveKey="#" justify>
+                    <Nav.Link as={Link} to={"/"} href="#">
                       <span className={styles.ddlink}><FontAwesomeIcon icon={myIcons['house']} fontSize="1.0rem" />&nbsp;&nbsp;HOME</span>
                     </Nav.Link>
-                    <Nav.Link as={Link} to={"resume"}>
-                      <span className={styles.ddlink}><FontAwesomeIcon icon={myIcons['book']} fontSize="1.0rem" />&nbsp;&nbsp;ONLINE RESUME</span>
+                    <Nav.Link as={Link} to={"/resume"} href="#resume">
+                      <span className={styles.ddlink}><FontAwesomeIcon icon={myIcons['book']} fontSize="1.0rem" />&nbsp;&nbsp;RESUME</span>
                     </Nav.Link>
                     <NavDropdown
                       menuVariant='dark'
@@ -128,22 +126,13 @@ const Navigation = () => {
                         </Row>
                       </NavDropdown.Item>
                     </NavDropdown>
-                    <Nav.Link className={`${styles.NavLink}`} as={Link} to={"/about"}>
+                    <Nav.Link as={Link} to={"/about"} href="#about">
                       <span className={styles.ddlink}><FontAwesomeIcon icon={myIcons['question']} fontSize="1.0rem" />&nbsp;&nbsp;ABOUT</span>
                     </Nav.Link>
-                    <Nav.Link className={styles.NavLink} href="#12action">
+                    <Nav.Link className={styles.onlyMobile} href="#12action">
                       <span className={styles.ddlink}><FontAwesomeIcon icon={myIcons['user']} fontSize="1.0rem" />&nbsp;&nbsp;LOGIN/REGISTER</span>
                     </Nav.Link>
                 </Nav>
-                  <Form className="d-flex">
-                    <Form.Control
-                      type="search"
-                      placeholder="Search"
-                      className="me-2"
-                      aria-label="Search"
-                    />
-                    <Button variant="outline-warning">Search</Button>
-                  </Form>
                 </Offcanvas.Body>
               </Navbar.Offcanvas>
             </Container>

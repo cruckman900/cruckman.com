@@ -9,7 +9,7 @@
 }
 
 .RowBody {
-  height: calc(100vh - 164px);
+  height: calc(100vh - 183px);
 }
 
 .Col {
@@ -17,13 +17,14 @@
 }
 
 .ColLeft {
+  min-width: 300px;
   background: linear-gradient(180deg, #000000, #260000 20%, #000000 );
   color: #b18030;
 }
 
 .Footer {
   background: linear-gradient(0deg, #260000, #000000, #000000 );
-  height: calc(100vh - 90vh);
+  height: calc(100vh - 88vh);
 }
 
 @media (max-width: 350px) {

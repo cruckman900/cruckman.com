@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'DragonSlapper';
+  src: url(/src/assets/Fonts/DragonslapperRegular-6z1D.ttf);
+}
+
+@font-face {
+  font-family: 'AGoblinAppears';
+  src: url(/src/assets/Fonts/AGoblinAppears-o2aV.ttf);
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

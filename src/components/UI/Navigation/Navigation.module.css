@@ -4,6 +4,7 @@
 }
 
 .NavbarBrand i {
+    font-family: 'DragonSlapper';
     font-size: 20pt;
     font-weight: 600;
     margin-left: 8px;
@@ -13,6 +14,10 @@
 
 .NavbarBrand img {
     margin-top: -12px;
+}
+
+.onlyMobile {
+    display: none;
 }
 
 #NavDD {
@@ -29,15 +34,15 @@
         margin-top: -5px;
     }
 
-    .NavLink {
-        color: black;
-        text-shadow: none;
-    }
+    .onlyMobile {
+        display: inline-block;
+    }    
 }
 
 .ddlink {
+    font-family: 'AGoblinAppears';
+    font-size: 9pt;
     color: #d0b670;
-    font-weight: 500;
 }
 
 hr {
