@@ -14,6 +14,7 @@ import dragon1 from '../../../assets/dragon1.png';
 import Home from '../../StaticPages/Home/Home';
 import Resume from '../../StaticPages/Resume/Resume';
 import About from '../../StaticPages/About/About';
+import Music from '../../StaticPages/Music/Music';
 
 const Navigation = () => {
   const expand = 'xl';
@@ -63,7 +64,7 @@ const Navigation = () => {
                       <span className={styles.ddlink}><FontAwesomeIcon icon={myIcons['house']} fontSize="1.0rem" />&nbsp;&nbsp;HOME</span>
                     </Nav.Link>
                     <Nav.Link as={Link} to={"/resume"} href="#resume">
-                      <span className={styles.ddlink}><FontAwesomeIcon icon={myIcons['book']} fontSize="1.0rem" />&nbsp;&nbsp;RESUME</span>
+                      <span className={styles.ddlink}><FontAwesomeIcon icon={myIcons['book']} fontSize="1.0rem" />&nbsp;&nbsp;R&#201;SUM&#201;</span>
                     </Nav.Link>
                     <NavDropdown
                       menuVariant='dark'
@@ -76,7 +77,7 @@ const Navigation = () => {
                           <Col className={styles.ddlink}>2D/3D ART (CG)</Col>
                         </Row>
                       </NavDropdown.Item>
-                      <NavDropdown.Item href="#action5">
+                      <NavDropdown.Item as={Link} to={"/Music/Music"} href="#Music">
                         <Row>
                           <Col className={styles.ddlink}><FontAwesomeIcon icon={myIcons['music']} fontSize="1.0rem" /></Col>
                           <Col className={styles.ddlink}>MUSIC (Guitar)</Col>
@@ -142,6 +143,7 @@ const Navigation = () => {
         <Route path="/" element={ <Home /> } />
         <Route path="/resume" element={ <Resume /> } />
         <Route path="/about" element={ <About /> } />
+        <Route path="/music/music" element={ <Music /> } />
       </Routes>
     </Router>
   );

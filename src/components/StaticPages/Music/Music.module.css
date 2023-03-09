@@ -1,0 +1,23 @@
+.image {
+    width: 75px;
+    height: 75px;
+}
+
+.header {
+    display: flex;
+    float: inline-start;
+}
+
+.Song {
+    font-size: 1.2rem;
+    text-align: start;
+    width: 80%;
+}
+
+.Song span {
+    white-space: nowrap;
+}
+
+.float {
+    float: inline-start;
+}

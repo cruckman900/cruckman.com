@@ -1,3 +1,13 @@
+.image {
+    width: 75px;
+    height: 75px;
+}
+
+.header {
+    display: flex;
+    float: inline-start;
+}
+
 .body {
     text-align: start;
     display: none;

@@ -20,6 +20,7 @@
     "react-geolocated": "^4.0.3",
     "react-router-dom": "^6.8.2",
     "react-scripts": "5.0.1",
+    "wavesurfer-react": "^2.2.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

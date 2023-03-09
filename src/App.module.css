@@ -14,6 +14,7 @@
 
 .Col {
   background: linear-gradient(180deg, #b18030, #f0eec7 20%, #b18030 );
+  color: #260000;
 }
 
 .ColLeft {
@@ -24,7 +25,13 @@
 
 .Footer {
   background: linear-gradient(0deg, #260000, #000000, #000000 );
+  color: #d0b670;
   height: calc(100vh - 88vh);
+}
+
+.Footer i {
+  position: relative;
+  top: 35%;
 }
 
 @media (max-width: 350px) {

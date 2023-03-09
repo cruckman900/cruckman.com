@@ -1,4 +1,4 @@
-import { React, useEffect } from 'react';
+import { React } from 'react';
 import dragon1 from '../../assets/dragon1.png';
 import styles from './WaitPart.module.css';
 
