@@ -14,7 +14,7 @@
 }
 
 .temp {
-    font-size: 1.8rem;
+    font-size: 1rem;
     font-weight: bold;
     text-shadow: 1px 1px black;
 }
@@ -59,7 +59,8 @@
     transform: translateY(20%);
 }
 
-.interpret {
+.interpret, .time {
+    font-size: 1rem;
     font-weight: bold;
 }
 
@@ -68,6 +69,6 @@
         font-size: 1.2rem;
     }
     .temp {
-        font-size: 1rem;
+        font-size: 10pt;
     }
 }

@@ -13,14 +13,32 @@
 }
 
 .Col {
-  background: linear-gradient(180deg, #b18030, #f0eec7 20%, #b18030 );
+  background: url('./assets/dragonImg.png'), #b18030;
+  background-size: 50rem;
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-attachment: fixed;
+  /* background-image: url('./assets/dragonImg.png'); */
   color: #260000;
+}
+
+.ColRight {
+  margin-left: 0%;
+  color: #260000;
+  font-weight: 100;
+  font-size: 1rem;
 }
 
 .ColLeft {
   min-width: 300px;
   background: linear-gradient(180deg, #000000, #260000 20%, #000000 );
+  background-attachment: fixed;
   color: #b18030;
+}
+
+.fixed {
+  position: fixed;
+  width: 18rem;
 }
 
 .Footer {
@@ -31,7 +49,7 @@
 
 .Footer i {
   position: relative;
-  top: 35%;
+  top: 65%;
 }
 
 @media (max-width: 350px) {

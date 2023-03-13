@@ -8,21 +8,6 @@
     float: inline-start;
 }
 
-.body {
-    text-align: start;
-    display: none;
-    float: left;
-    font-size: 1.5rem;
-    width: 65rem;
-}
-
 .bodyDiv {
     margin-top: 20px;
-}
-
-@media screen and (max-width: 350px) {
-    .body {
-        font-size: 1.1rem;
-        width: 19rem;
-    }
 }

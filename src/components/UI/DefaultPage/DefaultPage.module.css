@@ -14,6 +14,27 @@
     transform: translateY(-90%);
 }
 
+.body {
+    text-align: start;
+    float: left;
+    font-family: 'AGoblinAppears';
+    font-size: 10pt;
+    color: #260000;
+    width: 64rem;
+    background: rgba(208, 182, 112, .75);
+    padding: 8px;
+    border-radius: 8px;
+    border: solid 1px #260000;
+    box-shadow: 2px 2px 3px black;
+}
+
+@media screen and (max-width: 350px) {
+    .body {
+        font-size: 8pt;
+        width: 19rem;
+    }
+}
+
 .image {
     width: 75px;
     height: 75px;

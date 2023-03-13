@@ -1,12 +1,15 @@
-.floatStart, .floatEnd {
+.floatStart, .floatEnd, .center {
     font-weight: bold;
 }
 
 .floatStart {
-    margin-left: 5rem;
     text-align: start;
 }
 
 .floatEnd {
     text-align: end;
+}
+
+.center {
+    text-align: center;
 }

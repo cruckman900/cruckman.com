@@ -137,7 +137,7 @@ function Weather() {
         <Card className={classes.LeftColumn}>
             <div className={`${classes.header}`}>Weather in Rayland</div>
             <Container>
-                <Row><Col><Time /></Col></Row>
+                <Row><Col><Time className={classes.time} /></Col></Row>
                 <Row>
                     <Col>
                         <FontAwesomeIcon icon={myIcons[obj.icon]} fontSize="2.50rem" className={`${obj.className} ${classes.nudgeUp15p}`} />
