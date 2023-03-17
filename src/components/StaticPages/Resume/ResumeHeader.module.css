@@ -18,3 +18,15 @@
     padding: 0%;
     margin: 0%;
 }
+
+@media (max-width: 800px) and (min-width: 300px) {
+    .name {
+        font-size: 1.4rem;
+    }
+    .title {
+        font-size: 1.2rem;
+    }
+    .contactInfo {
+        font-size: 0.9rem;
+    }
+}

@@ -103,7 +103,7 @@ const Navigation = () => {
                         <NavItem className={styles.ddlink} icon={myIcons['video']} fontSize="1.0rem">YouTube LINKS</NavItem>
                       </NavDropdown.Item>
                     </NavDropdown>
-                    <Nav.Link as={Link} to={"/About/About"} href="#about">
+                    <Nav.Link as={Link} to={"/About"} href="#about">
                       <span className={styles.ddlink}><FontAwesomeIcon icon={myIcons['question']} fontSize="1.0rem" />&nbsp;&nbsp;ABOUT</span>
                     </Nav.Link>
                     <Nav.Link className={styles.onlyMobile} href="#12action">

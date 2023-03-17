@@ -135,7 +135,7 @@ function Weather(props) {
 
     if (data !== null) return(
         <Card className={`${classes.LeftColumn} ${props.className}`}>
-            <div className={`${classes.header}`}>Weather in Rayland</div>
+            <div className={`${classes.header}`}>Weather in Rayland, OH</div>
             <Container>
                 <Row><Col><Time className={classes.time} /></Col></Row>
                 <Row>

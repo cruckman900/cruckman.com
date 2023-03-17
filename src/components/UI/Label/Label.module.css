@@ -2,3 +2,9 @@
     font-weight: bold;
     font-size: 1.1rem;
 }
+
+@media (max-width: 800px) and (min-width: 300px) {
+    .Label {
+        font-size: 0.75rem;
+    }
+}
