@@ -4,6 +4,7 @@
 }
 
 .Container {
+  display: flexbox;
   overflow: auto;
   margin-top: 66px;
   width: 100vw;
@@ -19,12 +20,11 @@
   background-repeat: no-repeat;
   background-position: top right;
   background-attachment: fixed;
-  /* background-image: url('./assets/dragonImg.png'); */
+  width: calc(100vw - 320px) !important;
   color: #260000;
 }
 
 .ColRight {
-  margin-left: 0%;
   color: #260000;
   font-weight: 100;
   font-size: 1rem;
@@ -32,7 +32,7 @@
 }
 
 .ColLeft {
-  min-width: 300px;
+  min-width: 320px;
   background: linear-gradient(180deg, #000000, #260000 20%, #000000 );
   background-attachment: fixed;
   color: #b18030;
@@ -58,6 +58,10 @@
   top: 65%;
 }
 
+.buttonHolder {
+  display: none;
+}
+
 .SideBarToggle {
   background: transparent;
   border: 0px;
@@ -73,28 +77,42 @@
   color: #d0b670;
 }
 
-@media (max-width: 1400px) {
-  .Container {
-    margin-top: 66px;
-  }
-}
-
 @media (max-width: 800px) and (min-width: 300px) {
   .Container {
     margin-top: 61px;
   }
   .Col {
-    background: linear-gradient(180deg, #000000, #260000 20%, #000000 );
+    background-size: 26rem;
+    background-position: 15% 60%;
+    right: 50rem;
+  }
+  .buttonHolder {
+    display: inline-block;
+    height: 2vh;
+    width: 2vw;
+    position: absolute;
+    top: 10vh;
+    left: 1vw;
+    background: transparent;
+    border: none;
+    background-attachment: fixed;
+    z-index: 10;
   }
   .SideBarToggle {
-    display: block;
+    display: inline-block;
   }
   .ColLeft {
-    width: 100vw;
-    height: 100vh;
+    background: linear-gradient(180deg, #000000, #260000 20%, #000000 );
+    border: solid 5px #d0b670;
+    height: 91vh;
+    width: 99vw !important;
     z-index: 5;
-    position: relative;
+    position: absolute;
+    top: 9vh;
     left: -4vw;
+  }
+  .ColRight {
+    width: 100vw !important;
   }
   .Footer {
     display: none;

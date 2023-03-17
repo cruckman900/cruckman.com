@@ -37,19 +37,25 @@
 }
 
 .gameButtonContainer {
-    border: solid 1px #260000;
+    padding: 2px;
+    border: none;
+    border-radius: 5px;
+    background: #260000;
     position: relative;
     display: inline-block;
     top: 12vh;
+    left: -2px;
     height: 12.7vh;
 }
 
 .playButton {
     display: inline;
+    margin: 1px;
     width: 17.2rem;
     font-size: .55rem;
-    background: #b18030;
-    border: solid 1px pink;
+    background: #d0b670;
+    border: solid 1px #260000;
+    border-radius: 5px;
     color: #260000;
 }
 

@@ -5,7 +5,6 @@ import Navigation from './components/UI/Navigation/Navigation';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
-
 import TextGame from './Sidebar/TextGame/TextGame';
 import Weather from './Sidebar/Weather/Weather';
 
@@ -24,7 +23,7 @@ function App() {
     <div className={styles.App}>
       <Container fluid className={styles.Container}>
         <Row className={styles.RowBody}>
-          <Col xs={2} className={show && styles.ColLeft}>
+          <Col xs="2" className={show && styles.ColLeft}>
               { show &&
                 <div className={styles.fixed}>
                   <TextGame className={styles.padBottom} />
@@ -32,13 +31,11 @@ function App() {
                 </div>
               }
           </Col>
-          <Col className={`${styles.ColRight} ${styles.Col}`}>
-            <div className={styles.bgColor}>
-              <Navigation />
-              <Button className={`${styles.SideBarToggle}`} onClick={() => setShow((prevState) => !prevState)}>
-                <FontAwesomeIcon icon={!show ? faChevronRight : faChevronLeft} className={styles.chevron} fontSize="1.0rem" />
-              </Button>
-            </div>
+          <Col xs="9" className={`${styles.ColRight} ${styles.Col}`}>
+            <Navigation />
+            <Button className={`${styles.buttonHolder}`} onClick={() => setShow((prevState) => !prevState)}>
+              <FontAwesomeIcon icon={!show ? faChevronRight : faChevronLeft} className={styles.chevron} fontSize="1.0rem" />
+            </Button>
           </Col>
         </Row>
       </Container>
