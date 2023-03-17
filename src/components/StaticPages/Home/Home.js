@@ -6,7 +6,7 @@ import lolly from "../../../assets/images/lolly.png";
 export default class Home extends Component {
     render() {
         return (
-            <DefaultPage image={lolly} title="Welcome to my website!">
+            <DefaultPage image={lolly} title="Welcome to cruckman.com!">
                 <div>I hope to populate this site with a lot of interesting things.</div>
                 <div className={styles.bodyDiv}>
                     A friend of mine told me that this site looks like a 'throw-back Thursday' site.  Little

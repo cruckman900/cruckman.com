@@ -1,6 +1,6 @@
 .Label {
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 0.8rem;
 }
 
 @media (max-width: 800px) and (min-width: 300px) {

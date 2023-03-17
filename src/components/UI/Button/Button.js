@@ -1,9 +1,10 @@
 import React from "react";
-import styles from './Button.module.css';
 
 const Button = (props) => {
     return (
         <button
+            id={props.key}
+            key={props.key}
             type={props.type || 'button'}
             className={props.className}
             onClick={props.onClick}

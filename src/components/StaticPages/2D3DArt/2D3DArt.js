@@ -44,29 +44,29 @@ function Art2D3D() {
                     This was one of my first models in Wings3D, and the first 3D object I ever made that I was somewhat proud of.
                     Looking at it now... meh.
                 </p>
-                <p><img src={car1} alt="Car 1" /></p>
+                <p><img src={car1} alt="Car 1" className={styles.Image} /></p>
                 <p>
                     I made this missile for a mecha robot that I created... I can't find the mecha.
                 </p>
-                <p><img src={missile1} alt="Missile 1" /></p>
+                <p><img src={missile1} alt="Missile 1" className={styles.Image} /></p>
                 <p>
                     My first attempt at making a weapon from the age of dragons or some shit.  I called it a winged halberd.
                 </p>
-                <p><img src={halberd1} alt="Halberd 1" /></p>
+                <p><img src={halberd1} alt="Halberd 1" className={styles.Image} /></p>
                 <hr />
                 <Label>3D Objects created in Blender</Label>
                 <p>This was one of my first models in Blender that actually resembled something that could exist in the real world.</p>
-                <p><img src={bow1} alt="Bow 1" /></p>
+                <p><img src={bow1} alt="Bow 1" className={styles.Image} /></p>
                 <p>Somewhat pleased with the first bow, I created another one, a little fancier.</p>
-                <p><img src={bow2} alt="Bow 2" /></p>
+                <p><img src={bow2} alt="Bow 2" className={styles.Image} /></p>
                 <p>Can't always fight from afar, so here's a pretty plain sword</p>
-                <p><img src={sword1} alt="Sword 1" /></p>
+                <p><img src={sword1} alt="Sword 1" className={styles.Image} /></p>
                 <p>
                     And finally, we need someone to use these weapons, she could use some type of clothing or armor... or not.
                     I started this model in 2004.  I've only recently started back to finishing it.  I just procrastinate with 
                     this model too much.  The smaller and more intricate the parts are, the less I feel motivated to work on them.
                 </p>
-                <p><img src={female1} alt="Female 1" /></p>
+                <p><img src={female1} alt="Female 1" className={styles.Image} /></p>
             </div>
         </DefaultPage>
     );

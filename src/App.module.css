@@ -58,6 +58,21 @@
   top: 65%;
 }
 
+.SideBarToggle {
+  background: transparent;
+  border: 0px;
+  height: 1.75rem;
+  display: none;
+  position: absolute;
+  top: 9.4vh;
+  left: 0vw;
+  z-index: 5;
+}
+
+.chevron {
+  color: #d0b670;
+}
+
 @media (max-width: 1400px) {
   .Container {
     margin-top: 66px;
@@ -71,7 +86,17 @@
   .Col {
     background: linear-gradient(180deg, #000000, #260000 20%, #000000 );
   }
-  .ColLeft, .Footer {
+  .SideBarToggle {
+    display: block;
+  }
+  .ColLeft {
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
+    position: relative;
+    left: -4vw;
+  }
+  .Footer {
     display: none;
   }
   .RowBody {
