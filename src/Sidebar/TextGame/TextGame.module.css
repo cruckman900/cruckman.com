@@ -1,7 +1,7 @@
 .header {
     font-family: 'DragonSlapper';
     background: #260000;
-    background: linear-gradient(180deg, #000000, #260000 20%, #000000 );
+    background: linear-gradient(180deg, #000000, #260000 20%, #000000);
     color: #b18030;
     border-radius: 10px 10px 0 0;
     font-size: 1.2rem;
@@ -43,9 +43,9 @@
     background: #260000;
     position: relative;
     display: inline-block;
-    top: 12vh;
+    top: 11vh;
     left: -2px;
-    height: 12.7vh;
+    height: 13.8vh;
 }
 
 .playButton {
@@ -54,9 +54,14 @@
     width: 17.2rem;
     font-size: .55rem;
     background: #d0b670;
+    background: linear-gradient(0deg, #b08030, #d0b670, #b08030);
     border: solid 1px #260000;
     border-radius: 5px;
     color: #260000;
+}
+
+.playButton:hover {
+    border: solid 1px #eebb5a;
 }
 
 .buttonHidden {

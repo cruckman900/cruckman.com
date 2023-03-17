@@ -11,8 +11,8 @@ function TextGame(props) {
     const [gameButton4Show, setGameButton4Show] = useState(classes.buttonHidden);
 
     useEffect(() => {
-        setGameButton4Show(classes.buttonHidden);
-        setGameButton3Show(classes.buttonHidden);
+        setGameButton4Show(classes.playButton);
+        setGameButton3Show(classes.playButton);
         setGameButton2Show(classes.playButton);
         setGameButton1Show(classes.playButton);
     }, []);
@@ -49,10 +49,10 @@ function TextGame(props) {
                 }
                 
                 <div className={classes.gameButtonContainer}>
-                    <Button id="gameButton1" className={`${gameButton1Show}`} onClick={isPlayingHandler}>Yes</Button>
-                    <Button id="gameButton2" className={`${gameButton2Show}`} onClick={stopPlayingHandler}>No</Button>
-                    <Button id="gameButton3" className={`${gameButton3Show}`} onClick={null}>empty</Button>
-                    <Button id="gameButton4" className={`${gameButton4Show}`} onClick={null}>empty</Button>
+                    <Button id="gameButton1" className={`${gameButton1Show}`} onClick={isPlayingHandler}>Yes<br />Please</Button>
+                    <Button id="gameButton2" className={`${gameButton2Show}`} onClick={stopPlayingHandler}>No<br />Thanks</Button>
+                    <Button id="gameButton3" className={`${gameButton3Show}`} onClick={null}>Hello<br />Kitty</Button>
+                    <Button id="gameButton4" className={`${gameButton4Show}`} onClick={null}>Goodbye<br />Cruel World</Button>
                 </div>
             
                 <div className={classes.hiders}>
