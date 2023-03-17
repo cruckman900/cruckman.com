@@ -6,6 +6,7 @@
 .Container {
   overflow: auto;
   margin-top: 66px;
+  width: 100vw;
 }
 
 .RowBody {
@@ -27,7 +28,7 @@
   color: #260000;
   font-weight: 100;
   font-size: 1rem;
-
+  width: 100vw;
 }
 
 .ColLeft {
@@ -63,7 +64,7 @@
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 800px) and (min-width: 300px) {
   .Container {
     margin-top: 61px;
   }

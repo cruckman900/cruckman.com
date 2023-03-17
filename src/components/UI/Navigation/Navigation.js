@@ -1,12 +1,13 @@
 import { Nav, Navbar, NavDropdown, Offcanvas }from 'react-bootstrap';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { 
   faHouse, faBook, faImage, faMusic, faUser, faPersonFalling, faIcons,
   faPen, faFilm, faGhost, faCode, faCodeBranch, faVideo, faQuestion
 } from '@fortawesome/free-solid-svg-icons';
+import NavItem from '../NavItem/NavItem';
 import styles from './Navigation.module.css';
 
 import dragon1 from '../../../assets/images/dragon1.png';
@@ -73,63 +74,36 @@ const Navigation = () => {
                       title={<span className={styles.ddlink}><FontAwesomeIcon icon={myIcons['icons']} fontSize="1.0rem" />&nbsp;&nbsp;INTERESTS</span>}
                       id={`offcanvasNavbarDropdown-expand-${expand}`}
                     >
-                      <NavDropdown.Item href="/2D3DArt/2D3DArt">
-                        <Row>
-                          <Col className={styles.ddlink}><FontAwesomeIcon icon={myIcons['image']} fontSize="1.0rem" /></Col>
-                          <Col className={styles.ddlink}>2D/3D ART (CG)</Col>
-                        </Row>
+                      <NavDropdown.Item as={Link} to="/2D3DArt/2D3DArt" href="#2D3DArt">
+                        <NavItem className={styles.ddlink} icon={myIcons['image']} fontSize="1.0rem">2D/3D Art</NavItem>
                       </NavDropdown.Item>
                       <NavDropdown.Item as={Link} to={"/Music/Music"} href="#Music">
-                        <Row>
-                          <Col className={styles.ddlink}><FontAwesomeIcon icon={myIcons['music']} fontSize="1.0rem" /></Col>
-                          <Col className={styles.ddlink}>MUSIC (Guitar)</Col>
-                        </Row>
+                        <NavItem className={styles.ddlink} icon={myIcons['music']} fontSize="1.0rem">MUSIC (GUITAR)</NavItem>
                       </NavDropdown.Item>
                       <NavDropdown.Item as={Link} to={"/MartialArts/MartialArts"} href="#MartialArts">
-                        <Row>
-                          <Col className={styles.ddlink}><FontAwesomeIcon icon={myIcons['personFalling']} fontSize="1.0rem" /></Col>
-                          <Col className={styles.ddlink}>MARTIAL ARTS</Col>
-                        </Row>
+                        <NavItem className={styles.ddlink} icon={myIcons['personFalling']} fontSize="1.0rem">MARTIAL ARTS</NavItem>
                       </NavDropdown.Item>
                       <NavDropdown.Item href="#action7">
-                        <Row>
-                          <Col className={styles.ddlink}><FontAwesomeIcon icon={myIcons['pen']} fontSize="1.0rem" /></Col>
-                          <Col className={styles.ddlink}>CREATIVE WRITING</Col>
-                        </Row>
+                        <NavItem className={styles.ddlink} icon={myIcons['pen']} fontSize="1.0rem">CREATIVE WRITING</NavItem>
                       </NavDropdown.Item>
                       <NavDropdown.Item href="#action7">
-                        <Row>
-                          <Col className={styles.ddlink}><FontAwesomeIcon icon={myIcons['film']} fontSize="1.0rem" /></Col>
-                          <Col className={styles.ddlink}>AUDIO/VIDEO</Col>
-                        </Row>
+                        <NavItem className={styles.ddlink} icon={myIcons['film']} fontSize="1.0rem">AUDIO/VIDEO</NavItem>
                       </NavDropdown.Item>
                       <NavDropdown.Item href="#action8">
-                        <Row>
-                          <Col className={styles.ddlink}><FontAwesomeIcon icon={myIcons['ghost']} fontSize="1.0rem" /></Col>
-                          <Col className={styles.ddlink}>GAME DEV</Col>
-                        </Row>
+                        <NavItem className={styles.ddlink} icon={myIcons['ghost']} fontSize="1.0rem">GAME DEV</NavItem>
                       </NavDropdown.Item>
                       <NavDropdown.Item href="#action9">
-                        <Row>
-                          <Col className={styles.ddlink}><FontAwesomeIcon icon={myIcons['code']} fontSize="1.0rem" /></Col>
-                          <Col className={styles.ddlink}>SOFTWARE DEV</Col>
-                        </Row>
+                        <NavItem className={styles.ddlink} icon={myIcons['code']} fontSize="1.0rem">SOFTWARE DEV</NavItem>
                       </NavDropdown.Item>
                       <NavDropdown.Divider />
                       <NavDropdown.Item href="#action10">
-                        <Row>
-                          <Col className={styles.ddlink}><FontAwesomeIcon icon={myIcons['codeBranch']} fontSize="1.0rem" /></Col>
-                          <Col className={styles.ddlink}>GitHub LINKS</Col>
-                        </Row>
+                        <NavItem className={styles.ddlink} icon={myIcons['codeBranch']} fontSize="1.0rem">GitHub LINKS</NavItem>
                       </NavDropdown.Item>
                       <NavDropdown.Item href="#action11">
-                        <Row>
-                          <Col className={styles.ddlink}><FontAwesomeIcon icon={myIcons['video']} fontSize="1.0rem" /></Col>
-                          <Col className={styles.ddlink}>YouTube LINKS</Col>
-                        </Row>
+                        <NavItem className={styles.ddlink} icon={myIcons['video']} fontSize="1.0rem">YouTube LINKS</NavItem>
                       </NavDropdown.Item>
                     </NavDropdown>
-                    <Nav.Link as={Link} to={"/about"} href="#about">
+                    <Nav.Link as={Link} to={"/About/About"} href="#about">
                       <span className={styles.ddlink}><FontAwesomeIcon icon={myIcons['question']} fontSize="1.0rem" />&nbsp;&nbsp;ABOUT</span>
                     </Nav.Link>
                     <Nav.Link className={styles.onlyMobile} href="#12action">

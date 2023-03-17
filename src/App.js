@@ -19,7 +19,7 @@ function App() {
             </div>
           </Col>
           <Col className={`${styles.ColRight} ${styles.Col}`}>
-            <div class={styles.bgColor}>
+            <div className={styles.bgColor}>
               <Navigation />
             </div>
           </Col>
