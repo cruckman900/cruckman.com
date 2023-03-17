@@ -1,8 +1,8 @@
 import React from 'react';
 
 import Navigation from './components/UI/Navigation/Navigation';
-import TextGame from './components/TextGame/TextGame';
-import Weather from './components/Weather/Weather';
+import TextGame from './Sidebar/TextGame/TextGame';
+import Weather from './Sidebar/Weather/Weather';
 
 import { Container, Row, Col } from 'react-bootstrap';
 import styles from './App.module.css';
@@ -14,8 +14,8 @@ function App() {
         <Row className={styles.RowBody}>
           <Col xs={2} className={styles.ColLeft}>
             <div className={styles.fixed}>
-              <TextGame />
-              <Weather />
+              <TextGame className={styles.padBottom} />
+              <Weather className={styles.padBottom} />
             </div>
           </Col>
           <Col className={`${styles.ColRight} ${styles.Col}`}>

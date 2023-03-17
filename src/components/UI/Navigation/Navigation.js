@@ -14,6 +14,7 @@ import dragon1 from '../../../assets/images/dragon1.png';
 import Home from '../../StaticPages/Home/Home';
 import Resume from '../../StaticPages/Resume/Resume';
 import About from '../../StaticPages/About/About';
+import Art2D3D from '../../StaticPages/2D3DArt/2D3DArt';
 import Music from '../../StaticPages/Music/Music';
 import MartialArts from '../../StaticPages/MartialArts/MartialArts';
 
@@ -72,7 +73,7 @@ const Navigation = () => {
                       title={<span className={styles.ddlink}><FontAwesomeIcon icon={myIcons['icons']} fontSize="1.0rem" />&nbsp;&nbsp;INTERESTS</span>}
                       id={`offcanvasNavbarDropdown-expand-${expand}`}
                     >
-                      <NavDropdown.Item href="#action4">
+                      <NavDropdown.Item href="/2D3DArt/2D3DArt">
                         <Row>
                           <Col className={styles.ddlink}><FontAwesomeIcon icon={myIcons['image']} fontSize="1.0rem" /></Col>
                           <Col className={styles.ddlink}>2D/3D ART (CG)</Col>
@@ -144,8 +145,10 @@ const Navigation = () => {
         <Route path="/" element={ <Home /> } />
         <Route path="/resume" element={ <Resume /> } />
         <Route path="/about" element={ <About /> } />
+        <Route path="/2d3dart/2d3dart" element={ <Art2D3D /> } />
         <Route path="/music/music" element={ <Music /> } />
         <Route path="/martialarts/martialarts" element={ <MartialArts /> } />
+        <Route path="/about/about" element={ <About /> } />
       </Routes>
     </Router>
   );

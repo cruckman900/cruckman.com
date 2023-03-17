@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import styles from './Home.module.css';
-import WaitPart from "../../WaitPart/WaitPart";
 import DefaultPage from "../../UI/DefaultPage/DefaultPage";
 import lolly from "../../../assets/images/lolly.png";
 

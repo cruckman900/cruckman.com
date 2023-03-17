@@ -37,6 +37,10 @@
   color: #b18030;
 }
 
+.padBottom {
+  margin-bottom: 8px;
+}
+
 .fixed {
   position: fixed;
   width: 18rem;

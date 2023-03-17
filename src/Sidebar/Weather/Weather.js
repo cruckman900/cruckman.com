@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCoffee } from '@fortawesome/free-solid-svg-icons/faCoffee';
 import { faSun } from "@fortawesome/free-solid-svg-icons";
 
-function Weather() {
+function Weather(props) {
     const url = 'https://api.open-meteo.com/v1/forecast';
     const lat = 'latitude=40.183277';
     const lng = 'longitude=-80.690971';
@@ -134,7 +134,7 @@ function Weather() {
     }, []);
 
     if (data !== null) return(
-        <Card className={classes.LeftColumn}>
+        <Card className={`${classes.LeftColumn} ${props.className}`}>
             <div className={`${classes.header}`}>Weather in Rayland</div>
             <Container>
                 <Row><Col><Time className={classes.time} /></Col></Row>
