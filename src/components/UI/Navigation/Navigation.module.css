@@ -25,7 +25,7 @@
     color: #d0b670;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 600px) and (min-width: 300px) {
     .NavbarBrand i {
         font-size: 14pt;
     }

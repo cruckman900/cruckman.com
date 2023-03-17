@@ -5,7 +5,7 @@
     color: #b18030;
     border-radius: 10px 10px 0 0;
     font-size: 1.2rem;
-    font-weight: bold;
+    font-weight: 500;
     text-shadow: 2px 2px 3px #000000;
 }
 
@@ -54,7 +54,7 @@
     width: 17.2rem;
     font-size: .55rem;
     background: #d0b670;
-    background: linear-gradient(0deg, #b08030, #d0b670, #b08030);
+    background: linear-gradient(0deg, #b08030, #d0b670, 80%, #b08030);
     border: solid 1px #260000;
     border-radius: 5px;
     color: #260000;
@@ -103,6 +103,6 @@
 @media (max-width: 800px) and (min-width: 300px) {
     .gameButtonContainer {
         height: 19vh;
-        top: 18vh;
+        top: 15.5vh;
     }
 }

@@ -11,9 +11,9 @@ function printDate(string) {
     return new Date(string).toLocaleDateString([],options);
 }
 
-function Time() {
+function Time(props) {
     return (
-        <div className={styles.Time}>{printDate(new Date)}</div>
+        <div className={props.className}>{printDate(new Date)}</div>
     )
 }
 

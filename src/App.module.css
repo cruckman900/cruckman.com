@@ -20,7 +20,7 @@
   background-repeat: no-repeat;
   background-position: top right;
   background-attachment: fixed;
-  width: calc(100vw - 320px) !important;
+  width: calc(100vw - 320px - var(--scrollbar-width)) !important;
   color: #260000;
 }
 
@@ -48,7 +48,7 @@
 }
 
 .Footer {
-  background: linear-gradient(0deg, #260000, #000000, #000000 );
+  background: linear-gradient(0deg, #260000, #000000, #050000 );
   color: #d0b670;
   height: calc(100vh - 88vh);
 }
@@ -77,7 +77,7 @@
   color: #d0b670;
 }
 
-@media (max-width: 800px) and (min-width: 300px) {
+@media (max-width: 1106px) and (min-width: 340px) {
   .Container {
     margin-top: 61px;
   }
@@ -92,7 +92,7 @@
     width: 2vw;
     position: absolute;
     top: 10vh;
-    left: 1vw;
+    left: 5vw;
     background: transparent;
     border: none;
     background-attachment: fixed;
@@ -109,7 +109,7 @@
     z-index: 5;
     position: absolute;
     top: 9vh;
-    left: -4vw;
+    left: 0vw;
   }
   .ColRight {
     width: 100vw !important;
@@ -119,6 +119,12 @@
   }
   .RowBody {
     height: calc(100vh - 6px);
+  }
+}
+
+@media (max-width: 339px) {
+  * {
+    display: none;
   }
 }
 
