@@ -10,19 +10,33 @@ function TextGame(props) {
     const [gameButton3Show, setGameButton3Show] = useState(classes.buttonHidden);
     const [gameButton4Show, setGameButton4Show] = useState(classes.buttonHidden);
 
-    const playHandler = () => {
-        console.log("we have a winner!");
-        setPlay(true);
-    }
-
     useEffect(() => {
-        setPlay(false);
-        console.log('fuck you joe boo!');
-        setGameButton4Show(classes.playButton);
-        setGameButton3Show(classes.playButton);
+        setGameButton4Show(classes.buttonHidden);
+        setGameButton3Show(classes.buttonHidden);
         setGameButton2Show(classes.playButton);
         setGameButton1Show(classes.playButton);
     }, []);
+
+    const isPlayingHandler = () => {
+        localStorage.setItem('isPlaying', 'yes')
+        setPlay(true);
+        console.log(`playHandler ${play}`);
+    }
+
+    const stopPlayingHandler = () => {
+        localStorage.removeItem('isPlaying');
+        setPlay(false);
+    }
+
+    useEffect(() => {
+        const storedIsPlaying = localStorage.getItem('isPlaying');
+        if(storedIsPlaying === 'yes') {
+            setPlay(true);
+        } else {
+            setPlay(false);
+        }
+        console.log(`useEffect ${play}`);
+    }, [play]);
 
     return (
         <Card className={`${classes.LeftColumn} ${props.className}`}>
@@ -35,10 +49,10 @@ function TextGame(props) {
                 }
                 
                 <div className={classes.gameButtonContainer}>
-                    <Button key="gameButton1" className={gameButton1Show} onClick={playHandler}>1 Yes<br />1 Yes</Button>
-                    <Button key="gameButton2" className={gameButton2Show} onClick={playHandler}>2 Yes<br />2 Yes</Button>
-                    <Button key="gameButton3" className={gameButton3Show} onClick={playHandler}>3 Yes<br />3 Yes</Button>
-                    <Button key="gameButton4" className={gameButton4Show} onClick={playHandler}>4 Yes<br />4 Yes</Button>
+                    <Button id="gameButton1" className={gameButton1Show} onClick={isPlayingHandler}>Yes</Button>
+                    <Button id="gameButton2" className={gameButton2Show} onClick={stopPlayingHandler}>No</Button>
+                    <Button id="gameButton3" className={gameButton3Show} onClick={''}>empty</Button>
+                    <Button id="gameButton4" className={gameButton4Show} onClick={''}>empty</Button>
                 </div>
             
                 <div className={classes.hiders}>
