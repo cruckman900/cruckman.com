@@ -9,12 +9,13 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import styles from './Navigation.module.css';
 
-import dragon1 from '../../../assets/dragon1.png';
+import dragon1 from '../../../assets/images/dragon1.png';
 
 import Home from '../../StaticPages/Home/Home';
 import Resume from '../../StaticPages/Resume/Resume';
 import About from '../../StaticPages/About/About';
 import Music from '../../StaticPages/Music/Music';
+import MartialArts from '../../StaticPages/MartialArts/MartialArts';
 
 const Navigation = () => {
   const expand = 'xl';
@@ -83,7 +84,7 @@ const Navigation = () => {
                           <Col className={styles.ddlink}>MUSIC (Guitar)</Col>
                         </Row>
                       </NavDropdown.Item>
-                      <NavDropdown.Item href="#action6">
+                      <NavDropdown.Item as={Link} to={"/MartialArts/MartialArts"} href="#MartialArts">
                         <Row>
                           <Col className={styles.ddlink}><FontAwesomeIcon icon={myIcons['personFalling']} fontSize="1.0rem" /></Col>
                           <Col className={styles.ddlink}>MARTIAL ARTS</Col>
@@ -131,7 +132,7 @@ const Navigation = () => {
                       <span className={styles.ddlink}><FontAwesomeIcon icon={myIcons['question']} fontSize="1.0rem" />&nbsp;&nbsp;ABOUT</span>
                     </Nav.Link>
                     <Nav.Link className={styles.onlyMobile} href="#12action">
-                      <span className={styles.ddlink}><FontAwesomeIcon icon={myIcons['user']} fontSize="1.0rem" />&nbsp;&nbsp;LOGIN/REGISTER</span>
+                      <span className={styles.ddlink}><FontAwesomeIcon icon={myIcons['user']} fontSize="1.0rem" />&nbsp;&nbsp;LOGIN</span>
                     </Nav.Link>
                 </Nav>
                 </Offcanvas.Body>
@@ -144,6 +145,7 @@ const Navigation = () => {
         <Route path="/resume" element={ <Resume /> } />
         <Route path="/about" element={ <About /> } />
         <Route path="/music/music" element={ <Music /> } />
+        <Route path="/martialarts/martialarts" element={ <MartialArts /> } />
       </Routes>
     </Router>
   );

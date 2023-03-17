@@ -14,8 +14,8 @@ function App() {
         <Row className={styles.RowBody}>
           <Col xs={2} className={styles.ColLeft}>
             <div className={styles.fixed}>
-            <TextGame />
-            <Weather />
+              <TextGame />
+              <Weather />
             </div>
           </Col>
           <Col className={`${styles.ColRight} ${styles.Col}`}>

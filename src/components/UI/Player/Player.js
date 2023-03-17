@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Button from "../Button/Button";
 import classes from './Player.module.css';
 
 const useAudio = url => {
@@ -28,7 +29,9 @@ const Player = ({ url }) => {
 
   return (
     <span>
-      <button className={classes.btn} onClick={toggle}>{playing ? "Pause" : "Play"}</button>
+      <Button onClick={toggle} className={classes.btn}>
+        {!playing ? "Play" : "Pause"}
+      </Button>
     </span>
   );
 };

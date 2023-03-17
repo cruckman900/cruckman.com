@@ -1,5 +1,5 @@
 import { React } from 'react';
-import dragon1 from '../../assets/dragon1.png';
+import dragon1 from '../../assets/images/dragon1.png';
 import styles from './WaitPart.module.css';
 
 function WaitPart() {

@@ -1,8 +1,13 @@
 .btn {
-    width: 5rem;
+    font: inherit;
     color: #260000;
     background: #d0b670;
     border: 1px solid #260000;
+    padding: 0.25rem 1rem;
+    cursor: pointer;
+    width: 8.5rem;
+    font-size: 0.75rem;
+    border-radius: 8px;
 }
 
 .btn:hover {

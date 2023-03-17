@@ -9,14 +9,38 @@
 }
 
 .Song {
+    clear: both;
     text-align: start;
     width: 80%;
 }
 
-.Song span {
-    white-space: nowrap;
+.bodyImage {
+    float: left;
+    margin-right: 1rem;
+    width: 160px;
+    height: 200px;
+    border-radius: 8px;
 }
 
 .float {
-    float: inline-end;
+    display: flex;
+    position: relative;;
+    float: inline-start;
+    text-align: start;
+}
+
+.link {
+    padding: 0 4px;
+    color: #260000;
+}
+
+.link:hover {
+    color: #B18030;
+}
+
+.hr {
+    border: solid 1px #b18030;
+    border-radius: 8px;
+    padding: 0;
+    margin: 0;
 }

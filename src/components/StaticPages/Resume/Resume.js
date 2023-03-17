@@ -6,7 +6,7 @@ import LeftbarLabelledContainer from "../../UI/LeftbarLabelledContainer/LeftbarL
 import DefaultPage from "../../UI/DefaultPage/DefaultPage";
 import classes from './Resume.module.css';
 import ResumeHeader from "./ResumeHeader";
-import lollyLivro from '../../../assets/loly_livro2.png';
+import lollyLivro from '../../../assets/images/loly_livro2.png';
 
 const Resume = () => {
     return (
