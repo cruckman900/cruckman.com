@@ -37,15 +37,26 @@ function Art2D3D() {
                     created using Blender.  I will post screenshots of the items I have made, and for a tiny fee, will share 
                     the items with you to use in any way you wish.
                 </p>
+                <p>
+                    Most of these objects are really old.  The only newer model is the sword.  Bow2 and my female model have had
+                    recent work done to them, so they are a little more sophisticated than the other models.  The cool thing about 
+                    Blender is, when you start developing a new file, the layouts and stuff are saved in your model data.  So,
+                    no matter what edition of the software you have, your layouts are the same throughout.
+                </p>
+                <p>
+                    If you are looking for ease of use, I strongly suggest Wings3D, but if you want a platform that currently
+                    competes with most enterprise class software, Blender is the tool of choice!
+                </p>
             </div>
             <div>
                 <Label>3D Objects created in Wings3D</Label>
                 <p>
-                    This was one of my first models in Wings3D, and the first 3D object I ever made that I was somewhat proud of.
-                    Looking at it now... meh.
+                    
                 </p>
                 <ModelInfo
                     Title="Body1.wings"
+                    Description="This was one of my first models in Wings3D, and the first 3D object I ever made that I was somewhat proud 
+                        of.  Looking at it now... meh."
                     ImageSrc={car1}
                     AltText="Car 1"
                     NumObjects="17"
@@ -55,11 +66,9 @@ function Art2D3D() {
                     Price="$1.99"
                 >
                 </ModelInfo>
-                <p>
-                    I made this missile for a mecha robot that I created... I can't find the mecha.
-                </p>
                 <ModelInfo
                     Title="Missile.wings"
+                    Description="I made this missile for a mecha robot that I created... I can't find the mecha."
                     ImageSrc={missile1}
                     AltText="Missile 1"
                     NumObjects="1"
@@ -69,11 +78,9 @@ function Art2D3D() {
                     Price="$1.25"
                 >
                 </ModelInfo>
-                <p>
-                    My first attempt at making a weapon from the age of dragons or some shit.  I called it a winged halberd.
-                </p>
                 <ModelInfo
-                    Title="Halberd2.wing"
+                    Title="Halberd2.wings"
+                    Description="My first attempt at making a weapon from the age of dragons or some shit.  I called it a winged halberd."
                     ImageSrc={halberd1}
                     AltText="Halberd 1"
                     NumObjects="1"
@@ -85,9 +92,10 @@ function Art2D3D() {
                 </ModelInfo>
                 <hr />
                 <Label>3D Objects created in Blender</Label>
-                <p>This was one of my first models in Blender that actually resembled something that could exist in the real world.</p>
                 <ModelInfo
                     Title="bow1.blend"
+                    Description="This was one of my first models in Blender that actually resembled something that could exist in the 
+                        real world."
                     ImageSrc={bow1}
                     AltText="Bow 1"
                     NumObjects="3"
@@ -97,9 +105,9 @@ function Art2D3D() {
                     Price="$3.00"
                 >
                 </ModelInfo>
-                <p>Somewhat pleased with the first bow, I created another one, a little fancier.</p>
                 <ModelInfo
                     Title="bow2.blend"
+                    Description="Somewhat pleased with the first bow, I created another one, a little fancier."
                     ImageSrc={bow2}
                     AltText="Bow 2"
                     NumObjects="1"
@@ -109,9 +117,9 @@ function Art2D3D() {
                     Price="$7.00"
                 >
                 </ModelInfo>
-                <p>Can't always fight from afar, so here's a pretty plain sword</p>
                 <ModelInfo
                     Title="bastardsword.blend"
+                    Description="Can't always fight from afar, so here's a pretty plain sword"
                     ImageSrc={sword1}
                     AltText="Sword 1"
                     NumObjects="1"
@@ -122,12 +130,13 @@ function Art2D3D() {
                 >
                 </ModelInfo>
                 <p>
-                    And finally, we need someone to use these weapons, she could use some type of clothing or armor... or not.
-                    I started this model in 2004.  I've only recently started back to finishing it.  I just procrastinate with 
-                    this model too much.  The smaller and more intricate the parts are, the less I feel motivated to work on them.
+                    
                 </p>
                 <ModelInfo
                     Title="FEM001_ehhc_ba5_exp5.blend"
+                    Description="And finally, we need someone to use these weapons, she could use some type of clothing or armor... or not.
+                        I started this model in 2004.  I've only recently started back to finishing it.  I just procrastinate with 
+                        this model too much.  The smaller and more intricate the parts are, the less I feel motivated to work on them."
                     ImageSrc={female1}
                     AltText="Female 1"
                     NumObjects="4"
@@ -137,6 +146,15 @@ function Art2D3D() {
                     Price="$12.00"
                 >
                 </ModelInfo>
+            </div>
+            <div>
+                <p>
+                    I have tried texture mapping objects.  As you can see above, I only used materials in my modelling.
+                    I have a model I created in Blender that has textures, but they are very basic (like cylinders and cubes).
+                    Someday, I will get familiar with this topic as well as others.  My FEM001_ehhc_ba5_exp5 model has bones,
+                    but I have yet to complete everything on that model before I begin working with animations.  I would also like
+                    to play around with particle effects.  If anyone has experience using these concepts, feel free to reach out to me!
+                </p>
             </div>
         </DefaultPage>
     );

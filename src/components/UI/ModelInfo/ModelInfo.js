@@ -8,6 +8,7 @@ function ModelInfo(props) {
     return (
         <Card>
             <div className={classes.header}>{props.Title}</div>
+            <div className={classes.description}>{props.Description}</div>
             <div className={classes.container}>
                 <div className={classes.ImgWrapper}>
                     <img src={props.ImageSrc} alt={props.AltText} className={classes.ImgWidth} />
@@ -21,17 +22,17 @@ function ModelInfo(props) {
                 </div>
                 <div className={classes.Request}>
                     <Label>Request this model</Label>
-                    <div className={classes.ObjDetail}><Label className={classes.Label2}>Price</Label>: {props.Price}</div>
-                    <div>
+                    <div className={classes.ObjDetail}><Label className={classes.Label2}>Price</Label>: <Label className={classes.Label2}>{props.Price}</Label></div>
+                    <div className={classes.PaymentDetail}>
                         <Label className={classes.Label2}>Payment Method</Label>
-                        <Button className={classes.PaymentMethod}>PayPal</Button>
-                        <Button className={classes.PaymentMethod}>Venmo</Button>    
+                        <Button className={classes.PaymentMethodButton}>PayPal</Button>
+                        <Button className={classes.PaymentMethodButton}>Venmo</Button>    
                     </div>
                     <div>
-                        <Label className={classes.Label2}>Email Address</Label><input className={classes.PaymentMethod} />
+                        <Label className={classes.Label2}>Email Address</Label><input className={classes.PaymentMethodInput} />
                     </div>
                     <div>
-                        <Button className={classes.Submit}>Submit</Button>
+                        <Button className={classes.PaymentMethodButton}>Submit</Button>
                     </div>
                 </div>
             </div>

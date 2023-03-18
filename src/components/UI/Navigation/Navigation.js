@@ -18,6 +18,12 @@ import About from '../../StaticPages/About/About';
 import Art2D3D from '../../StaticPages/2D3DArt/2D3DArt';
 import Music from '../../StaticPages/Music/Music';
 import MartialArts from '../../StaticPages/MartialArts/MartialArts';
+import CreativeWriting from '../../StaticPages/CreativeWriting/CreativeWriting';
+import AudioVideo from '../../StaticPages/AudioVideo/AudioVideo';
+import GameDev from '../../StaticPages/GameDev/GameDev';
+import SoftwareDev from '../../StaticPages/SoftwareDev/SoftwareDev';
+import GitHubLinks from '../../StaticPages/GitHubLinks/GitHubLinks';
+import YouTubeLinks from '../../StaticPages/YouTubeLinks/YouTubeLinks';
 
 const Navigation = () => {
   const expand = 'xl';
@@ -83,23 +89,23 @@ const Navigation = () => {
                       <NavDropdown.Item as={Link} to={"/MartialArts/MartialArts"} href="#MartialArts">
                         <NavItem className={styles.ddlink} icon={myIcons['personFalling']} fontSize="1.0rem">MARTIAL ARTS</NavItem>
                       </NavDropdown.Item>
-                      <NavDropdown.Item href="#action7">
+                      <NavDropdown.Item as={Link} to={"/CreativeWriting/CreativeWriting"} href="#CreativeWriting">
                         <NavItem className={styles.ddlink} icon={myIcons['pen']} fontSize="1.0rem">CREATIVE WRITING</NavItem>
                       </NavDropdown.Item>
-                      <NavDropdown.Item href="#action7">
+                      <NavDropdown.Item as={Link} to={"/AudioVideo/AudioVideo"} href="#AudioVideo">
                         <NavItem className={styles.ddlink} icon={myIcons['film']} fontSize="1.0rem">AUDIO/VIDEO</NavItem>
                       </NavDropdown.Item>
-                      <NavDropdown.Item href="#action8">
+                      <NavDropdown.Item as={Link} to={"/GameDev/GameDev"} href="#GameDev">
                         <NavItem className={styles.ddlink} icon={myIcons['ghost']} fontSize="1.0rem">GAME DEV</NavItem>
                       </NavDropdown.Item>
-                      <NavDropdown.Item href="#action9">
+                      <NavDropdown.Item as={Link} to={"/SoftwareDev/SoftwareDev"} href="#SoftwareDev">
                         <NavItem className={styles.ddlink} icon={myIcons['code']} fontSize="1.0rem">SOFTWARE DEV</NavItem>
                       </NavDropdown.Item>
                       <NavDropdown.Divider />
-                      <NavDropdown.Item href="#action10">
+                      <NavDropdown.Item as={Link} to={"/GitHubLinks/GitHubLinks"} href="#GitHubLinks">
                         <NavItem className={styles.ddlink} icon={myIcons['codeBranch']} fontSize="1.0rem">GitHub LINKS</NavItem>
                       </NavDropdown.Item>
-                      <NavDropdown.Item href="#action11">
+                      <NavDropdown.Item as={Link} to={"/YouTubeLinks/YouTubeLinks"} href="#YouTubeLinks">
                         <NavItem className={styles.ddlink} icon={myIcons['video']} fontSize="1.0rem">YouTube LINKS</NavItem>
                       </NavDropdown.Item>
                     </NavDropdown>
@@ -122,7 +128,12 @@ const Navigation = () => {
         <Route path="/2d3dart/2d3dart" element={ <Art2D3D /> } />
         <Route path="/music/music" element={ <Music /> } />
         <Route path="/martialarts/martialarts" element={ <MartialArts /> } />
-        <Route path="/about/about" element={ <About /> } />
+        <Route path="/creativewriting/creativewriting" element={ <CreativeWriting /> } />
+        <Route path="/audiovideo/audiovideo" element={ <AudioVideo /> } />
+        <Route path="/gamedev/gamedev" element={ <GameDev /> } />
+        <Route path="/softwaredev/softwaredev" element={ <SoftwareDev /> } />
+        <Route path="/githublinks/githublinks" element={ <GitHubLinks /> } />
+        <Route path="/youtubelinks/youtubelinks" element={ <YouTubeLinks /> } />
       </Routes>
     </Router>
   );

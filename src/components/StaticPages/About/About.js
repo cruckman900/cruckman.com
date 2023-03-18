@@ -33,7 +33,7 @@ function About() {
                     which could have killed me, had I not been found and treated for them.
                 </p>
                 <p>
-                    I can't publicly telling about my court case.  I am unsure what would happen should the other party 
+                    I can't publicly be telling about my court case.  I am unsure what would happen should the other party 
                     see what all I have to say, but it's been going on for almost a year (will be 1 year in August).
                 </p>
                 <p>
@@ -43,8 +43,7 @@ function About() {
                     building this website, practically from scratch using ReactJS.  I am learning as I go, and there is a ton
                     to learn if I want to have a full working understanding of it.  This is also the first site I've created that
                     is fully responsive.  You can see my site in all its glory on a large widescreen monitor or you can look
-                    through it on your phone.  Some things, obviously, won't be on the phone.  The side bar and footer are removed
-                    as well as the beautiful dragon image that I had made just for this site.
+                    through it on your phone.
                 </p>
                 <p>
                     I like to give credit where credit is due.  I also like helping friends.  I will have a location on the site 

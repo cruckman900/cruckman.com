@@ -7,11 +7,21 @@
     border-radius: 10px 10px 0 0;
     font-size: 1.2rem;
     font-weight: 500;
+    margin-top: 8px;
     text-shadow: 2px 2px 3px #000000;
 }
 
+.description {
+    clear: both;
+    padding: 2px 8px;
+    background: linear-gradient(0deg, #b08030, #d0b670, 80%, #b08030);
+    border: solid 1px #020000;
+}
+
 .ImgWrapper {
-    flex: 1
+    background: #260000;
+    border-radius: 8px;
+    padding: 4px;
 }
 
 .Label2 {
@@ -23,9 +33,10 @@
 .container {
     font-family: 'AGoblinAppears';
     font-size: .65rem;
-    display: flex
-    
-    ;
+    background: rgba(177, 128, 48, 0.65);
+    border: solid 1px #260000;
+    padding: 4px;
+    display: flex;
 }
 
 .ModelInfo {
@@ -46,6 +57,10 @@
     width: 100%;
 }
 
+.PaymentDetail {
+    margin-top: 20px;
+}
+
 .PaymentMethod {
     width: 15rem;
     display: block;
@@ -53,11 +68,28 @@
     color: #260000;
 }
 
-.Submit {
+.PaymentMethodInput {
     width: 15rem;
+    display: block;
+    background: #d0b670;
+    margin: 2px 0px;
+    border: solid 1px #260000;
+    border-radius: 8px;
+    padding: 2px 8px;
+    font-size: 7pt;
+}
+
+.PaymentMethodButton {
+    width: 15rem;
+    margin: 2px;
     background: linear-gradient(180deg, #000000, #260000 20%, #000000 );
     color: #b18030;
-    border: solid 5px #d0b670;
+    border: solid 1px #260000;
+    border-radius: 8px;
+}
+
+.PaymentMethodButton:hover {
+    border: solid 1px #eebb5a;
 }
 
 @media (max-width: 800px) {
@@ -65,7 +97,7 @@
         margin-left: 0;
     }
     .ImgWidth {
-        width: 88vw;
+        width: 82vw;
     }
     .container {
         display: block;
