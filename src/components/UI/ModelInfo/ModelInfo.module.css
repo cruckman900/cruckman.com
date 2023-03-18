@@ -11,6 +11,10 @@
     text-shadow: 2px 2px 3px #000000;
 }
 
+.dropShadow {
+    box-shadow: 2px 2px 3px #000000;
+}
+
 .description {
     clear: both;
     padding: 2px 8px;

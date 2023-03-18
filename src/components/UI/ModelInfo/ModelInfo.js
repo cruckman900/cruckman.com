@@ -6,9 +6,8 @@ import classes from './ModelInfo.module.css';
 
 function ModelInfo(props) {
     return (
-        <Card>
+        <Card className={classes.dropShadow}>
             <div className={classes.header}>{props.Title}</div>
-            <div className={classes.description}>{props.Description}</div>
             <div className={classes.container}>
                 <div className={classes.ImgWrapper}>
                     <img src={props.ImageSrc} alt={props.AltText} className={classes.ImgWidth} />
@@ -36,6 +35,7 @@ function ModelInfo(props) {
                     </div>
                 </div>
             </div>
+            <div className={classes.description}>{props.Description}</div>
         </Card>
     )
 }
