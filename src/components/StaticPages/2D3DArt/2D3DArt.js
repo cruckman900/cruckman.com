@@ -49,10 +49,7 @@ function Art2D3D() {
                 </p>
             </div>
             <div>
-                <Label>3D Objects created in Wings3D</Label>
-                <p>
-                    
-                </p>
+                <h6>3D Objects created in Wings3D</h6>
                 <ModelInfo
                     Title="Body1.wings"
                     Description="This was one of my first models in Wings3D, and the first 3D object I ever made that I was somewhat proud 
@@ -91,7 +88,7 @@ function Art2D3D() {
                 >
                 </ModelInfo>
                 <hr />
-                <Label>3D Objects created in Blender</Label>
+                <h6>3D Objects created in Blender</h6>
                 <ModelInfo
                     Title="bow1.blend"
                     Description="This was one of my first models in Blender that actually resembled something that could exist in the 
@@ -129,9 +126,6 @@ function Art2D3D() {
                     Price="$5.00"
                 >
                 </ModelInfo>
-                <p>
-                    
-                </p>
                 <ModelInfo
                     Title="FEM001_ehhc_ba5_exp5.blend"
                     Description="And finally, we need someone to use these weapons, she could use some type of clothing or armor... or not.
