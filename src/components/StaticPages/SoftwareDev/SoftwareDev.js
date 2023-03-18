@@ -6,7 +6,7 @@ import classes from './SoftwareDev.module.css';
 function SoftwareDev() {
     return (
         <DefaultPage image={lolly_computer} title="Software Dev">
-            
+            here is a tad of text
         </DefaultPage>
     );
 };

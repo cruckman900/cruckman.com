@@ -6,7 +6,7 @@ import classes from './GitHubLinks.module.css';
 function GitHubLinks() {
     return (
         <DefaultPage image={lolly_sentada2} title="GitHub Links">
-            
+            here is a tad of text
         </DefaultPage>
     );
 };

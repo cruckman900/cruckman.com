@@ -6,7 +6,7 @@ import classes from './CreativeWriting.module.css';
 function CreativeWriting() {
     return (
         <DefaultPage image={lolly_livro2} title="Creative Writing">
-            
+            here is a tad of text
         </DefaultPage>
     );
 };

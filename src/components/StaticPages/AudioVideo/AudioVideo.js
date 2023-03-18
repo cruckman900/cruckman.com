@@ -6,7 +6,7 @@ import classes from './AudioVideo.module.css';
 function AudioVideo() {
     return (
         <DefaultPage image={lolly_guitar} title="Audio/Video">
-            
+            here is a tad of text
         </DefaultPage>
     );
 };

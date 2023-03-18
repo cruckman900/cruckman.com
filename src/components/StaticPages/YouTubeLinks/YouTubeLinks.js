@@ -6,7 +6,7 @@ import classes from './YouTubeLinks.module.css';
 function YouTubeLinks() {
     return (
         <DefaultPage image={lolly_sentada2} title="YouTube Links">
-            
+            here is a tad of text
         </DefaultPage>
     );
 };
