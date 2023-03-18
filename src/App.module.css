@@ -15,7 +15,7 @@
 }
 
 .Col {
-  background: url('./assets/images/dragonImg.png'), #b18030;
+  background: url('./assets/images/dragon900.png'), #b18030;
   background-size: 54rem;
   background-repeat: no-repeat;
   background-position: top right;
@@ -82,6 +82,8 @@
     margin-top: 61px;
   }
   .Col {
+    min-height: calc(100vh - 61px);
+    background-attachment: fixed;
     background-size: 26rem;
     background-position: 15% 60%;
     right: 50rem;
@@ -91,7 +93,6 @@
     height: 35px;
     width: 17px;
     position: absolute;
-    /* top: 10vh; */
     top: calc(100vh - 50% - 17.5px);
     left: -2px;
     background: rgba(0, 0, 0, .5);
@@ -126,7 +127,7 @@
     display: none;
   }
   .RowBody {
-    height: calc(100vh - 6px);
+    height: auto;
   }
 }
 
