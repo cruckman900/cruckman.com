@@ -1,7 +1,7 @@
 .btn {
     font: inherit;
-    color: #260000;
-    background: #d0b670;
+    color: #b18030;
+    background: linear-gradient(180deg, #000000, #260000 20%, #000000 );
     border: 1px solid #260000;
     padding: 0.25rem 1rem;
     cursor: pointer;
@@ -11,5 +11,5 @@
 }
 
 .btn:hover {
-    border: 1px solid #b18030;
+    border: 1px solid #eebb5a;
 }
