@@ -92,7 +92,7 @@
     display: inline-block;
     height: 35px;
     width: 17px;
-    position: absolute;
+    position: fixed;
     top: calc(100vh - 50% - 17.5px);
     left: -2px;
     background: rgba(0, 0, 0, .5);

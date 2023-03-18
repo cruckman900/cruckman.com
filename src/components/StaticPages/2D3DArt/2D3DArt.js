@@ -147,7 +147,7 @@ function Art2D3D() {
                 >
                 </ModelInfo>
             </div>
-            <div>
+            <div className={styles.bottomText}>
                 <p>
                     I have tried texture mapping objects.  As you can see above, I only used materials in my modelling.
                     I have a model I created in Blender that has textures, but they are very basic (like cylinders and cubes).
