@@ -1,32 +1,42 @@
 import React from 'react';
-import Card from '../Card';
-import Label from '../Label';
-import Button from '../Button';
+import Card from '../Card/Card';
+import Label from '../Label/Label';
+import Button from '../Button/Button';
 import classes from './ModelInfo.module.css';
 
 function ModelInfo(props) {
-    <Card>
-        <div className={classes.header}>{props.Title}</div>
-        <div className={classes.container}>
-            <div className={classes.ImgWrapper}>
-                <img src={props.ImageSrc} width={props.width} />
-            </div>
-            <div className={classes.ModelInfo}>
-                <div className={classes.ObjDetail}><Label>Num Objects</Label>: {props.NumObjects}</div>
-                <div className={classes.ObjDetail}><Label>Num Faces</Label>: {props.NumFaces}</div>
-                <div className={classes.ObjDetail}><Label>Num Verts</Label>: {props.NumVerts}</div>
-            </div>
-            <div className={classes.Request}>
-                <Label>Request this model</Label>
-                <div className={classes.ObjDetail}><Label>Price</Label>: {props.Price}</div>
-                <div>
-                    <Label>Payment Method</Label>
-                    <Button className={classes.PaymentMethod}>PayPal</Button>
-                    <Button className={classes.PaymentMethod}>Venmo</Button>    
+    return (
+        <Card>
+            <div className={classes.header}>{props.Title}</div>
+            <div className={classes.container}>
+                <div className={classes.ImgWrapper}>
+                    <img src={props.ImageSrc} alt={props.AltText} className={classes.ImgWidth} />
                 </div>
-                <input className={classes.EmailAddress} />
-                <Button className={classes.SubmitButton}>Submit</Button>
+                <div className={classes.ModelInfo}>
+                    <Label>Attributes</Label>
+                    <div className={classes.ObjDetail}><Label className={classes.Label2}>Num Objects</Label>: {props.NumObjects}</div>
+                    <div className={classes.ObjDetail}><Label className={classes.Label2}>Num Edges</Label>: {props.NumEdges}</div>
+                    <div className={classes.ObjDetail}><Label className={classes.Label2}>Num Faces</Label>: {props.NumFaces}</div>
+                    <div className={classes.ObjDetail}><Label className={classes.Label2}>Num Verts</Label>: {props.NumVerts}</div>
+                </div>
+                <div className={classes.Request}>
+                    <Label>Request this model</Label>
+                    <div className={classes.ObjDetail}><Label className={classes.Label2}>Price</Label>: {props.Price}</div>
+                    <div>
+                        <Label className={classes.Label2}>Payment Method</Label>
+                        <Button className={classes.PaymentMethod}>PayPal</Button>
+                        <Button className={classes.PaymentMethod}>Venmo</Button>    
+                    </div>
+                    <div>
+                        <Label className={classes.Label2}>Email Address</Label><input className={classes.PaymentMethod} />
+                    </div>
+                    <div>
+                        <Button className={classes.Submit}>Submit</Button>
+                    </div>
+                </div>
             </div>
-        </div>
-    </Card>
+        </Card>
+    )
 }
+
+export default ModelInfo;

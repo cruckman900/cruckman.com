@@ -1,6 +1,6 @@
 import React from "react";
-import { Row, Col } from 'react-bootstrap';
 import DefaultPage from "../../UI/DefaultPage/DefaultPage";
+import ModelInfo from "../../UI/ModelInfo/ModelInfo";
 import Label from "../../UI/Label/Label";
 
 import lolly_sentada2 from "../../../assets/images/lolly_sentada2.png";
@@ -44,29 +44,99 @@ function Art2D3D() {
                     This was one of my first models in Wings3D, and the first 3D object I ever made that I was somewhat proud of.
                     Looking at it now... meh.
                 </p>
-                <p><img src={car1} alt="Car 1" className={styles.Image} /></p>
+                <ModelInfo
+                    Title="Body1.wings"
+                    ImageSrc={car1}
+                    AltText="Car 1"
+                    NumObjects="17"
+                    NumEdges="16,364"
+                    NumFaces="8,620"
+                    NumVerts="8,870"
+                    Price="$1.99"
+                >
+                </ModelInfo>
                 <p>
                     I made this missile for a mecha robot that I created... I can't find the mecha.
                 </p>
-                <p><img src={missile1} alt="Missile 1" className={styles.Image} /></p>
+                <ModelInfo
+                    Title="Missile.wings"
+                    ImageSrc={missile1}
+                    AltText="Missile 1"
+                    NumObjects="1"
+                    NumEdges="496"
+                    NumFaces="242"
+                    NumVerts="256"
+                    Price="$1.25"
+                >
+                </ModelInfo>
                 <p>
                     My first attempt at making a weapon from the age of dragons or some shit.  I called it a winged halberd.
                 </p>
-                <p><img src={halberd1} alt="Halberd 1" className={styles.Image} /></p>
+                <ModelInfo
+                    Title="Halberd2.wing"
+                    ImageSrc={halberd1}
+                    AltText="Halberd 1"
+                    NumObjects="1"
+                    NumEdges="1,522"
+                    NumFaces="764"
+                    NumVerts="760"
+                    Price="$2.50"
+                >
+                </ModelInfo>
                 <hr />
                 <Label>3D Objects created in Blender</Label>
                 <p>This was one of my first models in Blender that actually resembled something that could exist in the real world.</p>
-                <p><img src={bow1} alt="Bow 1" className={styles.Image} /></p>
+                <ModelInfo
+                    Title="bow1.blend"
+                    ImageSrc={bow1}
+                    AltText="Bow 1"
+                    NumObjects="3"
+                    NumEdges=""
+                    NumFaces="66,256"
+                    NumVerts="66,208"
+                    Price="$3.00"
+                >
+                </ModelInfo>
                 <p>Somewhat pleased with the first bow, I created another one, a little fancier.</p>
-                <p><img src={bow2} alt="Bow 2" className={styles.Image} /></p>
+                <ModelInfo
+                    Title="bow2.blend"
+                    ImageSrc={bow2}
+                    AltText="Bow 2"
+                    NumObjects="1"
+                    NumEdges=""
+                    NumFaces="37,792"
+                    NumVerts="37,776"
+                    Price="$7.00"
+                >
+                </ModelInfo>
                 <p>Can't always fight from afar, so here's a pretty plain sword</p>
-                <p><img src={sword1} alt="Sword 1" className={styles.Image} /></p>
+                <ModelInfo
+                    Title="bastardsword.blend"
+                    ImageSrc={sword1}
+                    AltText="Sword 1"
+                    NumObjects="1"
+                    NumEdges=""
+                    NumFaces="794"
+                    NumVerts="824"
+                    Price="$5.00"
+                >
+                </ModelInfo>
                 <p>
                     And finally, we need someone to use these weapons, she could use some type of clothing or armor... or not.
                     I started this model in 2004.  I've only recently started back to finishing it.  I just procrastinate with 
                     this model too much.  The smaller and more intricate the parts are, the less I feel motivated to work on them.
                 </p>
-                <p><img src={female1} alt="Female 1" className={styles.Image} /></p>
+                <ModelInfo
+                    Title="FEM001_ehhc_ba5_exp5.blend"
+                    ImageSrc={female1}
+                    AltText="Female 1"
+                    NumObjects="4"
+                    NumEdges=""
+                    NumFaces="12,522"
+                    NumVerts="11,426"
+                    Price="$12.00"
+                >
+                </ModelInfo>
             </div>
         </DefaultPage>
     );

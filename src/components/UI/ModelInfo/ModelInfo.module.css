@@ -1,0 +1,76 @@
+.header {
+    font-family: 'DragonSlapper';
+    padding-left: 8px;
+    background: #260000;
+    background: linear-gradient(180deg, #000000, #260000 20%, #000000 );
+    color: #b18030;
+    border-radius: 10px 10px 0 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-shadow: 2px 2px 3px #000000;
+}
+
+.ImgWrapper {
+    flex: 1
+}
+
+.Label2 {
+    font-weight: 500;
+    font-size: 0.75rem;
+    color: #260000;
+}
+
+.container {
+    font-family: 'AGoblinAppears';
+    font-size: .65rem;
+    display: flex
+    
+    ;
+}
+
+.ModelInfo {
+    display: flexbox;
+    float: inline-end;
+    margin-left: 12px;
+    width: 100%;
+}
+
+.ObjectDetail {
+    float: left;
+    display: inline-flex;
+}
+
+.Request {
+    float: left;
+    display: block;
+    width: 100%;
+}
+
+.PaymentMethod {
+    width: 15rem;
+    display: block;
+    background: linear-gradient(0deg, #b08030, #d0b670, 80%, #b08030);
+    color: #260000;
+}
+
+.Submit {
+    width: 15rem;
+    background: linear-gradient(180deg, #000000, #260000 20%, #000000 );
+    color: #b18030;
+    border: solid 5px #d0b670;
+}
+
+@media (max-width: 800px) {
+    .ModelInfo {
+        margin-left: 0;
+    }
+    .ImgWidth {
+        width: 88vw;
+    }
+    .container {
+        display: block;
+    }
+    .Request {
+        margin-top: 8px;
+    }
+}

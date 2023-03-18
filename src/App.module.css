@@ -88,15 +88,23 @@
   }
   .buttonHolder {
     display: inline-block;
-    height: 2vh;
-    width: 2vw;
+    height: 35px;
+    width: 17px;
     position: absolute;
-    top: 10vh;
-    left: 5vw;
-    background: transparent;
-    border: none;
+    /* top: 10vh; */
+    top: calc(100vh - 50% - 17.5px);
+    left: -2px;
+    background: rgba(0, 0, 0, .5);
+    border: solid 1px #b18030;
     background-attachment: fixed;
     z-index: 10;
+  }
+  .buttonHolder:hover {
+    background: rgba(0, 255, 0, .5);
+  }
+  .chevron {
+    position: relative;
+    left: -3px;
   }
   .SideBarToggle {
     display: inline-block;
@@ -108,7 +116,7 @@
     width: 99vw !important;
     z-index: 5;
     position: absolute;
-    top: 9vh;
+    top: 65px;
     left: 0vw;
   }
   .ColRight {

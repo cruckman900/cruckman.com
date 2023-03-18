@@ -41,11 +41,11 @@
     border: none;
     border-radius: 5px;
     background: #260000;
-    position: relative;
+    position: absolute;
     display: inline-block;
-    top: 11vh;
-    left: -2px;
-    height: 13.8vh;
+    top: 114px;
+    left: 1px;
+    height: 135px;
 }
 
 .playButton {
@@ -100,9 +100,9 @@
     animation-delay: 8s;
 }
 
-@media (max-width: 800px) and (min-width: 300px) {
+/* @media (max-width: 800px) and (min-width: 300px) {
     .gameButtonContainer {
         height: 19vh;
         top: 15.5vh;
     }
-}
+} */
