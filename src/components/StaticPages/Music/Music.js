@@ -22,13 +22,17 @@ function Music() {
                 <div>
                         <img src={guitars} alt="My Guitars" className={styles.bodyImage} />
                         <p>
-                            I have 2 guitars currently. 1 electric (BC Rich Beast - Speedloader edition) and an acoustic-electric (Alvarez).
+                            I have 2 guitars currently. 1 electric (<a href="https://bcrich.com" className={styles.link} alt="BC Rich" target="_blank">BC Rich</a> 
+                            Beast - Speedloader edition) and an acoustic-electric 
+                            (<a href="https://alvarezguitars.com" className={styles.link} alt="Alvarez" target="_blank">Alvarez</a>).
                             I've only recently bought the Alvarez to learn finger-picking thanks to this composition of
-                            <a href='https://youtu.be/4SQg3hVt44Q' className={styles.link} target='blank'>Hotel California</a> by Lucas Imbiriba.
+                            <a href='https://youtu.be/4SQg3hVt44Q' className={styles.link} target='blank'>Hotel California</a> by 
+                            <a href="https://www.patreon.com/lucasimbiriba" className={styles.link} alt="Lucas Imbiriba" target="_blank">Lucas Imbiriba</a>.
                         </p>
                         <p>
                             I've been playing guitar since 1987.  That's a long time, right?  I don't feel that I have the talent or skill
-                            that one playing guitar that long should possess, but I enjoy it.  I began taking lessons about 2 months ago.  I'm
+                            that one playing guitar that long should possess, but I enjoy it.  I began taking lessons at 
+                            <a href="https://www.cahousemusic.com/" className={styles.link} alt="CA House" target="_blank">CA House</a> in January, 2023.  I'm
                             trying to get a real understanding of how and what I play and why I am playing what I play.
                         </p>
                         <p>
@@ -43,17 +47,35 @@ function Music() {
                         </p>
                 </div>
                 <div className={styles.Song}>
-                    <Row><Col xs={9}><span className={styles.colText}>AC/DC - Highway To Hell</span></Col><Col><Player url={HighwayToHell} className={styles.float} /></Col></Row>
+                    <Row>
+                        <Col xs={9}><span className={styles.colText}>AC/DC - Highway To Hell</span></Col>
+                        <Col><Player url={HighwayToHell} className={styles.float} /></Col>
+                    </Row>
                     <hr className={styles.hr} />
-                    <Row><Col xs={9}><span className={styles.colText}>Eagles - Hotel California</span></Col><Col><Player url={HotelCalifornia} className={styles.float} /></Col></Row>
+                    <Row>
+                        <Col xs={9}><span className={styles.colText}>Eagles - Hotel California</span></Col>
+                        <Col><Player url={HotelCalifornia} className={styles.float} /></Col>
+                    </Row>
                     <hr className={styles.hr} />
-                    <Row><Col xs={9}><span className={styles.colText}>MegaDeth - Set The World Afire</span></Col><Col><Player url={SetTheWorldAfire} className={styles.float} /></Col></Row>
+                    <Row>
+                        <Col xs={9}><span className={styles.colText}>MegaDeth - Set The World Afire</span></Col>
+                        <Col><Player url={SetTheWorldAfire} className={styles.float} /></Col>
+                    </Row>
                     <hr className={styles.hr} />
-                    <Row><Col xs={9}><span className={styles.colText}>Metallica - Master of Puppets</span></Col><Col><Player url={MasterOfPuppets} className={styles.float} /></Col></Row>
+                    <Row>
+                        <Col xs={9}><span className={styles.colText}>Metallica - Master of Puppets</span></Col>
+                        <Col><Player url={MasterOfPuppets} className={styles.float} /></Col>
+                    </Row>
                     <hr className={styles.hr} />
-                    <Row><Col xs={9}><span className={styles.colText}>Metallica - Enter Sandman</span></Col><Col><Player url={EnterSandman} className={styles.float} /></Col></Row>
+                    <Row>
+                        <Col xs={9}><span className={styles.colText}>Metallica - Enter Sandman</span></Col>
+                        <Col><Player url={EnterSandman} className={styles.float} /></Col>
+                    </Row>
                     <hr className={styles.hr} />
-                    <Row><Col xs={9}><span className={styles.colText}>Metallica - Welcome Home (Sanitarium)</span></Col><Col><Player url={Sanitarium} className={styles.float} /></Col></Row>
+                    <Row>
+                        <Col xs={9}><span className={styles.colText}>Metallica - Welcome Home (Sanitarium)</span></Col>
+                        <Col><Player url={Sanitarium} className={styles.float} /></Col>
+                    </Row>
                     <hr className={styles.hr} />
                 </div>
             </DefaultPage>

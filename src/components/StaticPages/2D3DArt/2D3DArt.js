@@ -19,8 +19,14 @@ function Art2D3D() {
             <div>
                 <p>
                     Over the years, I have had the opportunity to use a wide range of software packages to create 
-                    all sorts of things.  Those packages include Adobe Photoshop, Adobe Illustrator, GIMP, 3D Studio Max,
-                    Blender, Wings, and others.  I haven't done a whole lot of work or devoted very much time in
+                    all sorts of things.  Those packages include 
+                    <a href="https://www.adobe.com/products/photoshop.html" className={styles.link} alt="Adobe Photoshop" target="_blank">Adobe Photoshop</a>, 
+                    <a href="https://www.adobe.com/products/illustrator.html" className={styles.link} alt="Adobe Illustrator" target="_blank">Adobe Illustrator</a>, 
+                    <a href="https://www.gimp.org" className={styles.link} alt="GIMP" target="_blank">GIMP</a>, 
+                    <a href="https://www.autodesk.com" className={styles.link} alt="3D Studio Max" target="_blank">3D Studio Max</a>,
+                    <a href="https://www.blender.org" className={styles.link} alt="Blender" target="_blank">Blender</a>, 
+                    <a href="https://www.wings3d.com" className={styles.link} alt="Wings3D" target="_blank">Wings3D</a>, 
+                    and others.  I haven't done a whole lot of work or devoted very much time in
                     creating many things, but I have a decent amount of knowledge about the workings of each software
                     package.
                 </p>

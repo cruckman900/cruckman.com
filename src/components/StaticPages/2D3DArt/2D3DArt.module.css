@@ -2,6 +2,11 @@
     margin-top: 12px;
 }
 
+.link {
+    padding: 0 4px;
+    color: #260000;
+}
+
 @media (max-width: 800px) and (min-width: 300px) {
     .Image {
         width: 86vw;
