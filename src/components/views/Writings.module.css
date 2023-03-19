@@ -1,0 +1,28 @@
+.Card {
+    border: solid 1px #260000;
+    background: rgba(177, 128, 48, 0.65);
+    box-shadow: 2px 2px 3px #260000;
+}
+
+.header {
+    font-family: 'DragonSlapper';
+    background: #260000;
+    color: #d0b670;
+    font-size: 1.2rem;
+    padding: 4px 8px;
+}
+
+.stanza {
+    margin: 12px 8px;
+}
+
+.stanza p {
+    margin: 0;
+}
+
+.date {
+    margin-left: 18px;
+    margin-bottom: 8px;
+    font-size: 8pt;
+    font-style: italic;
+}

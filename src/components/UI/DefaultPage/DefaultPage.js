@@ -8,7 +8,7 @@ const DefaultPage = (props) => {
                 <img src={props.image} alt="" className={styles.image} />
                 <h1 className={styles.headertext}>{props.title}</h1>
             </div>
-            <div className={styles.body}>
+            <div className={`${styles.body} ${props.className}`}>
                 {props.children}
             </div>
         </>
