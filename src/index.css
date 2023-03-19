@@ -8,6 +8,11 @@
   src: url(/src/assets/Fonts/AGoblinAppears-o2aV.ttf);
 }
 
+@font-face {
+  font-family: 'TribalDragon';
+  src: url(/src/assets/Fonts/TribalDragon-23Ll.ttf);
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
