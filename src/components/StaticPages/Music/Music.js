@@ -43,17 +43,17 @@ function Music() {
                         </p>
                 </div>
                 <div className={styles.Song}>
-                    <Row><Col xs={9} className={styles.colText}>AC/DC - Highway To Hell</Col><Col><Player url={HighwayToHell} className={styles.float} /></Col></Row>
+                    <Row><Col xs={9}><span className={styles.colText}>AC/DC - Highway To Hell</span></Col><Col><Player url={HighwayToHell} className={styles.float} /></Col></Row>
                     <hr className={styles.hr} />
-                    <Row><Col xs={9} className={styles.colText}>Eagles - Hotel California</Col><Col><Player url={HotelCalifornia} className={styles.float} /></Col></Row>
+                    <Row><Col xs={9}><span className={styles.colText}>Eagles - Hotel California</span></Col><Col><Player url={HotelCalifornia} className={styles.float} /></Col></Row>
                     <hr className={styles.hr} />
-                    <Row><Col xs={9} className={styles.colText}>MegaDeth - Set The World Afire</Col><Col><Player url={SetTheWorldAfire} className={styles.float} /></Col></Row>
+                    <Row><Col xs={9}><span className={styles.colText}>MegaDeth - Set The World Afire</span></Col><Col><Player url={SetTheWorldAfire} className={styles.float} /></Col></Row>
                     <hr className={styles.hr} />
-                    <Row><Col xs={9} className={styles.colText}>Metallica - Master of Puppets</Col><Col><Player url={MasterOfPuppets} className={styles.float} /></Col></Row>
+                    <Row><Col xs={9}><span className={styles.colText}>Metallica - Master of Puppets</span></Col><Col><Player url={MasterOfPuppets} className={styles.float} /></Col></Row>
                     <hr className={styles.hr} />
-                    <Row><Col xs={9} className={styles.colText}>Metallica - Enter Sandman</Col><Col><Player url={EnterSandman} className={styles.float} /></Col></Row>
+                    <Row><Col xs={9}><span className={styles.colText}>Metallica - Enter Sandman</span></Col><Col><Player url={EnterSandman} className={styles.float} /></Col></Row>
                     <hr className={styles.hr} />
-                    <Row><Col xs={9} className={styles.colText}>Metallica - Welcome Home (Sanitarium)</Col><Col><Player url={Sanitarium} className={styles.float} /></Col></Row>
+                    <Row><Col xs={9}><span className={styles.colText}>Metallica - Welcome Home (Sanitarium)</span></Col><Col><Player url={Sanitarium} className={styles.float} /></Col></Row>
                     <hr className={styles.hr} />
                 </div>
             </DefaultPage>
