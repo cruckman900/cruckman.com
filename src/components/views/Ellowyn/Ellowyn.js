@@ -152,6 +152,7 @@ function Ellowyn() {
                 become queen of all dragons, and to the disbelief of her parents, she has risen above the sacred law of the people.  She is not to be 
                 married, but to remain queen of the dragons!
             </div>
+            <div className={classes.date}>11/17/2020</div>
         </Card>
     );
 }
