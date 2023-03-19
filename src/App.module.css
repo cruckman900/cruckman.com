@@ -23,11 +23,11 @@
   text-align: center;
   position: fixed;
   font-family: 'TribalDragon';
-  font-weight: 500;
+  font-weight: 600;
   font-size: 24pt;
   top: 21rem;
   color: #b18030;
-  text-shadow: 2px 2px 5px #780000;
+  text-shadow: 2px 2px 5px #990000;
   z-index: 25;
 }
 
