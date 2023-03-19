@@ -47,36 +47,30 @@ function Music() {
                         </p>
                 </div>
                 <div className={styles.Song}>
-                    <Row>
-                        <Col xs={9}><span className={styles.colText}>AC/DC - Highway To Hell</span></Col>
-                        <Col><Player url={HighwayToHell} className={styles.float} /></Col>
-                    </Row>
-                    <hr className={styles.hr} />
-                    <Row>
-                        <Col xs={9}><span className={styles.colText}>Eagles - Hotel California</span></Col>
-                        <Col><Player url={HotelCalifornia} className={styles.float} /></Col>
-                    </Row>
-                    <hr className={styles.hr} />
-                    <Row>
-                        <Col xs={9}><span className={styles.colText}>MegaDeth - Set The World Afire</span></Col>
-                        <Col><Player url={SetTheWorldAfire} className={styles.float} /></Col>
-                    </Row>
-                    <hr className={styles.hr} />
-                    <Row>
-                        <Col xs={9}><span className={styles.colText}>Metallica - Master of Puppets</span></Col>
-                        <Col><Player url={MasterOfPuppets} className={styles.float} /></Col>
-                    </Row>
-                    <hr className={styles.hr} />
-                    <Row>
-                        <Col xs={9}><span className={styles.colText}>Metallica - Enter Sandman</span></Col>
-                        <Col><Player url={EnterSandman} className={styles.float} /></Col>
-                    </Row>
-                    <hr className={styles.hr} />
-                    <Row>
-                        <Col xs={9}><span className={styles.colText}>Metallica - Welcome Home (Sanitarium)</span></Col>
-                        <Col><Player url={Sanitarium} className={styles.float} /></Col>
-                    </Row>
-                    <hr className={styles.hr} />
+                    <div class={styles.songContainer}>
+                        <div className={styles.colText}>AC/DC - Highway To Hell</div>
+                        <div className={styles.float}><Player url={HighwayToHell} /></div>
+                    </div>
+                    <div class={styles.songContainer}>
+                        <div className={styles.colText}>Eagles - Hotel California</div>
+                        <div className={styles.float}><Player url={HotelCalifornia} /></div>
+                    </div>
+                    <div class={styles.songContainer}>
+                        <div className={styles.colText}>MegaDeth - Set The World Afire</div>
+                        <div className={styles.float}><Player url={SetTheWorldAfire} /></div>                
+                    </div>
+                    <div class={styles.songContainer}>
+                        <div className={styles.colText}>Metallica - Master of Puppets</div>
+                        <div className={styles.float}><Player url={MasterOfPuppets} /></div>
+                    </div>
+                    <div class={styles.songContainer}>
+                        <div className={styles.colText}>Metallica - Enter Sandman</div>
+                        <div className={styles.float}><Player url={EnterSandman} /></div>
+                    </div>
+                    <div class={styles.songContainer}>
+                        <div className={styles.colText}>Metallica - Welcome Home (Sanitarium)</div>
+                        <div className={styles.float}><Player url={Sanitarium} /></div>
+                    </div>
                 </div>
             </DefaultPage>
         </>

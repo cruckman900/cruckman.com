@@ -26,6 +26,21 @@
     border: none;
 }
 
+.ddlink {
+    font-family: 'AGoblinAppears';
+    font-size: 9pt;
+    color: #eebb5a;
+}
+
+.floatright {
+    position: absolute;
+    right: 8px;
+}
+
+hr {
+    background-color: #eebb5a;
+}
+
 @media (max-width: 600px) and (min-width: 300px) {
     .NavbarBrand i {
         font-size: 14pt;
@@ -37,24 +52,12 @@
 
     .onlyMobile {
         display: inline-block;
-    }    
-}
+    }
 
-.ddlink {
-    font-family: 'AGoblinAppears';
-    font-size: 9pt;
-    color: #eebb5a;
-    padding: 3px;
-    display: flex;
-    justify-content: left;
-    align-items: top;  
-}
-
-.floatright {
-    position: absolute;
-    right: 8px;
-}
-
-hr {
-    background-color: #eebb5a;
+    .ddlink {
+        padding: 3px;
+        display: flex;
+        justify-content: left;
+        align-items: top;
+    }
 }

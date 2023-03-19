@@ -13,8 +13,8 @@
     border-radius: 8px;
     background: rgba(177, 128, 48, 0.65);
     padding: 12px;
-    clear: both;
-    width: 80%;
+    /* clear: both; */
+    width: 100%;
     box-shadow: 2px 2px 3px #000000;
 }
 
@@ -26,16 +26,19 @@
     border-radius: 8px;
 }
 
-.float {
-    display: flex;
-    position: relative;;
-    float: inline-start;
-    text-align: start;
+.songContainer {
+    display: block;
 }
 
 .colText {
-    position: relative;
-    top: 5px;
+    display: inline-block;
+    padding: 10px 0;
+}
+
+.float {
+    display: flex;
+    justify-content: left;
+    align-items: center;
 }
 
 .link {

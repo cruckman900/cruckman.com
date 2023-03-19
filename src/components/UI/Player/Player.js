@@ -28,11 +28,9 @@ const Player = ({ url }) => {
   const [playing, toggle] = useAudio(url);
 
   return (
-    <span>
-      <Button onClick={toggle} className={classes.btn}>
-        {!playing ? "Play" : "Pause"}
-      </Button>
-    </span>
+    <Button onClick={toggle} className={classes.btn}>
+      {!playing ? "Play" : "Pause"}
+    </Button>
   );
 };
 

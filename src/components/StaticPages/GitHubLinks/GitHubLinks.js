@@ -21,7 +21,7 @@ function GitHubLinks() {
                 be to use 'Build Variants' and code the app in Java (did something similar to this idea at Google).
             </p>
             <p className={classes.linkBody}>
-                Here is the link:
+                Here is the link:<br />
                 <a 
                     className={classes.href}
                     href="https://github.com/cruckman900/MyMarvelComicCollection"
@@ -38,7 +38,7 @@ function GitHubLinks() {
                 I will be adding content to my site that incorporates it!  So, if you keep checking in GitHub for changes, take a look!  
             </p>
             <p className={classes.linkBody}>
-                Here is the link:
+                Here is the link:<br />
                 <a 
                     className={classes.href}                
                     href="https://github.com/cruckman900/cruckman.com" 
