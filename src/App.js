@@ -35,7 +35,7 @@ function App() {
     {loading ? (
       <>
         <div className={styles.loaderContainer}>
-          <img src={dragon1} className={styles.spinner} />
+          <img src={dragon1} className={styles.spinner} alt="Spinning Dragon" />
         </div>
         <div className={styles.loaderContainer2}>LOADING mid 90's<br />and early 2000's<br />Please remain calm.</div>
       </>
