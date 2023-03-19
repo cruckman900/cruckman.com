@@ -7,7 +7,23 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.resLabel {
+    font-size: 1.2rem;
+}
+
+@media (max-width: 800px) and (min-width: 300px) {
+    .IndentedBlock {
+        font-size: 1rem;
+        margin-left: 0.5rem;
+    }
+    
+    .resLabel {
+        font-size: 1rem;
+    }
+}
+
 @media print {
+
     .printable {
         width: 100%;
         height: 100% !important;

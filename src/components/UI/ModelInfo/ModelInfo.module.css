@@ -83,16 +83,21 @@
 }
 
 .PaymentMethodButton {
-    width: 15rem;
+    width: 40%;
     margin: 2px;
-    background: linear-gradient(180deg, #000000, #260000 20%, #000000 );
-    color: #b18030;
+    background: linear-gradient(0deg, #b08030, #d0b670, 80%, #b08030);
+    color: #260000;
     border: solid 1px #260000;
     border-radius: 8px;
 }
 
 .PaymentMethodButton:hover {
     border: solid 1px #eebb5a;
+}
+
+.PaymentMethodButton_disabled {
+    background: #260000;
+    color: #d0b670;
 }
 
 @media (max-width: 800px) {

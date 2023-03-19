@@ -1,10 +1,29 @@
-import React from 'react';
+import { React, useEffect, useState } from 'react';
 import Card from '../Card/Card';
 import Label from '../Label/Label';
 import Button from '../Button/Button';
 import classes from './ModelInfo.module.css';
 
 function ModelInfo(props) {
+    const paymentTypes = [
+        {
+            index: 0,
+            key: 0,
+            value: 'PayPal'
+        },
+        {
+            index: 1,
+            key: 1,
+            value: 'Venmo'
+        }
+    ];
+
+    const [active, setActive] = useState(0);
+
+    const clickHandler = (id) => {
+        setActive(id);
+    }
+    
     return (
         <Card className={classes.dropShadow}>
             <div className={classes.header}>{props.Title}</div>
@@ -24,8 +43,20 @@ function ModelInfo(props) {
                     <div className={classes.ObjDetail}><Label className={classes.Label2}>Price</Label>: <Label className={classes.Label2}>{props.Price}</Label></div>
                     <div className={classes.PaymentDetail}>
                         <Label className={classes.Label2}>Payment Method</Label>
-                        <Button className={classes.PaymentMethodButton}>PayPal</Button>
-                        <Button className={classes.PaymentMethodButton}>Venmo</Button>    
+                        <div>
+                            {paymentTypes.map((type) => {
+                                return (
+                                    <Button
+                                        id={type.index}
+                                        className={`${classes.PaymentMethodButton} ${active !== type.index && classes.PaymentMethodButton_disabled}`}
+                                        key={type.key}
+                                        onClick={() => clickHandler(type.index)}
+                                    >
+                                        {type.value}
+                                    </Button>
+                                )
+                            })}
+                        </div>
                     </div>
                     <div>
                         <Label className={classes.Label2}>Email Address</Label><input className={classes.PaymentMethodInput} />

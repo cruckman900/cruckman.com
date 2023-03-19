@@ -17,14 +17,14 @@ const Resume = () => {
                     <hr />
                     <LeftbarLabelledContainer Title="Technical Skills"></LeftbarLabelledContainer>
                         <IndentedBlock>
-                            <div><Label>Languages</Label>: C#, VB.NET, PHP, ActionScript, Java, Kotlin, HTML, JavaScript, jQuery, CSS, ReactJS</div>
-                            <div><Label>Technologies</Label>: ASP.NET MVC/Core/Web Forms/Web API, Entity Framework, LINQ, SignalR, jQuery, Bootstrap, Telerik Controls, KendoUI</div>
-                            <div><Label>Databases</Label>: MS SQL Server, MySQL, SQLite, Room Database</div>
-                            <div><Label>Debug/Testing/Performance</Label>: Charles Proxy, JUnit, Espresso</div>
-                            <div><Label>Version Control</Label>: Visual Source Safe, TFS, Git, GitHub</div>
-                            <div><Label>Project Management</Label>: JIRA</div>
-                            <div><Label>Software Development Methodologies</Label>: Waterfall, Agile/Scrum</div>
-                            <div><Label>Tools</Label>: Visual Studio, Visual Studio Code, Android Studio, Unity, Blender, Adobe (Photoshop, Illustrator), Microsoft Office. Google Productivity Tools</div>
+                            <div><Label className={classes.resLabel}>Languages</Label>: C#, VB.NET, PHP, ActionScript, Java, Kotlin, HTML, JavaScript, jQuery, CSS, ReactJS</div>
+                            <div><Label className={classes.resLabel}>Technologies</Label>: ASP.NET MVC/Core/Web Forms/Web API, Entity Framework, LINQ, SignalR, jQuery, Bootstrap, Telerik Controls, KendoUI</div>
+                            <div><Label className={classes.resLabel}>Databases</Label>: MS SQL Server, MySQL, SQLite, Room Database</div>
+                            <div><Label className={classes.resLabel}>Debug/Testing/Performance</Label>: Charles Proxy, JUnit, Espresso</div>
+                            <div><Label className={classes.resLabel}>Version Control</Label>: Visual Source Safe, TFS, Git, GitHub</div>
+                            <div><Label className={classes.resLabel}>Project Management</Label>: JIRA</div>
+                            <div><Label className={classes.resLabel}>Software Development Methodologies</Label>: Waterfall, Agile/Scrum</div>
+                            <div><Label className={classes.resLabel}>Tools</Label>: Visual Studio, Visual Studio Code, Android Studio, Unity, Blender, Adobe (Photoshop, Illustrator), Microsoft Office. Google Productivity Tools</div>
                         </IndentedBlock>
                     <hr />
                     <LeftbarLabelledContainer Title="Professional Experience"></LeftbarLabelledContainer>
