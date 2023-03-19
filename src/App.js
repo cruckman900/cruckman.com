@@ -37,7 +37,7 @@ function App() {
         <div className={styles.loaderContainer}>
           <img src={dragon1} className={styles.spinner} />
         </div>
-        <div className={styles.loaderContainer2}>LOADING cruckman.com<br />Please remain calm.</div>
+        <div className={styles.loaderContainer2}>LOADING mid 90's<br />and early 2000's<br />Please remain calm.</div>
       </>
     ) : (
       <div className={styles.App}>
