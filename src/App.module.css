@@ -34,7 +34,7 @@
 .spinner {
   width: 512px;
   height: 512px;
-  animation: spin-anim 2s linear infinite;
+  animation: spin-anim 4s linear 1;
 }
 
 @keyframes spin-anim {
