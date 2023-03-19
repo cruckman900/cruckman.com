@@ -59,7 +59,7 @@ function App() {
             </Col>
           </Row>
         </Container>
-        <Footer />
+        <Footer className={styles.Footer} />
       </div>
     )}
     </>

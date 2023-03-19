@@ -123,7 +123,7 @@
     font-size: 16pt;
     top: 16rem;
   }
-
+  
   .Col {
     min-height: calc(100vh - 61px);
     background-attachment: fixed;
@@ -155,13 +155,15 @@
   }
   .ColLeft {
     background: linear-gradient(180deg, #000000, #260000 20%, #000000 );
-    border: solid 5px #d0b670;
+    border: solid 1px #d0b670;
     height: 91vh;
-    width: 99vw !important;
+    width: 100vw !important;
     z-index: 5;
-    position: absolute;
-    top: 65px;
+    position: fixed;
+    top: 61px;
     left: 0vw;
+    display: flex;
+    justify-content: center;
   }
   .ColRight {
     width: 100vw !important;

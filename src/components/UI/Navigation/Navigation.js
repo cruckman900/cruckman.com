@@ -81,25 +81,25 @@ const Navigation = () => {
                       id={`offcanvasNavbarDropdown-expand-${expand}`}
                     >
                       <NavDropdown.Item as={Link} to="/2D3DArt/2D3DArt" href="#2D3DArt">
-                        <NavItem className={styles.ddlink} icon={myIcons['image']} fontSize="1.0rem">2D/3D Art</NavItem>
+                        <NavItem className={styles.ddlink} icon={myIcons['image']} fontSize="1.0rem"><div className={styles.floatright}>2D/3D Art</div></NavItem>
                       </NavDropdown.Item>
                       <NavDropdown.Item as={Link} to={"/Music/Music"} href="#Music">
-                        <NavItem className={styles.ddlink} icon={myIcons['music']} fontSize="1.0rem">MUSIC (GUITAR)</NavItem>
+                        <NavItem className={styles.ddlink} icon={myIcons['music']} fontSize="1.0rem"><div className={styles.floatright}>MUSIC (GUITAR)</div></NavItem>
                       </NavDropdown.Item>
                       <NavDropdown.Item as={Link} to={"/MartialArts/MartialArts"} href="#MartialArts">
-                        <NavItem className={styles.ddlink} icon={myIcons['personFalling']} fontSize="1.0rem">MARTIAL ARTS</NavItem>
+                        <NavItem className={styles.ddlink} icon={myIcons['personFalling']} fontSize="1.0rem"><div className={styles.floatright}>MARTIAL ARTS</div></NavItem>
                       </NavDropdown.Item>
                       <NavDropdown.Item as={Link} to={"/CreativeWriting/CreativeWriting"} href="#CreativeWriting">
-                        <NavItem className={styles.ddlink} icon={myIcons['pen']} fontSize="1.0rem">CREATIVE WRITING</NavItem>
+                        <NavItem className={styles.ddlink} icon={myIcons['pen']} fontSize="1.0rem"><div className={styles.floatright}>CREATIVE WRITING</div></NavItem>
                       </NavDropdown.Item>
                       <NavDropdown.Item as={Link} to={"/AudioVideo/AudioVideo"} href="#AudioVideo">
-                        <NavItem className={styles.ddlink} icon={myIcons['film']} fontSize="1.0rem">AUDIO/VIDEO</NavItem>
+                        <NavItem className={styles.ddlink} icon={myIcons['film']} fontSize="1.0rem"><div className={styles.floatright}>AUDIO/VIDEO</div></NavItem>
                       </NavDropdown.Item>
                       <NavDropdown.Item as={Link} to={"/GameDev/GameDev"} href="#GameDev">
-                        <NavItem className={styles.ddlink} icon={myIcons['ghost']} fontSize="1.0rem">GAME DEV</NavItem>
+                        <NavItem className={styles.ddlink} icon={myIcons['ghost']} fontSize="1.0rem"><div className={styles.floatright}>GAME DEV</div></NavItem>
                       </NavDropdown.Item>
                       <NavDropdown.Item as={Link} to={"/SoftwareDev/SoftwareDev"} href="#SoftwareDev">
-                        <NavItem className={styles.ddlink} icon={myIcons['code']} fontSize="1.0rem">SOFTWARE DEV</NavItem>
+                        <NavItem className={styles.ddlink} icon={myIcons['code']} fontSize="1.0rem"><div className={styles.floatright}>SOFTWARE DEV</div></NavItem>
                       </NavDropdown.Item>
                       <NavDropdown.Divider />
                       <NavDropdown.Item as={Link} to={"/GitHubLinks/GitHubLinks"} href="#GitHubLinks">
