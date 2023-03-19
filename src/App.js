@@ -1,6 +1,7 @@
 import { React, useEffect, useState } from 'react';
 
 import Navigation from './components/UI/Navigation/Navigation';
+import Footer from './components/UI/Footer/Footer';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
@@ -39,9 +40,7 @@ function App() {
           </Col>
         </Row>
       </Container>
-      <footer className={styles.Footer}>
-        <i>&copy; Christopher Ruckman {new Date().getFullYear()}</i>
-      </footer>
+      <Footer />
     </div>
   );
 }

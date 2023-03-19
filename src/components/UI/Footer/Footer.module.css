@@ -1,0 +1,10 @@
+.Footer {
+    background: linear-gradient(0deg, #260000, #000000, #050000 );
+    color: #d0b670;
+    height: calc(100vh - 96vh);
+}  
+
+.Footer i {
+    position: relative;
+    top: 6px;
+}
