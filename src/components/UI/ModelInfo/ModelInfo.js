@@ -1,4 +1,4 @@
-import { React, useEffect, useState } from 'react';
+import { React, useState } from 'react';
 import Card from '../Card/Card';
 import Label from '../Label/Label';
 import Button from '../Button/Button';
@@ -39,18 +39,27 @@ function ModelInfo(props) {
                     <div className={classes.ObjDetail}><Label className={classes.Label2}>Num Verts</Label>: {props.NumVerts}</div>
                 </div>
                 <div className={classes.Request}>
-                    <Label>Request this model</Label>
-                    <div className={classes.ObjDetail}><Label className={classes.Label2}>Price</Label>: <Label className={classes.Label2}>{props.Price}</Label></div>
+                    <Label>Request this Model</Label>
+                    <div>
+                        <Label className={classes.Label2}>Full Name</Label><input className={classes.PaymentMethodInput} />
+                    </div>
+                    <div>
+                        <Label className={classes.Label2}>Email Address</Label><input className={classes.PaymentMethodInput} />
+                    </div>
+                    <br />
+                    <div>
+                        <Label className={classes.Label2}>Price</Label>: <Label className={classes.Label2}>{props.Price}</Label>
+                    </div>
                     <div className={classes.PaymentDetail}>
                         <Label className={classes.Label2}>Payment Method</Label>
                         <div>
                             {paymentTypes.map((type) => {
                                 return (
                                     <Button
-                                        id={type.index}
-                                        className={`${classes.PaymentMethodButton} ${active !== type.index && classes.PaymentMethodButton_disabled}`}
-                                        key={type.key}
-                                        onClick={() => clickHandler(type.index)}
+                                    id={type.index}
+                                    className={`${classes.PaymentMethodButton} ${active !== type.index && classes.PaymentMethodButton_disabled}`}
+                                    key={type.key}
+                                    onClick={() => clickHandler(type.index)}
                                     >
                                         {type.value}
                                     </Button>
@@ -58,9 +67,7 @@ function ModelInfo(props) {
                             })}
                         </div>
                     </div>
-                    <div>
-                        <Label className={classes.Label2}>Email Address</Label><input className={classes.PaymentMethodInput} />
-                    </div>
+                    <br />
                     <div>
                         <Button className={classes.PaymentMethodButton}>Submit</Button>
                     </div>

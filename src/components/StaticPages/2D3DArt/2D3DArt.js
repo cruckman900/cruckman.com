@@ -1,7 +1,6 @@
 import React from "react";
 import DefaultPage from "../../UI/DefaultPage/DefaultPage";
 import ModelInfo from "../../UI/ModelInfo/ModelInfo";
-import Label from "../../UI/Label/Label";
 
 import lolly_sentada2 from "../../../assets/images/lolly_sentada2.png";
 import bow1 from "../../../assets/images/3DModels/bow1.png";
@@ -20,12 +19,12 @@ function Art2D3D() {
                 <p>
                     Over the years, I have had the opportunity to use a wide range of software packages to create 
                     all sorts of things.  Those packages include 
-                    <a href="https://www.adobe.com/products/photoshop.html" className={styles.link} alt="Adobe Photoshop" target="_blank">Adobe Photoshop</a>, 
-                    <a href="https://www.adobe.com/products/illustrator.html" className={styles.link} alt="Adobe Illustrator" target="_blank">Adobe Illustrator</a>, 
-                    <a href="https://www.gimp.org" className={styles.link} alt="GIMP" target="_blank">GIMP</a>, 
-                    <a href="https://www.autodesk.com" className={styles.link} alt="3D Studio Max" target="_blank">3D Studio Max</a>,
-                    <a href="https://www.blender.org" className={styles.link} alt="Blender" target="_blank">Blender</a>, 
-                    <a href="https://www.wings3d.com" className={styles.link} alt="Wings3D" target="_blank">Wings3D</a>, 
+                    <a href="https://www.adobe.com/products/photoshop.html" className={styles.link} alt="Adobe Photoshop" target="_blank" rel="noreferrer">Adobe Photoshop</a>, 
+                    <a href="https://www.adobe.com/products/illustrator.html" className={styles.link} alt="Adobe Illustrator" target="_blank" rel="noreferrer">Adobe Illustrator</a>, 
+                    <a href="https://www.gimp.org" className={styles.link} alt="GIMP" target="_blank" rel="noreferrer">GIMP</a>, 
+                    <a href="https://www.autodesk.com" className={styles.link} alt="3D Studio Max" target="_blank" rel="noreferrer">3D Studio Max</a>,
+                    <a href="https://www.blender.org" className={styles.link} alt="Blender" target="_blank" rel="noreferrer">Blender</a>, 
+                    <a href="https://www.wings3d.com" className={styles.link} alt="Wings3D" target="_blank" rel="noreferrer">Wings3D</a>, 
                     and others.  I haven't done a whole lot of work or devoted very much time in
                     creating many things, but I have a decent amount of knowledge about the workings of each software
                     package.

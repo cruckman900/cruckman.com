@@ -11,7 +11,7 @@ const useAudio = url => {
   useEffect(() => {
       playing ? audio.play() : audio.pause();
     },
-    [playing]
+    [audio, playing]
   );
 
   useEffect(() => {
@@ -19,7 +19,7 @@ const useAudio = url => {
     return () => {
       audio.removeEventListener('ended', () => setPlaying(false));
     };
-  }, []);
+  }, [audio]);
 
   return [playing, toggle];
 };
