@@ -58,7 +58,7 @@
 }
 
 .Col {
-  background: url('./assets/images/dragon900.png'), #b18030;
+  background: url('./assets/images/dragon900.png'), #260000;
   background-size: 54rem;
   background-repeat: no-repeat;
   background-position: top right;
@@ -144,7 +144,7 @@
     z-index: 10;
   }
   .buttonHolder:hover {
-    background: rgba(0, 255, 0, .5);
+    background: rgba(194, 17, 17, 0.5);
   }
   .chevron {
     position: relative;

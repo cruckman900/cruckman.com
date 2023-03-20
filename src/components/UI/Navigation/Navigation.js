@@ -14,7 +14,10 @@ import dragon1 from '../../../assets/images/dragon1.png';
 
 import Home from '../../StaticPages/Home/Home';
 import Resume from '../../StaticPages/Resume/Resume';
-import About from '../../StaticPages/About/About';
+import Me from '../../StaticPages/About/Me';
+import Friends from '../../StaticPages/About/Friends';
+import Portfolio from '../../StaticPages/About/Portfolio';
+import ThisSite from '../../StaticPages/About/ThisSite';
 import Art2D3D from '../../StaticPages/2D3DArt/2D3DArt';
 import Music from '../../StaticPages/Music/Music';
 import MartialArts from '../../StaticPages/MartialArts/MartialArts';
@@ -58,12 +61,13 @@ const Navigation = () => {
               </Navbar.Brand>
               <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
               <Navbar.Offcanvas
+                style={{backgroundColor: '#444', color: '#eebb5a'}}
                 id={`offcanvasNavbar-expand-${expand}`}
                 aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
                 placement="end"
               >
                 <Offcanvas.Header closeButton>
-                  <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
+                  <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`} style={{color: '#eebb5a', fontFamily: 'DragonSlapper', fontSize: '2rem'}}>
                     Main Menu
                   </Offcanvas.Title>
                 </Offcanvas.Header>
@@ -80,7 +84,7 @@ const Navigation = () => {
                       title={<span className={styles.ddlink}><FontAwesomeIcon icon={myIcons['icons']} fontSize="1.0rem" />&nbsp;&nbsp;INTERESTS</span>}
                       id={`offcanvasNavbarDropdown-expand-${expand}`}
                     >
-                      <NavDropdown.Item as={Link} to="/2D3DArt/2D3DArt" href="#2D3DArt">
+                      <NavDropdown.Item as={Link} to="/2D3DArt/2D3DArt" href="#2D3DArt" style={{minWidth:'250px', width: '15vw'}}>
                         <NavItem className={styles.ddlink} icon={myIcons['image']} fontSize="1.0rem"><div className={styles.floatright}>2D/3D Art</div></NavItem>
                       </NavDropdown.Item>
                       <NavDropdown.Item as={Link} to={"/Music/Music"} href="#Music">
@@ -109,9 +113,25 @@ const Navigation = () => {
                         <NavItem className={styles.ddlink} icon={myIcons['video']} fontSize="1.0rem">YouTube LINKS</NavItem>
                       </NavDropdown.Item>
                     </NavDropdown>
-                    <Nav.Link as={Link} to={"/About"} href="#about">
-                      <span className={styles.ddlink}><FontAwesomeIcon icon={myIcons['question']} fontSize="1.0rem" />&nbsp;&nbsp;ABOUT</span>
-                    </Nav.Link>
+                    <NavDropdown
+                      menuVariant='dark'
+                      title={<span className={styles.ddlink}><FontAwesomeIcon icon={myIcons['question']} fontSize="1.0rem" />&nbsp;&nbsp;ABOUT</span>}
+                      id={`offcanvasNavbarDropdown-expand-${expand}`}
+                    >
+                      <NavDropdown.Item as={Link} to="/About/Me" href="#Me" style={{minWidth:'250px', width: '15vw'}}>
+                        <NavItem className={styles.ddlink} icon={myIcons['image']} fontSize="1.0rem"><div className={styles.floatright}>ME</div></NavItem>
+                      </NavDropdown.Item>
+                      <NavDropdown.Item as={Link} to="/About/Friends" href="#Friends">
+                        <NavItem className={styles.ddlink} icon={myIcons['image']} fontSize="1.0rem"><div className={styles.floatright}>FRIENDS</div></NavItem>
+                      </NavDropdown.Item>
+                      <NavDropdown.Divider />
+                      <NavDropdown.Item as={Link} to="/About/Portfolio" href="#Portfolio">
+                        <NavItem className={styles.ddlink} icon={myIcons['image']} fontSize="1.0rem"><div className={styles.floatright}>PORTFOLIO</div></NavItem>
+                      </NavDropdown.Item>
+                      <NavDropdown.Item as={Link} to="/About/ThisSite" href="#ThisSite">
+                        <NavItem className={styles.ddlink} icon={myIcons['image']} fontSize="1.0rem"><div className={styles.floatright}>THIS SITE</div></NavItem>
+                      </NavDropdown.Item>
+                    </NavDropdown>
                     <Nav.Link className={styles.onlyMobile} href="#12action">
                       <span className={styles.ddlink}><FontAwesomeIcon icon={myIcons['user']} fontSize="1.0rem" />&nbsp;&nbsp;LOGIN</span>
                     </Nav.Link>
@@ -124,7 +144,10 @@ const Navigation = () => {
       <Routes>
         <Route path="/" element={ <Home /> } />
         <Route path="/resume" element={ <Resume /> } />
-        <Route path="/about" element={ <About /> } />
+        <Route path="/about/me" element={ <Me /> } />
+        <Route path="/about/friends" element={ <Friends /> } />
+        <Route path="/about/portfolio" element={ <Portfolio /> } />
+        <Route path="/about/thissite" element={ <ThisSite /> } />
         <Route path="/2d3dart/2d3dart" element={ <Art2D3D /> } />
         <Route path="/music/music" element={ <Music /> } />
         <Route path="/martialarts/martialarts" element={ <MartialArts /> } />

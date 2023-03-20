@@ -1,9 +1,22 @@
-.dropdowns {
-    margin-top: 8px;
-    margin-bottom: 8px;
+.Dropdown {
+    background-color: #d0b670;
+    color: #260000;
+    font-size: .8rem;
+    border: none;
+    border-radius: 8px;
+    margin-right: 8px;
+}
+
+.Dropdown:hover {
+    background-color: #b18030;
+}
+
+.menu {
+    min-width: 200px;
+    background: #260000;
 }
 
 .ddlItem {
-    font-size: 9pt;
-    color: #260000;
+    color: #d0b670;
+    font-size: .7rem;
 }
