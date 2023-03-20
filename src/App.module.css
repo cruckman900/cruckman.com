@@ -55,6 +55,7 @@
 
 .RowBody {
   height: calc(100vh - 105px);
+  display: flex;
 }
 
 .Col {
@@ -72,6 +73,7 @@
   font-weight: 100;
   font-size: 1rem;
   width: 100vw;
+  height: calc(100vh - 105px);
 }
 
 .ColLeft {
@@ -92,17 +94,24 @@
 
 .buttonHolder {
   display: none;
+  height: 35px;
+  width: 17px;
+  position: fixed;
+  top: calc(100vh - 50% - 17.5px);
+  left: -2px;
+  background: rgba(0, 0, 0, .5);
+  border: solid 1px #b18030;
+  background-attachment: fixed;
+  z-index: 10;
 }
 
-.SideBarToggle {
-  background: transparent;
-  border: 0px;
-  height: 1.75rem;
-  display: none;
-  position: absolute;
-  top: 9.4vh;
-  left: 0vw;
-  z-index: 5;
+.buttonHolder:hover {
+  background: rgba(194, 17, 17, 0.5);
+}
+
+.chevron {
+  position: relative;
+  left: -3px;
 }
 
 .chevron {
@@ -123,6 +132,10 @@
     font-size: 16pt;
     top: 16rem;
   }
+
+  .buttonHolder {
+    display: inline-block;
+  }
   
   .Col {
     min-height: calc(100vh - 61px);
@@ -131,28 +144,7 @@
     background-position: 15% 60%;
     right: 50rem;
   }
-  .buttonHolder {
-    display: inline-block;
-    height: 35px;
-    width: 17px;
-    position: fixed;
-    top: calc(100vh - 50% - 17.5px);
-    left: -2px;
-    background: rgba(0, 0, 0, .5);
-    border: solid 1px #b18030;
-    background-attachment: fixed;
-    z-index: 10;
-  }
-  .buttonHolder:hover {
-    background: rgba(194, 17, 17, 0.5);
-  }
-  .chevron {
-    position: relative;
-    left: -3px;
-  }
-  .SideBarToggle {
-    display: inline-block;
-  }
+
   .ColLeft {
     background: linear-gradient(180deg, #000000, #260000 20%, #000000 );
     border: solid 1px #d0b670;
@@ -171,9 +163,6 @@
   }
   .ColRight {
     width: 100vw !important;
-  }
-  .Footer {
-    display: none;
   }
   .RowBody {
     height: auto;

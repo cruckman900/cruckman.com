@@ -100,7 +100,7 @@
     color: #d0b670;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1248) {
     .ModelInfo {
         margin-left: 0;
     }

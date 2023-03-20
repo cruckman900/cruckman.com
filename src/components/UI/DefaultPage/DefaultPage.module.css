@@ -6,7 +6,7 @@
 .headertext {
     margin-left: 1.0rem;
     font-family: 'DragonSlapper';
-    float: inline-start;
+    float: left;
     color: #d0b670;
     text-shadow: 2px 2px 3px #000000;
     position: relative;
@@ -28,7 +28,7 @@
     box-shadow: 2px 2px 3px black;
 }
 
-@media (max-width: 800px) and (min-width: 300px) {
+@media (max-width: 1106px) and (min-width: 300px) {
     .body {
         font-size: 8pt;
         width: 93.5vw;
