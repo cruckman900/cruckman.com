@@ -38,7 +38,7 @@
     display: block;
     position: absolute;
     width: 280px;
-    height: 17vh;
+    height: 106px;
     top: 0px;
     left: 0px;
     margin: 2px;
@@ -48,7 +48,6 @@
     border-radius: 4px;
     box-shadow: 2px 2px 3px #260000;
 }
-
 .gameButtonContainer {
     padding: 2px;
     border: none;
