@@ -8,6 +8,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCoffee } from '@fortawesome/free-solid-svg-icons/faCoffee';
 import { faSun } from "@fortawesome/free-solid-svg-icons";
 
+import { faChevronUp, faChevronDown } from '@fortawesome/free-solid-svg-icons';
+
 function Weather(props) {
     const url = 'https://api.open-meteo.com/v1/forecast';
     const lat = 'latitude=40.183277';
@@ -25,7 +27,9 @@ function Weather(props) {
 
     const myIcons = {
         coffee: faCoffee,
-        sun: faSun
+        sun: faSun,
+        up: faChevronUp, 
+        down: faChevronDown    
     };
 
     function getForecast() {
@@ -133,10 +137,27 @@ function Weather(props) {
         getForecast();
     }, []);
 
-    if (data !== null) return(
+    const [arrow, setArrow] = useState('up');
+    const [containerStyle, setContainerStyle] = useState('block');
+
+    const rollupHandler = () => {
+        if (arrow === 'up') {
+            setArrow('down');
+            setContainerStyle('none');
+            return;
+        }
+        setArrow('up');
+        setContainerStyle('block');
+    }
+
+    if (data !== null) return (
+    
         <Card className={`${classes.LeftColumn} ${props.className}`}>
-            <div className={`${classes.header}`}>Weather in Rayland, OH</div>
-            <Container className={classes.container}>
+            <div className={`${classes.header}`}>
+                Weather in Rayland, OH
+                <span className={classes.icon} onClick={rollupHandler}><FontAwesomeIcon icon={myIcons[arrow]} fontSize="1.0rem" /></span>
+            </div>
+            <Container className={classes.container} style={{display: containerStyle}}>
                 <Row><Col><Time className={classes.time} /></Col></Row>
                 <Row>
                     <Col>

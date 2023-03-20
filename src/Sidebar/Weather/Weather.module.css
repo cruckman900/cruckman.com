@@ -9,6 +9,16 @@
     text-shadow: 2px 2px 3px #000000;
 }
 
+.icon {
+    position: absolute;
+    right: 8px;
+}
+
+.icon:hover {
+    cursor: pointer;
+    color: #eebb5a;
+}
+
 .LeftColumn {
     background: #b18030;
     border: solid 1px #b18030;

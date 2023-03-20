@@ -9,7 +9,17 @@
     text-shadow: 2px 2px 3px #000000;
 }
 
-.Label {
+.icon {
+    position: absolute;
+    right: 8px;
+}
+
+.icon:hover {
+    cursor: pointer;
+    color: #eebb5a;
+}
+
+.loginLabel {
     font-size: .5rem;
 }
 
@@ -55,12 +65,13 @@
     font-size: 7pt;
 }
 
-.link {
+.loginLink {
     font-size: .5rem;
     float: right;
+    text-decoration: none;
     color: #260000;
 }
 
-.link:hover {
-    color: #eebb5a;
+.loginLink:hover {
+    color: #b18030;
 }
