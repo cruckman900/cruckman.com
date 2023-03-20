@@ -1,7 +1,7 @@
 import { React, useState } from "react";
-import Card from '../UI/Card/Card';
-import Label from '../UI/Label/Label';
-import Button from '../UI/Button/Button';
+import Card from '../../components/UI/Card/Card';
+import Label from '../../components/UI/Label/Label';
+import Button from '../../components/UI/Button/Button';
 import { Container, Row, Col } from 'react-bootstrap';
 import classes from './Login.module.css';
 
