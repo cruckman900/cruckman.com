@@ -1,13 +1,13 @@
-.Dropdown {
-    background-color: #d0b670;
-    color: #260000;
+.dropdown {
     font-size: .8rem;
     border: none;
-    border-radius: 8px;
-    margin-right: 8px;
+    border-radius: 4px;
+    margin-left: 8px;
+    background-color: #d0b670;
+    color: #260000;
 }
 
-.Dropdown:hover {
+.dropdown:hover {
     background-color: #b18030;
 }
 
