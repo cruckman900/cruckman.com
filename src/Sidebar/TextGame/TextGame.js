@@ -1,32 +1,22 @@
-import { React, useState, useEffect } from "react";
+import { React, useState, useEffect, useRef } from "react";
 import Button from "../../components/UI/Button/Button";
 import Card from '../../components/UI/Card/Card';
 import classes from './TextGame.module.css';
 
 function TextGame(props) {
-    const [play, setPlay] = useState();
+    const [play, setPlay] = useState(false);
+
     const [gameButton1Show, setGameButton1Show] = useState(classes.buttonHidden);
     const [gameButton2Show, setGameButton2Show] = useState(classes.buttonHidden);
     const [gameButton3Show, setGameButton3Show] = useState(classes.buttonHidden);
     const [gameButton4Show, setGameButton4Show] = useState(classes.buttonHidden);
 
-    useEffect(() => {
-        setGameButton4Show(classes.playButton);
-        setGameButton3Show(classes.playButton);
-        setGameButton2Show(classes.playButton);
-        setGameButton1Show(classes.playButton);
-    }, []);
+    const [gameText, setGameText] = useState(null);
 
-    const isPlayingHandler = () => {
-        localStorage.setItem('isPlaying', 'yes')
-        setPlay(true);
-        console.log(`playHandler ${play}`);
-    }
-
-    const stopPlayingHandler = () => {
-        localStorage.removeItem('isPlaying');
-        setPlay(false);
-    }
+    const [btn1Text, setBtn1Text] = useState(null);
+    const [btn2Text, setBtn2Text] = useState(null);
+    const [btn3Text, setBtn3Text] = useState(null);
+    const [btn4Text, setBtn4Text] = useState(null);
 
     useEffect(() => {
         const storedIsPlaying = localStorage.getItem('isPlaying');
@@ -35,32 +25,200 @@ function TextGame(props) {
         } else {
             setPlay(false);
         }
-        console.log(`useEffect ${play}`);
     }, [play]);
+
+    const [state, setState] = useState(null);
+
+    const startGame = () => {
+        setState(null);
+        showTextNode(0);
+    }
+
+    useEffect(() => {
+        clearButtons();
+        startGame();
+    }, []);
+
+    const [textNode, setTextNode] = useState(null);
+
+    const showTextNode = (textNodeIndex) => {
+        const textNode = textNodes.find(textNode => textNode.id === textNodeIndex);
+        
+        if (!textNode.options) {
+            gameOver("You'll have to try again when I've had time to work more on the game! Thanks for trying it out!")
+            return;
+        }
+        setTextNode(textNode);
+
+        setGameText(textNode.text);
+        clearButtons();
+        
+        if (textNode.options[0]) {
+            setBtn1Text(textNode.options[0].text);
+            textNode.options[0].text !== null ? setGameButton1Show(classes.playButton) :  setGameButton1Show(classes.buttonHidden);
+        }
+        
+        if (textNode.options[1]) {
+            setBtn2Text(textNode.options[1].text);
+            textNode.options[1].text !== null ? setGameButton2Show(classes.playButton) :  setGameButton2Show(classes.buttonHidden);
+        }
+        
+        if (textNode.options[2]) {
+            setBtn3Text(textNode.options[2].text);
+            textNode.options[2].text !== null ? setGameButton3Show(classes.playButton) :  setGameButton3Show(classes.buttonHidden);
+        }
+        
+        if (textNode.options[3]) {
+            setBtn4Text(textNode.options[3].text);
+            textNode.options[3].text !== null ? setGameButton4Show(classes.playButton) :  setGameButton4Show(classes.buttonHidden);
+        }
+    }
+
+    const showOption = (option) => {
+        return option.requiredState == null || option.requiredState(state);
+    }
+
+    const selectOption = (option) => {
+        if (!option) {
+            gameOver("You'll have to try again when I've had time to work more on the game! Thanks for trying it out!")
+            return;
+        }
+        const nextTextNodeId = option.nextText;
+        showTextNode(nextTextNodeId);
+    }
+
+    const gameOver = (gameOverText) => {
+        clearButtons();
+        setGameText(gameOverText);
+    }
+
+    const clearButtons = () => {
+        setGameButton1Show(classes.buttonHidden);
+        setGameButton2Show(classes.buttonHidden);
+        setGameButton3Show(classes.buttonHidden);
+        setGameButton4Show(classes.buttonHidden);
+    }
+    
+    const textNodes = [
+        {
+            id: 0,
+            text: `Do you want to play a game?`,
+            options: [
+                {
+                    text: `Yes, please!`,
+                    nextText: 1
+                },
+                {
+                    text: `No thanks.`,
+                    nextText: 5000
+                }
+            ]
+        },
+        {
+            id: 1,
+            text: `You wake up and notice that you are lying in a puddle of blood in the woods.
+            You hear men talking faintly a short distance away.`,
+            options: [
+                {
+                    text: `Get closer so you can hear what they are saying.`,
+                    nextText: 2
+                },
+                {
+                    text: `Look around for something to defend yourself with in case of trouble.`,
+                    nextText: 3
+                }
+            ]
+        },
+        {
+            id: 2,
+            text: `You attempt to get closer and are noticed. The group of men are headed your way.`,
+            options: [
+                {
+                    text: `Stay and fight!`,
+                    nextText: 4
+                },
+                {
+                    text: `Call out for help!!`,
+                    nextText: 5
+                },
+                {
+                    text: `Run like hell!!!`,
+                    nextText: 6
+                }
+            ]
+        },
+        {
+            id: 3,
+            text: `You spot a very big stick. One that could crush skulls. Do you want to pick it up?`,
+            options: [
+                {
+                    text: `Pick it up and take a few practice swings!`,
+                    setState: { heavyStick: true },
+                    nextText: 7
+                },
+                {
+                    text: `You weigh less than the stick. You see some nice-sized rocks and pick up a handful
+                        of those instead.`,
+                    setState: { rocks: true },
+                    nextText: 8
+                }
+            ]
+        },
+        {
+            id: 4,
+            text: `You try to stand your ground. There are 3 men in black robes: 1 has a knife, the other 2 are empty-handed
+                but look much more muscular.`,
+            options: [
+                {
+                    text: `Go for the one with the knife. If you can get the knife, you'll stand a better chance with the other 2.`,
+                    nextText: 9
+                },
+                {
+                    text: `Go for the biggest one! Maybe it's like prison, where if you take out the big one, the others will leave you alone!`,
+                    nextText: 10
+                }
+            ]
+        },
+        {
+            id: 5,
+            text: `You call out for help, but there is nobody here to hear your screams. You are frozen in your tracks, 
+                afraid of what is about to happen.`,
+        },
+        {
+            id: 6,
+            text: `You start booking it away from the baddies, but they are much faster than you. You are feeling the pain
+                from whatever happened to you before you woke up.`,
+        },
+        {
+            id: 5000,
+            text: `Fine then! I didn't want you to play it anyway! *pbbbbbbbbt!* >:3`,
+            options: [
+                {
+                    text: `Reset this graphically intensive game!`,
+                    nextText: 0
+                }
+            ]
+        }
+    ];
 
     return (
         <Card className={`${classes.LeftColumn} ${props.className}`}>
             <div className={`${classes.header}`}>Text-based Game</div>
             <div className={classes.container}>
-                {!play &&
-                    <p className={classes.typing}>
-                        Would you like to play a game?
-                    </p>
-                }
+                    
+                <div id="gameText" key={Math.random()} className={classes.typing}>{gameText}</div>
+                
+                <div className={classes.hiders}>
+                    <p>&nbsp;</p><p>&nbsp;</p>
+                    <p>&nbsp;</p><p>&nbsp;</p>
+                    <p>&nbsp;</p><p>&nbsp;</p>
+                </div>
                 
                 <div className={classes.gameButtonContainer}>
-                    <Button id="gameButton1" className={`${gameButton1Show}`} onClick={isPlayingHandler}>Yes<br />Please</Button>
-                    <Button id="gameButton2" className={`${gameButton2Show}`} onClick={stopPlayingHandler}>No<br />Thanks</Button>
-                    <Button id="gameButton3" className={`${gameButton3Show}`} onClick={null}>Hello<br />Kitty</Button>
-                    <Button id="gameButton4" className={`${gameButton4Show}`} onClick={null}>Goodbye<br />Cruel World</Button>
-                </div>
-            
-                <div className={classes.hiders}>
-                    <p>&nbsp;</p>
-                    <p>&nbsp;</p>
-                    <p>&nbsp;</p>
-                    <p>&nbsp;</p>
-                    <p>&nbsp;</p>
+                    <Button id="gameButton1" key="gameButton1" className={gameButton1Show} onClick={() => selectOption(textNode.options[0])}>{btn1Text}</Button>
+                    <Button id="gameButton2" key="gameButton2" className={gameButton2Show} onClick={() => selectOption(textNode.options[1])}>{btn2Text}</Button>
+                    <Button id="gameButton3" key="gameButton3" className={gameButton3Show} onClick={() => selectOption(textNode.options[2])}>{btn3Text}</Button>
+                    <Button id="gameButton4" key="gameButton4" className={gameButton4Show} onClick={() => selectOption(textNode.options[3])}>{btn4Text}</Button>
                 </div>
             </div>
         </Card>

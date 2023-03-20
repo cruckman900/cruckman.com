@@ -15,11 +15,6 @@
     color: #260000;
 }
 
-@keyframes typing {
-    from { width: 100% }
-    to { width: 0 }
-}
-
 .container {
     position: relative;
     font-family: 'AGoblinAppears';
@@ -30,10 +25,18 @@
 }
 
 .typing {
+    display: block;
     position: absolute;
-    top: 0;
-    margin: 0;
-    padding: 0 4px
+    width: 280px;
+    height: 17vh;
+    top: 0px;
+    left: 0px;
+    margin: 2px;
+    padding: 4px;
+    background: #d0b670;
+    border: 2px solid #260000;
+    border-radius: 4px;
+    box-shadow: 2px 2px 3px #260000;
 }
 
 .gameButtonContainer {
@@ -46,6 +49,7 @@
     top: 114px;
     left: 1px;
     height: 135px;
+    width: 284px;
 }
 
 .playButton {
@@ -78,13 +82,23 @@
 
 .hiders p {
     position: relative;
+    top: 5px;
+    left: -4px;
     clear: both;
     margin: 0;
+    margin-left: 60px;
+    line-height: 0.67rem;
+    padding: 3px;
     float: right;
     width: 0;
-    background: #b18030;
+    background: #d0b670;
     animation: typing 2s steps(30, end);
     animation-fill-mode: both;
+}
+
+@keyframes typing {
+    from { width: 98% }
+    to { width: 0 }
 }
 
 .hiders p:nth-child(2) {
@@ -99,10 +113,6 @@
 .hiders p:nth-child(5) {
     animation-delay: 8s;
 }
-
-/* @media (max-width: 800px) and (min-width: 300px) {
-    .gameButtonContainer {
-        height: 19vh;
-        top: 15.5vh;
-    }
-} */
+.hiders p:nth-child(6) {
+    animation-delay: 10s;
+}
