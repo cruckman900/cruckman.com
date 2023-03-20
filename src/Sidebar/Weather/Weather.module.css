@@ -23,11 +23,18 @@
     background: #b18030;
     border: solid 1px #b18030;
     color: #260000;
+    height: 130px
 }
 
 .container {
+    margin-top: 3px;
+    width: 278px;
+    border: solid 1px #260000;
+    border-radius: 4px;
+    box-shadow: 2px 2px 3px #260000;
     font-family: 'AGoblinAppears';
     font-size: .65rem;
+    background-color: #d0b670;
 }
 
 .time {

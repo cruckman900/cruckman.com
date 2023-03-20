@@ -1,4 +1,5 @@
 .App {
+  background: linear-gradient(180deg, #000000, #260000 20%, #000000 );
   text-align: center;
   height: calc(100vh - 66px);
 }
@@ -55,12 +56,13 @@
 
 .RowBody {
   height: calc(100vh - 105px);
+  width: 100vw;
   display: flex;
 }
 
 .Col {
   background: url('./assets/images/dragon900.png'), #260000;
-  background-size: 54rem;
+  /* background-size: 54rem; */
   background-repeat: no-repeat;
   background-position: top right;
   background-attachment: fixed;
@@ -93,7 +95,7 @@
 }
 
 .buttonHolder {
-  display: none;
+  display: inline;
   height: 35px;
   width: 17px;
   position: fixed;
@@ -140,16 +142,16 @@
   .Col {
     min-height: calc(100vh - 61px);
     background-attachment: fixed;
-    background-size: 26rem;
-    background-position: 15% 60%;
-    right: 50rem;
+    background-size: 60rem;
+    background-position: 2% 2%;
+    right: 0rem;
   }
 
   .ColLeft {
     background: linear-gradient(180deg, #000000, #260000 20%, #000000 );
     border: solid 1px #d0b670;
     height: 91vh;
-    width: 100vw !important;
+    /* width: 100vw !important; */
     z-index: 5;
     position: fixed;
     top: 61px;

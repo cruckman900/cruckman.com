@@ -45,10 +45,10 @@ function Login(props) {
                 <Row>
                     <Col>
                         <Button className={classes.Button}>Submit</Button>
-                        <span>
-                            <a className={classes.loginLink} href="" alt="Register">Register</a>
-                            <a className={classes.loginLink} href="" alt="Register">Forgot User/Pass</a>
-                        </span>
+                        <div>
+                            <a className={`${classes.loginLink} ${classes.left}`} href="" alt="Register">Register</a>
+                            <a className={`${classes.loginLink} ${classes.right}`} href="" alt="Register">Forgot User/Pass</a>
+                        </div>
                     </Col>
                 </Row>
             </Container>

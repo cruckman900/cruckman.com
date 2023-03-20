@@ -21,11 +21,13 @@
 
 .loginLabel {
     font-size: .5rem;
+    font-weight: 300;
+    text-shadow: none;
+    margin-left: 4px;
 }
 
 .Button {
     width: 40%;
-    margin: 2px;
     background: linear-gradient(0deg, #b08030, #d0b670, 80%, #b08030);
     color: #260000;
     border: solid 1px #260000;
@@ -36,21 +38,18 @@
     background: #b18030;
     border: solid 1px #b18030;
     color: #260000;
+    height: 150px
 }
 
 .container {
-    width: 98%;
-    position: relative;
-    left: -2px;
-    top: -1px;
+    margin-top: 3px;
+    width: 280px;
     border: solid 1px #260000;
-    border-radius: 8px;
+    border-radius: 4px;
     box-shadow: 2px 2px 3px #260000;
-    justify-content: left;
-    text-align: left;
+    text-align: start;
     font-family: 'AGoblinAppears';
     font-size: .65rem;
-    margin: 4px;
     background-color: #d0b670;
 }
 
@@ -74,4 +73,12 @@
 
 .loginLink:hover {
     color: #b18030;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
 }
