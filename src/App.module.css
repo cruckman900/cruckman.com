@@ -165,6 +165,10 @@
     display: flex;
     justify-content: center;
   }
+  .fixed {
+    position: relative;
+    height: auto !important;
+  }
   .ColRight {
     width: 100vw !important;
   }

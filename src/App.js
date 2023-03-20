@@ -6,6 +6,7 @@ import Footer from './components/UI/Footer/Footer';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
+import Login from './components/Login/Login';
 import TextGame from './Sidebar/TextGame/TextGame';
 import Weather from './Sidebar/Weather/Weather';
 
@@ -46,6 +47,7 @@ function App() {
             <Col xs="2" className={show && styles.ColLeft}>
                 { show &&
                   <div className={styles.fixed}>
+                    <Login className={styles.padBottom} />
                     <TextGame className={styles.padBottom} />
                     <Weather className={styles.padBottom} />
                   </div>
