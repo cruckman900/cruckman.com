@@ -132,7 +132,7 @@ const Navigation = () => {
                         <NavItem className={styles.ddlink} icon={myIcons['image']} fontSize="1.0rem"><div className={styles.floatright}>THIS SITE</div></NavItem>
                       </NavDropdown.Item>
                     </NavDropdown>
-                    <Nav.Link className={styles.onlyMobile} href="#12action">
+                    <Nav.Link as={Link} to="/Login/Login" href="#Login">
                       <span className={styles.ddlink}><FontAwesomeIcon icon={myIcons['user']} fontSize="1.0rem" />&nbsp;&nbsp;LOGIN</span>
                     </Nav.Link>
                 </Nav>
