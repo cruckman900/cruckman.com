@@ -28,11 +28,13 @@ const Card = (props) => {
         <div className={`${classes.card} ${classes.cardOuterDiv}`}>
             <div className={classes.header}>
                 <span className={classes.headerLeft}>{props.header}</span>
-                <span className={classes.headerRight}>
-                    <span className={classes.icon} onClick={rollupHandler}>
-                        <FontAwesomeIcon icon={myIcons[arrow]} fontSize="1.0rem" />
+                {props.showToggle &&
+                    <span className={classes.headerRight}>
+                        <span className={classes.icon} onClick={rollupHandler}>
+                            <FontAwesomeIcon icon={myIcons[arrow]} fontSize="1.0rem" />
+                        </span>
                     </span>
-                </span>
+                }
             </div>
             <div style={{display: containerStyle}}>
                 <div className={classes.cardInnerDiv}>

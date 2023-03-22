@@ -7,7 +7,7 @@ import classes from './Login.module.css';
 
 function Login(props) {
     return (
-        <Card 
+        <Card showToggle={true}
             className={`${classes.Card} ${classes.LeftColumn}`}
             header="Login/Register"
             >

@@ -223,11 +223,11 @@ function TextGame(props) {
     }
 
     return (
-        <Card
+        <Card showToggle={false}
             header="Text-based Game"
         >
             <div className={classes.container} style={{display: containerStyle}}>
-                <div id="gameText" key={Math.random()} className={classes.typing}>{gameText}</div>
+                <div id="gameText" className={classes.typing}>{gameText}</div>
                 
                 <div key={Math.random()} className={classes.hiders}>
                     <p>&nbsp;</p><p>&nbsp;</p>

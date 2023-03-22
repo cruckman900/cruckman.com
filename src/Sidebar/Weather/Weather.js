@@ -152,7 +152,7 @@ function Weather(props) {
 
     if (data !== null) return (
     
-        <Card
+        <Card showToggle={true}
             header="Weather in Rayland, OH"
         >
             <Container className={classes.container} style={{display: containerStyle}}>
