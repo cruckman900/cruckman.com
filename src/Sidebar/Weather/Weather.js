@@ -152,11 +152,9 @@ function Weather(props) {
 
     if (data !== null) return (
     
-        <Card className={`${classes.LeftColumn} ${props.className}`}>
-            <div className={`${classes.header}`}>
-                Weather in Rayland, OH
-                <span className={classes.icon} onClick={rollupHandler}><FontAwesomeIcon icon={myIcons[arrow]} fontSize="1.0rem" /></span>
-            </div>
+        <Card
+            header="Weather in Rayland, OH"
+        >
             <Container className={classes.container} style={{display: containerStyle}}>
                 <Row><Col><Time className={classes.time} /></Col></Row>
                 <Row>
