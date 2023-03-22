@@ -60,20 +60,29 @@
   position: fixed;
   overflow: auto;
   height: calc(100vh - 105px);
-  /* width: 100vw; */
-  width: calc(100vw - var(--scrollbar-width));
+  width: 100vw;
+  /* width: calc(100vw - var(--scrollbar-width)); */
   display: flex;
 }
 
-.Col {
-  position: absolute;
-  right: 0;
+.Body {
   background: url('./assets/images/dragon900.png'), #260000;
   background-size: 54rem;
   background-repeat: no-repeat;
   background-position: top right;
   background-attachment: fixed;
+}
+
+.Right {
+  position: absolute;
+  right: 0;
   width: calc(100vw - 320px - var(--scrollbar-width)) !important;
+  color: #260000;
+}
+
+.Left {
+  position: absolute;
+  left: 0;
   color: #260000;
 }
 

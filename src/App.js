@@ -15,6 +15,7 @@ import classes from './App.module.css';
 
 function App() {
     const [loading, setLoading] = useState(false);
+    const [LeftRight, setLeftRight] = useState('classes.Right');
 
     useEffect(() => {
       setLoading(true);
@@ -23,11 +24,7 @@ function App() {
       }, 4100);
     }, []);
     
-    const [show, setShow] = useState();
-
-    useEffect(() => {
-      setShow(true);
-    }, []);
+    const [show, setShow] = useState(true);
   
     return (
         <>
@@ -45,9 +42,9 @@ function App() {
                     </Row>
                     <Row className={classes.RowBody}>
                         {show &&
-                        <Col lg="2" className={classes.ColLeft}><Sidebar /></Col>
+                            <Col lg="2" className={classes.ColLeft}><Sidebar /></Col>
                         }
-                        <Col lg="10" className={`${classes.Col} ${classes.ColRight}`}>
+                        <Col lg="10" className={`${classes.Body} ${classes.ColRight} ${show ? classes.Right : classes.Left}`}>
                             <MainContentWindow />
                             <Button className={`${classes.buttonHolder}`} onClick={() => setShow((prevState) => !prevState)}>
                                 <FontAwesomeIcon icon={!show ? faChevronRight : faChevronLeft} className={classes.chevron} fontSize="1.0rem" />
