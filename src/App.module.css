@@ -3,7 +3,7 @@
   background-attachment: fixed;
   text-align: center;
   width: calc(100vw - var(--scrollbar-width));
-  height: 96vh;
+  height: 100vh;
 }
 
 .loaderContainer {
