@@ -1,7 +1,7 @@
 .App {
   background: linear-gradient(180deg, #000000, #260000 20%, #000000 );
   text-align: center;
-  width: 100vw;
+  width: calc(100vw - var(--scrollbar-width));
   height: 100vh;
 }
 
@@ -48,19 +48,20 @@
   }
 }
 
-.Container {
+/* .Container {
   display: flex;
   overflow: auto;
   margin-top: 66px;
   width: 100vw;
-}
+} */
 
 .RowBody {
   padding-top: 4rem;
   position: fixed;
   overflow: auto;
   height: calc(100vh - 105px);
-  width: 100vw;
+  /* width: 100vw; */
+  width: calc(100vw - var(--scrollbar-width));
   display: flex;
 }
 
@@ -80,8 +81,9 @@
   color: #260000;
   font-weight: 100;
   font-size: 1rem;
+  min-height: 80vh;
   width: 100vw;
-  height: calc(100vh - 105px);
+  overflow: auto;
 }
 
 .ColLeft {
@@ -90,15 +92,6 @@
   background: linear-gradient(180deg, #000000, #260000 20%, #000000 );
   background-attachment: fixed;
   color: #b18030;
-}
-
-.padBottom {
-  margin-bottom: 8px;
-}
-
-.fixed {
-  position: fixed;
-  width: 18rem;
 }
 
 .buttonHolder {

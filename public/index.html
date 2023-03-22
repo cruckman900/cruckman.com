@@ -14,6 +14,17 @@
     <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png">
     <link rel="manifest" href="%PUBLIC_URL%/site.webmanifest">
+    <script>
+      function _calculateScrollbarWidth() {
+        document.documentElement.style.setProperty('--scrollbar-width', (window.innerWidth - document.documentElement.clientWidth) + "px");
+      }
+      // recalculate on resize
+      window.addEventListener('resize', _calculateScrollbarWidth, false);
+      // recalculate on dom load
+      document.addEventListener('DOMContentLoaded', _calculateScrollbarWidth, false); 
+      // recalculate on load (assets loaded as well)
+      window.addEventListener('load', _calculateScrollbarWidth);
+    </script>
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/

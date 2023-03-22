@@ -1,11 +1,10 @@
 import React from "react";
-import classes from './Sidebar.module.css';
+import { Row } from 'react-bootstrap'; 
 
 import Login from './Login/Login';
 import TextGame from "./TextGame/TextGame";
 import Weather from "./Weather/Weather";
 
-import { Row, Col } from 'react-bootstrap'; 
 
 class Sidebar extends React.Component {
     render() {
