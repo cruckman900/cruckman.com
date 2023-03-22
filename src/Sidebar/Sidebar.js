@@ -12,9 +12,9 @@ class Sidebar extends React.Component {
         return (
             <div className={classes.wrapperDiv}>
                 <div className={`${classes.scrollable} ${classes.noScrollbars}`}>
-                    <Row><Login /></Row>
-                    <Row><TextGame /></Row>
-                    <Row><Weather /></Row>
+                    <Row className={classes.login}><Login /></Row>
+                    <Row className={classes.textGame}><TextGame /></Row>
+                    <Row className={classes.weather}><Weather /></Row>
                 </div>
             </div>
         )

@@ -1,9 +1,13 @@
-.wrapperDiv {
+/* .wrapperDiv {
     position: fixed;
     top: 64;
     left: 8px;
     min-width: 300px;
     max-width: 300px;
+} */
+.login, .textGame, .weather {
+    display: inline-block;
+    width: 100%;
 }
 
 .noScrollbars {
@@ -12,4 +16,10 @@
 
 .noScrollbars::-webkit-scrollbar {
     display: none;
+}
+
+@media (max-width: 340px) and (min-width: 0px) {
+    .textGame, .weather {
+        display: none;
+    }
 }

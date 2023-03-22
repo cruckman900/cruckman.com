@@ -57,6 +57,7 @@ function App() {
                     </Row>
                 </Container>
             )}
+            <div className={classes.angry}><img src={dragon1} /></div>
         </>
     );
 }
