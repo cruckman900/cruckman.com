@@ -1,8 +1,8 @@
 .App {
-  background: linear-gradient(180deg, #000000, #260000 20%, #000000 );
+  background: linear-gradient(180deg, #000000, #260000 60%, #b18030 );
   text-align: center;
   width: calc(100vw - var(--scrollbar-width));
-  height: 100vh;
+  height: 96vh;
 }
 
 .loaderContainer {
@@ -52,13 +52,13 @@
   padding-top: 4rem;
   position: fixed;
   overflow: auto;
-  height: calc(100vh - 105px);
+  height: 100vh;
   width: calc(100vw - var(--scrollbar-width));
   display: flex;
 }
 
 .Body {
-  background: url('./assets/images/dragon900.png'), #260000;
+  background: url('./assets/images/dragon900.png');
   background-size: 54rem;
   background-repeat: no-repeat;
   background-position: top right;
@@ -138,7 +138,7 @@
   
   .Body {
     background: url('./assets/images/dragon900.png'), #260000;
-    background-size: 54rem;
+    background-size: 34rem;
     background-repeat: no-repeat;
     background-position: top right;
     background-attachment: fixed;
