@@ -223,11 +223,9 @@ function TextGame(props) {
     }
 
     return (
-        <Card className={`${classes.LeftColumn} ${props.className}`}>
-            <div className={`${classes.header}`}>
-                Text-based Game
-                <span className={classes.icon} onClick={rollupHandler}><FontAwesomeIcon icon={myIcons[arrow]} fontSize="1.0rem" /></span>
-            </div>
+        <Card
+            header="Text-based Game"
+        >
             <div className={classes.container} style={{display: containerStyle}}>
                 <div id="gameText" key={Math.random()} className={classes.typing}>{gameText}</div>
                 

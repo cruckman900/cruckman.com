@@ -11,8 +11,8 @@ class Sidebar extends React.Component {
         return (
             <div>
                 <Row><Login /></Row>
-                {/* <Row><TextGame /></Row>
-                <Row><Weather /></Row> */}
+                <Row><TextGame /></Row>
+                <Row><Weather /></Row>
             </div>
         )
     }
