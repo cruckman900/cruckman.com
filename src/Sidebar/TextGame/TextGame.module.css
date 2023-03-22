@@ -38,7 +38,7 @@
 .typing {
     display: block;
     position: absolute;
-    width: 280px;
+    min-width: 98%;
     height: 106px;
     top: 0px;
     left: 0px;
@@ -60,13 +60,13 @@
     top: 114px;
     left: 1px;
     height: 135px;
-    width: 284px;
+    min-width: 98%;
 }
 
 .playButton {
     display: inline;
     margin: 1px;
-    width: 17.2rem;
+    width: 100%;
     font-size: .55rem;
     background: #d0b670;
     background: linear-gradient(0deg, #b08030, #d0b670, 80%, #b08030);
