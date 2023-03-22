@@ -14,13 +14,13 @@
 
 @media (max-width: 800px) and (min-width: 300px) {
     .IndentedBlock {
-        font-size: 1rem;
+        /* font-size: 1rem; */
         margin-left: 0.5rem;
     }
     
-    .resLabel {
+    /* .resLabel {
         font-size: 1rem;
-    }
+    } */
 }
 
 @media print {
