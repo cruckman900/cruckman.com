@@ -5,7 +5,7 @@ import styles from './Ellowyn.module.css';
 
 function Ellowyn() {
     return (
-        <Card className={classes.Card}>
+        <Card className={`${classes.Card}`}>
             <div className={`${classes.header}`}>Ellowyn &mdash; The Dragon Whisperer</div>
             <div className={styles.sectionTitle}>The Princess of Night</div>
             <div className={classes.stanza}>

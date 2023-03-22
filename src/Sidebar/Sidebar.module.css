@@ -1,0 +1,7 @@
+.LeftCol {
+    height: 100vh;
+    background: linear-gradient(180deg, #000000, #260000 20%, #000000 );
+    background-attachment: fixed;
+    position: fixed;
+    color: #b18030;
+}

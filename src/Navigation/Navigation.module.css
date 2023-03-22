@@ -1,0 +1,67 @@
+.Navbar {
+    background: #b18030;
+    background: linear-gradient(180deg, #260000, #b18030 20%, #260000 );
+}
+
+.NavbarBrand i {
+    font-family: 'DragonSlapper';
+    font-size: 20pt;
+    font-weight: 600;
+    margin-left: 8px;
+    color: #d0b670;
+    text-shadow: 2px 2px 3px #000000;
+}
+
+.NavbarBrand img {
+    margin-top: -12px;
+}
+
+.onlyMobile {
+    display: none;
+}
+
+#NavDD {
+    font-weight: bold;
+    color: #d0b670;
+    border: none;
+}
+
+.OffCanvas {
+    background-color: green;
+}
+
+.ddlink {
+    font-family: 'AGoblinAppears';
+    font-size: 9pt;
+    color: #eebb5a;
+}
+
+.floatright {
+    position: absolute;
+    right: 8px;
+}
+
+hr {
+    background-color: #eebb5a;
+}
+
+@media (max-width: 600px) and (min-width: 300px) {
+    .NavbarBrand i {
+        font-size: 14pt;
+    }
+
+    .NavbarBrand img {
+        margin-top: -5px;
+    }
+
+    .onlyMobile {
+        display: inline-block;
+    }
+
+    .ddlink {
+        padding: 3px;
+        display: flex;
+        justify-content: left;
+        align-items: top;
+    }
+}

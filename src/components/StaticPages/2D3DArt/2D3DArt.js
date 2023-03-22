@@ -65,12 +65,13 @@ function Art2D3D() {
                     NumEdges="16,364"
                     NumFaces="8,620"
                     NumVerts="8,870"
-                    Price="$1.99"
+                    Price="$0.99"
                 >
                 </ModelInfo>
                 <ModelInfo
                     Title="Missile.wings"
-                    Description="I made this missile for a mecha robot that I created... I can't find the mecha."
+                    Description="I made this missile for a mecha robot that I created... I can't find the mecha.  I've done a similar thing
+                        for the black bow below."
                     ImageSrc={missile1}
                     AltText="Missile 1"
                     NumObjects="1"
@@ -82,14 +83,15 @@ function Art2D3D() {
                 </ModelInfo>
                 <ModelInfo
                     Title="Halberd2.wings"
-                    Description="My first attempt at making a weapon from the age of dragons or some shit.  I called it a winged halberd."
+                    Description="My first attempt at making a weapon from the age of dragons or some shit.  I called it a winged halberd.
+                        It is kind of fancy, but not absolutely incredible."
                     ImageSrc={halberd1}
                     AltText="Halberd 1"
                     NumObjects="1"
                     NumEdges="1,522"
                     NumFaces="764"
                     NumVerts="760"
-                    Price="$2.50"
+                    Price="$0.50"
                 >
                 </ModelInfo>
                 <hr />
@@ -97,7 +99,7 @@ function Art2D3D() {
                 <ModelInfo
                     Title="bow1.blend"
                     Description="This was one of my first models in Blender that actually resembled something that could exist in the 
-                        real world."
+                        real world. I've added bones to this so that later, it could be animated for a game or something."
                     ImageSrc={bow1}
                     AltText="Bow 1"
                     NumObjects="3"
@@ -109,7 +111,8 @@ function Art2D3D() {
                 </ModelInfo>
                 <ModelInfo
                     Title="bow2.blend"
-                    Description="Somewhat pleased with the first bow, I created another one, a little fancier."
+                    Description="Somewhat pleased with the first bow, I created another one, a little fancier. This bow isn't rigged yet,
+                        but I created a separate arrow to add with it. I think I can rig it next time I have an opportunity to work on it."
                     ImageSrc={bow2}
                     AltText="Bow 2"
                     NumObjects="1"

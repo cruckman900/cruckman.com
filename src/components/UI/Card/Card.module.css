@@ -1,4 +1,56 @@
 .card {
+    width: 100%;
+}
+
+.header {
+    padding-left: 1rem;
+    text-align: left;
+    font-family: 'DragonSlapper';
+    font-size: large;
+    background-color: #260000;
+    color: #b18030;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.headerLeft {
+    display: inline;
+    align-items: center;
+    justify-content: left;
+}
+
+.headerRight {
+    display: inline;
+    align-items: center;
+    justify-content: right;
+}
+
+.cardOuterDiv {
+    margin: 2px;
+    padding: 8px;
+    background: rgba(177, 128, 48, .75);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
     border-radius: 5px;
+    height: auto;
+}
+
+.cardInnerDiv {
+    font-family: 'AGoblinAppears';
+    background: rgba(208, 182, 112, .65);
+    border: solid 2px #260000;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    height: auto;
+}
+
+.icon {
+    color: #b18030;
+    float: right;
+    position: relative;
+    padding-right: 1rem;
+}
+
+.icon:hover {
+    cursor: pointer;
+    color: #eebb5a;
 }

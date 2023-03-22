@@ -20,12 +20,14 @@
 }
 
 .LeftColumn {
+    padding-top: 8px;
     background: #b18030;
     border: solid 1px #b18030;
     color: #260000;
 }
 
 .container {
+    
     position: relative;
     font-family: 'AGoblinAppears';
     font-size: .65rem;

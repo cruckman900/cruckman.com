@@ -2,10 +2,11 @@ import React from "react";
 import Card from "../UI/Card/Card";
 import classes from './Writings.module.css';
 
-function CWInfo() {
+function CWInfo(props) {
     return (
-        <Card className={classes.Card}>
-            <div className={`${classes.header}`}>Creative Writing Info</div>
+        <Card
+            header="Creative Writing Info"
+        >
             <div className={classes.stanza}>
                 Other than the short story, Ellowyn, I haven't written anything like the things you will see here in over
                 15 years.  Why?  I think I lost motivation.  A lot of the stuff I wrote was dark and twisted, because, 

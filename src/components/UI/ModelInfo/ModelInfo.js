@@ -25,8 +25,9 @@ function ModelInfo(props) {
     }
     
     return (
-        <Card className={classes.dropShadow}>
-            <div className={classes.header}>{props.Title}</div>
+        <Card
+            header={props.Title}
+        >
             <div className={classes.container}>
                 <div className={classes.ImgWrapper}>
                     <img src={props.ImageSrc} alt={props.AltText} className={classes.ImgWidth} />
