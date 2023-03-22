@@ -43,11 +43,13 @@ function App() {
                         {show &&
                             <Col lg="2" className={classes.ColLeft}><Sidebar /></Col>
                         }
-                        <Col lg="10" className={`${classes.Body} ${classes.ColRight} ${show ? classes.Right : classes.Left}`}>
-                            <MainContentWindow />
+                        <Col>
                             <Button className={`${classes.buttonHolder}`} onClick={() => setShow((prevState) => !prevState)}>
                                 <FontAwesomeIcon icon={!show ? faChevronRight : faChevronLeft} className={classes.chevron} fontSize="1.0rem" />
-                            </Button>
+                            </Button>                        
+                        </Col>
+                        <Col lg="10" className={`${classes.Body} ${classes.ColRight} ${show ? classes.Right : classes.Left}`}>
+                            <MainContentWindow className={show && classes.RightHide} />
                         </Col>
                     </Row>
                     <Row>

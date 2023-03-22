@@ -97,12 +97,13 @@
 }
 
 .buttonHolder {
-  display: inline;
+  display: block;
   height: 35px;
   width: 18px;
-  position: fixed;
+  position: relative;
+  float: left;
   top: 300px;
-  left: -2px;
+  left: -12px;
   background: rgba(0, 0, 0, .5);
   border: solid 1px #b18030;
   background-attachment: fixed;
@@ -122,7 +123,18 @@
   color: #d0b670;
 }
 
+@media (max-width: 560px) and (min-width: 340px) {
+  .Right {
+    display: none;
+  }
+  
+  .buttonHolder {
+    display: inline-block;
+  }
+}
+
 @media (max-width: 1106px) and (min-width: 340px) {
+
   .spinner {
       width: 256px;
       height: 256px;
