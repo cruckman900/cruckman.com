@@ -229,7 +229,7 @@ function TextGame(props) {
             <div className={classes.container} style={{display: containerStyle}}>
                 <div id="gameText" key={Math.random()} className={classes.typing}>{gameText}</div>
                 
-                <div className={classes.hiders}>
+                <div key={Math.random()} className={classes.hiders}>
                     <p>&nbsp;</p><p>&nbsp;</p>
                     <p>&nbsp;</p><p>&nbsp;</p>
                     <p>&nbsp;</p><p>&nbsp;</p>
