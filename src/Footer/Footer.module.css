@@ -12,5 +12,7 @@
 
 .Footer i {
     position: relative;
-    top: 14px;
+    text-shadow: 2px 2px 3px #260000;
+    font-weight: 500;
+    top: 10px;
 }

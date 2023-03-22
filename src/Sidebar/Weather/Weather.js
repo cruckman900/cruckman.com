@@ -155,7 +155,7 @@ function Weather(props) {
         <Card showToggle={true}
             header="Weather in Rayland, OH"
         >
-            <Container className={classes.container} style={{display: containerStyle}}>
+            <Container className={classes.container}>
                 <Row><Col><Time className={classes.time} /></Col></Row>
                 <Row>
                     <Col>
@@ -164,7 +164,7 @@ function Weather(props) {
                     </Col>
                     <Col className={classes.nudgeDown50}>
                         <div className={classes.interpret}>{obj.text}</div>
-                        <div><span>{data.windspeed} mph</span><span>&nbsp;</span><span>{getDirection(data.winddirection)}</span></div>
+                        <div className={classes.windspeed}><span>{data.windspeed} mph</span><span>&nbsp;</span><span>{getDirection(data.winddirection)}</span></div>
                     </Col>
                 </Row>
             </Container>
