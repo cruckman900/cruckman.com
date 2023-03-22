@@ -25,7 +25,7 @@ function Login(props) {
                 <Row>
                     <Col>
                         <Button className={classes.Button}>Submit</Button>
-                        <div>
+                        <div class={classes.linksContainer}>
                             <a className={`${classes.loginLink} ${classes.left}`}
                                 href="" alt="Register">Register</a>
                             <a className={`${classes.loginLink} ${classes.right}`}
