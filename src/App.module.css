@@ -53,7 +53,7 @@
   padding-top: 4rem;
   position: fixed;
   overflow: auto;
-  height: 100vh;
+  height: 96vh;
   width: calc(100vw - var(--scrollbar-width));
   display: flex;
 }
