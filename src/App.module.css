@@ -48,13 +48,6 @@
   }
 }
 
-/* .Container {
-  display: flex;
-  overflow: auto;
-  margin-top: 66px;
-  width: 100vw;
-} */
-
 .RowBody {
   padding-top: 4rem;
   position: fixed;
@@ -65,8 +58,6 @@
 }
 
 .Body {
-  /* height: 100vh;
-  width: 100vw; */
   background: url('./assets/images/dragon900.png'), #260000;
   background-size: 54rem;
   background-repeat: no-repeat;
@@ -75,7 +66,6 @@
 }
 
 .Right {
-  /* height: 100vh; */
   position: absolute;
   right: 0;
   width: calc(100vw - 320px - var(--scrollbar-width)) !important;
@@ -109,9 +99,8 @@
 .buttonHolder {
   display: inline;
   height: 35px;
-  width: 17px;
+  width: 18px;
   position: fixed;
-  /* top: calc(100vh - 50% - 17.5px); */
   top: 300px;
   left: -2px;
   background: rgba(0, 0, 0, .5);
@@ -134,10 +123,6 @@
 }
 
 @media (max-width: 1106px) and (min-width: 340px) {
-  /* .Container {
-    margin-top: 61px;
-  } */
-
   .spinner {
       width: 256px;
       height: 256px;
@@ -153,8 +138,6 @@
   }
   
   .Body {
-    /* height: 100vh;
-    width: 100vw; */
     background: url('./assets/images/dragon900.png'), #260000;
     background-size: 54rem;
     background-repeat: no-repeat;
@@ -173,30 +156,12 @@
     display: flex;
     justify-content: center;
   }
-    
-  /* .Right {
-    height: 100vh;
-    position: absolute;
-    right: 0;
-    width: calc(100vw - 320px - var(--scrollbar-width)) !important;
-    color: #260000;
-  } */
-
-  /* .Left {
-    position: absolute;
-    left: 0px;
-    width: 100vw;
-    height: 100vh;
-    color: #260000;
-  } */
 
   .fixed {
     position: relative;
     height: auto !important;
   }
-  /* .ColRight {
-    width: 100vw !important;
-  } */
+
   .RowBody {
     height: 100vh;
   }
@@ -209,7 +174,7 @@
 }
 
 @media print {
-  .ColLeft, .Footer {
+  .ColLeft {
     display: none;
   }
 }
