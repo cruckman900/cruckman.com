@@ -68,7 +68,7 @@
 .Right {
   position: absolute;
   right: 0;
-  min-width: calc(100vw - 320px - var(--scrollbar-width)) !important;
+  width: calc(100vw - 340px - var(--scrollbar-width)) !important;
   color: #260000;
 }
 
@@ -84,13 +84,12 @@
   font-weight: 100;
   font-size: 1rem;
   min-height: 80vh;
-  min-width: 100vw;
+  width: calc(100vw - 340px - var(--scrollbar-width)) !important;
   overflow: auto;
 }
 
 .ColLeft {
   position: fixed;
-  min-width: 320px;
   background: linear-gradient(180deg, #000000, #260000 20%, #000000 );
   background-attachment: fixed;
   color: #b18030;
