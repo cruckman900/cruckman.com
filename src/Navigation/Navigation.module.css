@@ -5,7 +5,7 @@
 
 .NavbarBrand i {
     font-family: 'DragonSlapper';
-    font-size: 20pt;
+    font-size: 14pt;
     font-weight: 600;
     margin-left: 8px;
     color: #d0b670;
@@ -13,7 +13,7 @@
 }
 
 .NavbarBrand img {
-    margin-top: -12px;
+    margin-top: -0px;
 }
 
 .onlyMobile {
@@ -46,14 +46,6 @@ hr {
 }
 
 @media (max-width: 600px) and (min-width: 300px) {
-    .NavbarBrand i {
-        font-size: 14pt;
-    }
-
-    .NavbarBrand img {
-        margin-top: -5px;
-    }
-
     .onlyMobile {
         display: inline-block;
     }
