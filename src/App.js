@@ -15,7 +15,6 @@ import classes from './App.module.css';
 
 function App() {
     const [loading, setLoading] = useState(false);
-    const [LeftRight, setLeftRight] = useState('classes.Right');
 
     useEffect(() => {
       setLoading(true);

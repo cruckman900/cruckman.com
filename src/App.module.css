@@ -60,12 +60,13 @@
   position: fixed;
   overflow: auto;
   height: calc(100vh - 105px);
-  width: 100vw;
-  /* width: calc(100vw - var(--scrollbar-width)); */
+  width: calc(100vw - var(--scrollbar-width));
   display: flex;
 }
 
 .Body {
+  /* height: 100vh;
+  width: 100vw; */
   background: url('./assets/images/dragon900.png'), #260000;
   background-size: 54rem;
   background-repeat: no-repeat;
@@ -74,6 +75,7 @@
 }
 
 .Right {
+  /* height: 100vh; */
   position: absolute;
   right: 0;
   width: calc(100vw - 320px - var(--scrollbar-width)) !important;
@@ -83,6 +85,7 @@
 .Left {
   position: absolute;
   left: 0;
+  width: 100vw;
   color: #260000;
 }
 
@@ -131,9 +134,9 @@
 }
 
 @media (max-width: 1106px) and (min-width: 340px) {
-  .Container {
+  /* .Container {
     margin-top: 61px;
-  }
+  } */
 
   .spinner {
       width: 256px;
@@ -149,19 +152,20 @@
     display: inline-block;
   }
   
-  .Col {
-    min-height: calc(100vh - 61px);
+  .Body {
+    /* height: 100vh;
+    width: 100vw; */
+    background: url('./assets/images/dragon900.png'), #260000;
+    background-size: 54rem;
+    background-repeat: no-repeat;
+    background-position: top right;
     background-attachment: fixed;
-    background-size: 60rem;
-    background-position: 2% 2%;
-    right: 0rem;
   }
-
+  
   .ColLeft {
     background: linear-gradient(180deg, #000000, #260000 20%, #000000 );
     border: solid 1px #d0b670;
     height: 91vh;
-    /* width: 100vw !important; */
     z-index: 5;
     position: fixed;
     top: 61px;
@@ -169,15 +173,32 @@
     display: flex;
     justify-content: center;
   }
+    
+  /* .Right {
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    width: calc(100vw - 320px - var(--scrollbar-width)) !important;
+    color: #260000;
+  } */
+
+  /* .Left {
+    position: absolute;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    color: #260000;
+  } */
+
   .fixed {
     position: relative;
     height: auto !important;
   }
-  .ColRight {
+  /* .ColRight {
     width: 100vw !important;
-  }
+  } */
   .RowBody {
-    height: auto;
+    height: 100vh;
   }
 }
 
