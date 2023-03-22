@@ -137,19 +137,6 @@ function Weather(props) {
         getForecast();
     }, []);
 
-    const [arrow, setArrow] = useState('up');
-    const [containerStyle, setContainerStyle] = useState('block');
-
-    const rollupHandler = () => {
-        if (arrow === 'up') {
-            setArrow('down');
-            setContainerStyle('none');
-            return;
-        }
-        setArrow('up');
-        setContainerStyle('block');
-    }
-
     if (data !== null) return (
     
         <Card showToggle={true}

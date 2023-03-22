@@ -1,15 +1,7 @@
-import { React, useState, useEffect, useRef } from "react";
+import { React, useState, useEffect } from "react";
 import Button from "../../components/UI/Button/Button";
 import Card from '../../components/UI/Card/Card';
 import classes from './TextGame.module.css';
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronUp, faChevronDown } from '@fortawesome/free-solid-svg-icons';
-
-const myIcons = {
-    up: faChevronUp, 
-    down: faChevronDown
-}
 
 function TextGame(props) {
     const [play, setPlay] = useState(false);
@@ -209,24 +201,11 @@ function TextGame(props) {
         }
     ];
 
-    const [arrow, setArrow] = useState('up');
-    const [containerStyle, setContainerStyle] = useState('block');
-
-    const rollupHandler = () => {
-        if (arrow === 'up') {
-            setArrow('down');
-            setContainerStyle('none');
-            return;
-        }
-        setArrow('up');
-        setContainerStyle('block');
-    }
-
     return (
         <Card showToggle={false}
             header="Text-based Game"
         >
-            <div className={classes.container} style={{display: containerStyle}}>
+            <div className={classes.container}>
                 <div id="gameText" className={classes.typing}>{gameText}</div>
                 
                 <div key={Math.random()} className={classes.hiders}>

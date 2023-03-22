@@ -1,5 +1,6 @@
 .App {
   background: linear-gradient(180deg, #000000, #260000 60%, #b18030 );
+  background-attachment: fixed;
   text-align: center;
   width: calc(100vw - var(--scrollbar-width));
   height: 96vh;
@@ -140,7 +141,7 @@
     background: url('./assets/images/dragon900.png'), #260000;
     background-size: 34rem;
     background-repeat: no-repeat;
-    background-position: top right;
+    background-position: 25% 40%;
     background-attachment: fixed;
   }
   
@@ -149,7 +150,7 @@
     border: solid 1px #d0b670;
     height: 91vh;
     z-index: 5;
-    position: fixed;
+    position: absolute;
     top: 61px;
     left: 0vw;
     display: flex;

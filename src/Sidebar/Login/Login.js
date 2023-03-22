@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import { React } from "react";
 import Card from '../../components/UI/Card/Card';
 import Label from '../../components/UI/Label/Label';
 import Button from '../../components/UI/Button/Button';
@@ -25,7 +25,7 @@ function Login(props) {
                 <Row>
                     <Col>
                         <Button className={classes.Button}>Submit</Button>
-                        <div class={classes.linksContainer}>
+                        <div className={classes.linksContainer}>
                             <a className={`${classes.loginLink} ${classes.left}`}
                                 href="" alt="Register">Register</a>
                             <a className={`${classes.loginLink} ${classes.right}`}

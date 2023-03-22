@@ -3,7 +3,6 @@ import classes from './Card.module.css';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronUp, faChevronDown } from '@fortawesome/free-solid-svg-icons';
-import { Label } from 'reactstrap';
 
 const myIcons = {
     up: faChevronUp, 

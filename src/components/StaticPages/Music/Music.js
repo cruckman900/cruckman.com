@@ -1,5 +1,4 @@
 import React from "react";
-import { Row, Col } from 'react-bootstrap';
 
 import DefaultPage from "../../UI/DefaultPage/DefaultPage";
 import Player from '../../UI/Player/Player';
@@ -22,17 +21,17 @@ function Music() {
                 <div>
                         <img src={guitars} alt="My Guitars" className={styles.bodyImage} />
                         <p>
-                            I have 2 guitars currently. 1 electric (<a href="https://bcrich.com" className={styles.link} alt="BC Rich" target="_blank">BC Rich</a> 
+                            I have 2 guitars currently. 1 electric (<a href="https://bcrich.com" className={styles.link} alt="BC Rich" target="_blank" rel="noreferrer">BC Rich</a> 
                             Beast - Speedloader edition) and an acoustic-electric 
-                            (<a href="https://alvarezguitars.com" className={styles.link} alt="Alvarez" target="_blank">Alvarez</a>).
+                            (<a href="https://alvarezguitars.com" className={styles.link} alt="Alvarez" target="_blank" rel="noreferrer">Alvarez</a>).
                             I've only recently bought the Alvarez to learn finger-picking thanks to this composition of
-                            <a href='https://youtu.be/4SQg3hVt44Q' className={styles.link} target='blank'>Hotel California</a> by 
-                            <a href="https://www.patreon.com/lucasimbiriba" className={styles.link} alt="Lucas Imbiriba" target="_blank">Lucas Imbiriba</a>.
+                            <a href='https://youtu.be/4SQg3hVt44Q' className={styles.link} target='blank' rel="noreferrer">Hotel California</a> by 
+                            <a href="https://www.patreon.com/lucasimbiriba" className={styles.link} alt="Lucas Imbiriba" target="_blank" rel="noreferrer">Lucas Imbiriba</a>.
                         </p>
                         <p>
                             I've been playing guitar since 1987.  That's a long time, right?  I don't feel that I have the talent or skill
                             that one playing guitar that long should possess, but I enjoy it.  I began taking lessons at 
-                            <a href="https://www.cahousemusic.com/" className={styles.link} alt="CA House" target="_blank">CA House</a> in January, 2023.  I'm
+                            <a href="https://www.cahousemusic.com/" className={styles.link} alt="CA House" target="_blank" rel="noreferrer">CA House</a> in January, 2023.  I'm
                             trying to get a real understanding of how and what I play and why I am playing what I play.
                         </p>
                         <p>
@@ -47,27 +46,27 @@ function Music() {
                         </p>
                 </div>
                 <div className={styles.Song}>
-                    <div class={styles.songContainer}>
+                    <div className={styles.songContainer}>
                         <div className={styles.colText}>AC/DC - Highway To Hell</div>
                         <div className={styles.float}><Player url={HighwayToHell} /></div>
                     </div>
-                    <div class={styles.songContainer}>
+                    <div className={styles.songContainer}>
                         <div className={styles.colText}>Eagles - Hotel California</div>
                         <div className={styles.float}><Player url={HotelCalifornia} /></div>
                     </div>
-                    <div class={styles.songContainer}>
+                    <div className={styles.songContainer}>
                         <div className={styles.colText}>MegaDeth - Set The World Afire</div>
                         <div className={styles.float}><Player url={SetTheWorldAfire} /></div>                
                     </div>
-                    <div class={styles.songContainer}>
+                    <div className={styles.songContainer}>
                         <div className={styles.colText}>Metallica - Master of Puppets</div>
                         <div className={styles.float}><Player url={MasterOfPuppets} /></div>
                     </div>
-                    <div class={styles.songContainer}>
+                    <div className={styles.songContainer}>
                         <div className={styles.colText}>Metallica - Enter Sandman</div>
                         <div className={styles.float}><Player url={EnterSandman} /></div>
                     </div>
-                    <div class={styles.songContainer}>
+                    <div className={styles.songContainer}>
                         <div className={styles.colText}>Metallica - Welcome Home (Sanitarium)</div>
                         <div className={styles.float}><Player url={Sanitarium} /></div>
                     </div>
