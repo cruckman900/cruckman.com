@@ -139,9 +139,9 @@
   
   .Body {
     background: url('./assets/images/dragon900.png'), #260000;
-    background-size: 34rem;
+    background-size: 38rem;
     background-repeat: no-repeat;
-    background-position: 25% 48%;
+    background-position: 25% 60%;
     background-attachment: fixed;
   }
   
