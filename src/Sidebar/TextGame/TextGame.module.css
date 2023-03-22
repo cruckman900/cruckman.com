@@ -44,7 +44,8 @@
     left: 0px;
     margin: 2px;
     padding: 4px;
-    background: #d0b670;
+    background: #260000;
+    color: green;
     border: 2px solid #260000;
     border-radius: 4px;
     box-shadow: 2px 2px 3px #260000;
@@ -101,7 +102,7 @@
     padding: 3px;
     float: right;
     width: 0;
-    background: #d0b670;
+    background: #260000;
     animation: typing 2s steps(30, end);
     animation-fill-mode: both;
 }
