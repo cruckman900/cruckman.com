@@ -29,7 +29,7 @@ function Friends() {
                     if she has time.
                 </p>
                 <p>
-                    <a className={styles.link} href="caslig.myportfolio.com/graphic-design" alt="Cassie's design portfolio" target="_blank"  rel="noreferrer">
+                    <a className={styles.link} href="https://caslig.myportfolio.com/graphic-design" alt="Cassie's design portfolio" target="_blank"  rel="noreferrer">
                         Cassie's graphic design portfolio
                     </a>
                 </p> 

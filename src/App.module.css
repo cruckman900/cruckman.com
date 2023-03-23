@@ -95,8 +95,8 @@
 
 .ColLeft {
   position: fixed;
-  background: linear-gradient(180deg, #000000, #260000 20%, #000000 );
-  background-attachment: fixed;
+  /* background: linear-gradient(180deg, #000000, #260000 20%, #000000 );
+  background-attachment: fixed; */
   color: #b18030;
 }
 
@@ -151,15 +151,15 @@
   }
   
   .ColLeft {
-    background: linear-gradient(180deg, #000000, #260000 20%, #000000 );
-    border: solid 1px #d0b670;
+    /* background: linear-gradient(180deg, #000000, #260000 20%, #000000 );
+    border: solid 1px #d0b670; */
     height: 91vh;
     z-index: 5;
     position: absolute;
     top: 61px;
     left: 0vw;
     width: 20rem;
-    display: inline-block;
+    display: flex;
     justify-content: center;
   }
 
