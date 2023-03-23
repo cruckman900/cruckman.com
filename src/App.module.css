@@ -163,11 +163,11 @@
     justify-content: center;
   }
 
-  .ColRight {
+  /* .ColRight {
     left: 20rem;
     min-width: 20rem;
     max-width: 70rem;
-  }
+  } */
 
   .fixed {
     position: relative;
@@ -183,24 +183,23 @@
   .App {
     display: flex;
   }
-  .RowBody {
-    display: block;
-  }
   .ColLeft {
-    position: relative;
-    top: 0px;
+    position: absolute;
     left: 0px;
   }
+  .Sidebar {
+    width: 100vw;
+  }
   .ColRight {
-    position: relative;
-    top: 0rem;
+    position: absolute;
+    width: 100vw;
     left: 0rem;
   }
 }
 
 @media (max-width: 560px) and (min-width: 340px) {
   .RowBody {
-    width: 100vh;
+    width: 100vw;
     height: 100vh
   }
   

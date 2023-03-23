@@ -21,7 +21,7 @@
     font-size: .70rem;
     color: #260000;
     min-width: 2rem;
-    max-width: 70vw;
+    max-width: 70rem;
     background: rgba(208, 182, 112, .75);
     padding: 8px;
     border-radius: 8px;
@@ -30,12 +30,12 @@
 }
 
 @media (max-width: 1106px) and (min-width: 300px) {
-    .body {
+    /* .body {
         font-size: 8pt;
-        min-width: 2rem;
-        max-width: 70vw;
-            background: rgba(208, 182, 112, .70);
-    }
+        min-width: 20rem;
+        max-width: 50rem;
+        background: rgba(208, 182, 112, .70);
+    } */
 }
 
 .image {

@@ -6,6 +6,16 @@
     box-shadow: 2px 2px 3px #260000;
 }
 
+.link {
+    padding: 0 4px;
+    font-weight: 600;
+    color: #260000;
+}
+
+.link:hover {
+    color: #B18030;
+}
+
 .href {
     margin: 0 8px;
     color: #260000;
