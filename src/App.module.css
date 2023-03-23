@@ -141,14 +141,7 @@
   }
 }
 
-@media(max-width: 4000px) and (min-width: 1980px) {
-  .ColLeft {
-    max-width: 350px;
-  }
-}
-
 @media (max-width: 1106px) and (min-width: 340px) {
-
   .spinner {
       width: 256px;
       height: 256px;
@@ -179,8 +172,15 @@
     position: absolute;
     top: 61px;
     left: 0vw;
-    display: block;
+    width: 20rem;
+    display: inline-block;
     justify-content: center;
+  }
+
+  .ColRight {
+    left: 20rem;
+    min-width: 20rem;
+    max-width: 70rem;
   }
 
   .fixed {

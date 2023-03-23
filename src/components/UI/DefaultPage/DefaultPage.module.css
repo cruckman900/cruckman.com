@@ -20,7 +20,8 @@
     font-family: 'AGoblinAppears';
     font-size: .70rem;
     color: #260000;
-    width: 70vw;
+    min-width: 2rem;
+    max-width: 70vw;
     background: rgba(208, 182, 112, .75);
     padding: 8px;
     border-radius: 8px;
@@ -31,8 +32,9 @@
 @media (max-width: 1106px) and (min-width: 300px) {
     .body {
         font-size: 8pt;
-        width: 93.5vw;
-        background: rgba(208, 182, 112, .70);
+        min-width: 2rem;
+        max-width: 70vw;
+            background: rgba(208, 182, 112, .70);
     }
 }
 
