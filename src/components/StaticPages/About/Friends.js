@@ -2,6 +2,7 @@ import React from "react";
 import Card from '../../UI/Card/Card';
 import DefaultPage from "../../UI/DefaultPage/DefaultPage";
 import lolly_friends from "../../../assets/images/lf222.png";
+import dragon1 from "../../../assets/images/dragon900.png";
 import styles from './About.module.css';
 
 function Friends() {
@@ -35,20 +36,21 @@ function Friends() {
                 </p> 
             </Card>
             <Card header="Silas Amunga">
-                <p>
-                    I don't know too much about Silas yet, but he was referred to me by Cassie.  I contracted him to design the amazing
-                    dragon that you see on all the pages of my site as the background image.  If Cassie is busy in the future, and I need 
-                    some graphic work done, I will hit him up!
-                </p>
-                <p>
-                    <a className={styles.link} href="http://agnumasalis.carbon33.com" alt="Silas' design portfolio" target="_blank"  rel="noreferrer">
-                        Silas' portfolio
-                    </a>
-                </p>
-                <p>
-                    Contact him at <a className={styles.link} href="mailto:contactme@carbon33.com">contactme@carbon33.com</a>
-                </p>
-            </Card>
+                    <div>
+                        <img src={dragon1} alt="Dragon by Silas Amunga" className={styles.bodyImage} />
+                        I don't know too much about Silas yet, but he was referred to me by Cassie.  I contracted him to design the amazing
+                        dragon that you see on all the pages of my site as the background image.  If Cassie is busy in the future, and I need 
+                        some graphic work done, I will hit him up!
+                    </div>
+                    <p>
+                        <a className={styles.link} href="http://agnumasalis.carbon33.com" alt="Silas' design portfolio" target="_blank"  rel="noreferrer">
+                            Silas' portfolio
+                        </a>
+                    </p>
+                    <p>
+                        Contact him at <a className={styles.link} href="mailto:contactme@carbon33.com">contactme@carbon33.com</a>
+                    </p>
+                </Card>
         </DefaultPage>
     );
 }

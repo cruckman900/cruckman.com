@@ -7,3 +7,11 @@
 .link:hover {
     color: #B18030;
 }
+
+.bodyImage {
+    float: right;
+    margin-right: 1rem;
+    width: 160px;
+    height: 160px;
+    border-radius: 8px;
+}
