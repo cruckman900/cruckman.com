@@ -193,6 +193,13 @@
   }
 }
 
+@media (max-width: 800px) and (min-width: 340px) {
+  .ColRight {
+    position: absolute;
+    left: 21rem;
+  }
+}
+
 @media (max-width: 339px) and (min-width: 0px) {
   * {
     display: none;
