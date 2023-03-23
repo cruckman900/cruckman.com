@@ -128,12 +128,22 @@
 }
 
 @media (max-width: 560px) and (min-width: 340px) {
+  .RowBody {
+    width: 100vh;
+    height: 100vh
+  }
   .Right {
     display: none;
   }
   
   .buttonHolder {
     display: inline-block;
+  }
+}
+
+@media(max-width: 4000px) and (min-width: 1980px) {
+  .ColLeft {
+    max-width: 350px;
   }
 }
 
@@ -169,7 +179,7 @@
     position: absolute;
     top: 61px;
     left: 0vw;
-    display: flex;
+    display: block;
     justify-content: center;
   }
 
@@ -183,7 +193,7 @@
   }
 }
 
-@media (max-width: 339px) {
+@media (max-width: 339px) and (min-width: 0px) {
   * {
     display: none;
   }
