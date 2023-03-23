@@ -7,7 +7,10 @@ import styles from './About.module.css';
 function Friends() {
     return (
         <DefaultPage image={lolly_friends} title="Friends and Family">
-            here is a tad of text
+            <p>
+                I know that this may be hard to believe, but I do have friends and aquaintances!  hehehaha  I will be listing
+                some of the skilled people that I know that allow me to post information.  I'm talking... highly skilled people!!
+            </p>
             <Card header="Cassie Lightfritz">
                 <p>
                     I met Cassie in 2008 when I got hired on at Wheeling Jesuit University (now just Wheeling University).
@@ -22,11 +25,11 @@ function Friends() {
                     Silas Amunga to help me out.
                 </p>
                 <p>
-                    Cassie has an online profile - .  I highly recommend trying to reach her if you are looking to have something made:
+                    I highly recommend trying to reach her if you are looking to have something made:
                     if she has time.
                 </p>
                 <p>
-                    <a class={styles.link} href="caslig.myportfolio.com/graphic-design" alt="Cassie's design portfolio" target="_blank"  rel="noreferrer">
+                    <a className={styles.link} href="caslig.myportfolio.com/graphic-design" alt="Cassie's design portfolio" target="_blank"  rel="noreferrer">
                         Cassie's graphic design portfolio
                     </a>
                 </p> 
@@ -38,12 +41,12 @@ function Friends() {
                     some graphic work done, I will hit him up!
                 </p>
                 <p>
-                    <a class={styles.link} href="http://agnumasalis.carbon33.com" alt="Silas' design portfolio" target="_blank"  rel="noreferrer">
+                    <a className={styles.link} href="http://agnumasalis.carbon33.com" alt="Silas' design portfolio" target="_blank"  rel="noreferrer">
                         Silas' portfolio
                     </a>
                 </p>
                 <p>
-                    Contact him at contactme@carbon33.com
+                    Contact him at <a className={styles.link} href="mailto:contactme@carbon33.com">contactme@carbon33.com</a>
                 </p>
             </Card>
         </DefaultPage>
