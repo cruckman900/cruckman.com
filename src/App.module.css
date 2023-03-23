@@ -180,9 +180,21 @@
 }
 
 @media (max-width: 800px) and (min-width: 340px) {
+  .App {
+    display: flex;
+  }
+  .RowBody {
+    display: block;
+  }
+  .ColLeft {
+    position: relative;
+    top: 0px;
+    left: 0px;
+  }
   .ColRight {
-    position: absolute;
-    left: 21rem;
+    position: relative;
+    top: 0rem;
+    left: 0rem;
   }
 }
 

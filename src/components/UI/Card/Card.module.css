@@ -38,6 +38,7 @@
 .cardInnerDiv {
     font-family: 'AGoblinAppears';
     background: rgba(208, 182, 112, .65);
+    padding: 8px;
     border: solid 2px #260000;
     border-radius: 4px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
