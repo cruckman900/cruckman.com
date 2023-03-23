@@ -3,7 +3,7 @@
     top: 64;
     left: 8px;
     min-width: 300px;
-    max-width: 300px;
+    max-width: 21rem;
 }
 
 .login, .textGame, .weather {
