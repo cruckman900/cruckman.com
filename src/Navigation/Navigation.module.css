@@ -45,7 +45,11 @@ hr {
     background-color: #eebb5a;
 }
 
-@media (max-width: 600px) and (min-width: 300px) {
+@media (max-width: 770px) and (min-width: 300px) {
+    .NavbarBrand i {
+        display: none;
+    }
+
     .onlyMobile {
         display: inline-block;
     }

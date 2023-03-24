@@ -13,6 +13,7 @@
 
 .login, .textGame, .weather {
     display: inline-block;
+    padding-left: 8px;
     width: 100%;
 }
 
@@ -24,8 +25,9 @@
     display: none;
 }
 
-@media (max-width: 780px) and (min-width: 340px) {
+@media (max-width: 800px) and (min-width: 340px) {
  .wrapperDiv {
+    position: absolute;
     min-width: 100vw;
     margin: 0px;
     background: #260000;

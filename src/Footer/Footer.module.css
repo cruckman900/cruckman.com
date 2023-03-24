@@ -16,3 +16,9 @@
     font-weight: 500;
     top: 10px;
 }
+
+@media (max-width: 800) and (min-width: 340) {
+    .Footer {
+        display: none;
+    }
+}
