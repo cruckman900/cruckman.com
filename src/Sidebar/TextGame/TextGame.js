@@ -184,14 +184,11 @@ function TextGame(props) {
                 afraid of what is about to happen.`,
             options: [
                 {
-                    text: `You feel frightened.  So many noises: you jump out of your skin from every sound you hear.  You find a bush and crawl
-                        into it, hoping to stay safe,`,
+                    text: `You find a bush and crawl into it, hoping to stay safe,`,
                     nextText: 11
                 },
                 {
-                    text: `You keep thinking about a stick that you saw.  You decide to go back and grab it.  As you pick up the stick, you immediately
-                    feel less afraid.`,
-                    setState: {dragonstaff: true},
+                    text: `You keep thinking about a stick that you saw.  You decide to go back and grab it.`,
                     nextText: 12
                 }
             ]
@@ -222,7 +219,7 @@ function TextGame(props) {
                     nextText: 13
                 },
                 {
-                    text: `You start rethinking yourself with your handful of rocks.  Something nice and heavy would make you feel better`,
+                    text: `You start rethinking yourself with your handful of rocks.  Something nice and heavy would make you feel safer`,
                     nextText: 14
                 }
             ]

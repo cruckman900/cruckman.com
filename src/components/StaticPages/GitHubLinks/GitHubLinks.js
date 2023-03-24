@@ -28,6 +28,7 @@ function GitHubLinks() {
                         href="https://github.com/cruckman900/MyMarvelComicCollection"
                         target="_blank"
                         title="My Marvel Comic Collection app"
+                        rel="noreferrer"
                     >
                         MyMarvelComicCollection
                     </a>
@@ -46,6 +47,7 @@ function GitHubLinks() {
                         href="https://github.com/cruckman900/cruckman.com" 
                         target="_blank"
                         title="cruckman.com"
+                        rel="noreferrer"
                     >
                         cruckman.com
                     </a>
