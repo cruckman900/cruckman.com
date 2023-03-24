@@ -25,7 +25,7 @@
     display: none;
 }
 
-@media (max-width: 1024px) and (min-width: 800px) {
+/* @media (max-width: 1024px) and (min-width: 800px) {
     .wrapperDiv {
        display: flex;
        position: absolute;
@@ -47,9 +47,9 @@
        padding: 4px;
        background: #260000;
     }
-   }
+   } */
 
-@media (max-width: 799px) and (min-width: 340px) {
+@media (max-width: 1024px) and (min-width: 340px) {
     .wrapperDiv {
        display: inline-block;
        position: absolute;
