@@ -6,6 +6,12 @@
     max-width: 21rem;
 }
 
+/* .scrollable {
+    display: inline-block;
+    overflow: scroll;
+    
+} */
+
 .login, .textGame, .weather {
     display: inline-block;
     width: 100%;

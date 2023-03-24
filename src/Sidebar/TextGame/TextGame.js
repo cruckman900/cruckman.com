@@ -153,7 +153,6 @@ function TextGame(props) {
             options: [
                 {
                     text: `Pick it up and take a few practice swings!`,
-                    setState: { heavyStick: true },
                     nextText: 7
                 },
                 {
@@ -183,11 +182,57 @@ function TextGame(props) {
             id: 5,
             text: `You call out for help, but there is nobody here to hear your screams. You are frozen in your tracks, 
                 afraid of what is about to happen.`,
+            options: [
+                {
+                    text: `You feel frightened.  So many noises: you jump out of your skin from every sound you hear.  You find a bush and crawl
+                        into it, hoping to stay safe,`,
+                    nextText: 11
+                },
+                {
+                    text: `You keep thinking about a stick that you saw.  You decide to go back and grab it.  As you pick up the stick, you immediately
+                    feel less afraid.`,
+                    setState: {dragonstaff: true},
+                    nextText: 12
+                }
+            ]
         },
         {
             id: 6,
             text: `You start booking it away from the baddies, but they are much faster than you. You are feeling the pain
                 from whatever happened to you before you woke up.`,
+            options: [
+
+            ]
+        },
+        {
+            id: 7,
+            text: `As you pick up the stick, you feel a great, powerful sensation come over you.  You look at the stick glowing in your hands as
+                it becomes straight and narrow... black and mighty with a golden dragon insignia.`,
+            setState: {dragonstaff: true},
+            options: [
+
+            ]
+        },
+        {
+            id: 8,
+            text: `You hear some noises coming from the wilderness behind you.  You feel safe with your handful of rocks.`,
+            options: [
+                {
+                    text: `Throw a rock in the direction of the noises`,
+                    nextText: 13
+                },
+                {
+                    text: `You start rethinking yourself with your handful of rocks.  Something nice and heavy would make you feel better`,
+                    nextText: 14
+                }
+            ]
+        },
+        {
+            id: 9,
+            text: ``,
+            options: [
+
+            ]
         },
         {
             id: 5000,
@@ -198,7 +243,7 @@ function TextGame(props) {
                     nextText: 0
                 }
             ]
-        }
+        },
     ];
 
     return (
