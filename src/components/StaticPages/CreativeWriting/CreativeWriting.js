@@ -8,6 +8,8 @@ import ButtonGroup from "react-bootstrap/ButtonGroup";
 import CWInfo from '../../views/CWInfo';//'../../views/CWInfo/CWInfo';
 import Ellowyn from '../../views/Ellowyn/Ellowyn';
 import Volcano from '../../views/Volcano/Volcano';
+import Resurrection from '../../views/Resurrection/Resurrection';
+import ShelterISeek from '../../views/ShelterISeek/ShelterISeek';
 import PetrifiedStatesIssue1 from '../../views/PetrifiedStates/PetrifiedStatesIssue1';
 import PetrifiedStatesIssue2 from '../../views/PetrifiedStates/PetrifiedStatesIssue2';
 import { FormGroup } from "react-bootstrap";
@@ -19,6 +21,8 @@ function CreativeWriting() {
         '#CWInfo': CWInfo,
         '#Volcano': Volcano,
         '#Ellowyn': Ellowyn,
+        '#Resurrection': Resurrection,
+        '#ShelterISeek': ShelterISeek,
         '#PetrifiedStates1': PetrifiedStatesIssue1,
         '#PetrifiedStates2': PetrifiedStatesIssue2,        
     };
@@ -38,6 +42,12 @@ function CreativeWriting() {
                         <Dropdown.Toggle id="poems" variant="warning" className={classes.dropdown}>Poems</Dropdown.Toggle>
                         <Dropdown.Menu className={classes.menu}>
                             <Dropdown.Item href="#Volcano" className={classes.ddlItem}>Volcano</Dropdown.Item>
+                        </Dropdown.Menu>
+                        <Dropdown.Menu className={classes.menu}>
+                            <Dropdown.Item href="#Resurrection" className={classes.ddlItem}>Resurrection</Dropdown.Item>
+                        </Dropdown.Menu>
+                        <Dropdown.Menu className={classes.menu}>
+                            <Dropdown.Item href="#ShelterISeek" className={classes.ddlItem}>ShelterISeek</Dropdown.Item>
                         </Dropdown.Menu>
                     </Dropdown>
                     <Dropdown as={ButtonGroup} size="sm" onSelect={(e) =>  {setVal(e)}}>
