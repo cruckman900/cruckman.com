@@ -42,11 +42,7 @@ function CreativeWriting() {
                         <Dropdown.Toggle id="poems" variant="warning" className={classes.dropdown}>Poems</Dropdown.Toggle>
                         <Dropdown.Menu className={classes.menu}>
                             <Dropdown.Item href="#Volcano" className={classes.ddlItem}>Volcano</Dropdown.Item>
-                        </Dropdown.Menu>
-                        <Dropdown.Menu className={classes.menu}>
                             <Dropdown.Item href="#Resurrection" className={classes.ddlItem}>Resurrection</Dropdown.Item>
-                        </Dropdown.Menu>
-                        <Dropdown.Menu className={classes.menu}>
                             <Dropdown.Item href="#ShelterISeek" className={classes.ddlItem}>ShelterISeek</Dropdown.Item>
                         </Dropdown.Menu>
                     </Dropdown>

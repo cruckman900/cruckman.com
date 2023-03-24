@@ -6,15 +6,17 @@ function Resurrection() {
     return (
         <Card className={classes.Card}>
             <div className={`${classes.header}`}>Resurrection</div>
-                <p>The fermented blood taht trickles from my vein</p>
-                <p>Is all that remains of the world I reign.</p>
+            <div className={classes.stanza}>
+                <p>The fermented blood that trickles from my vein</p>
+                <p>Is all that remains of the world I reigned.</p>
                 <p>Hell on earth is a living HELL,</p>
                 <p>With all of its sinners that really mean well.</p>
+            </div>
             <div className={classes.stanza}>
-                <p>I build my chaos with an acquired tast,</p>
+                <p>I build my chaos with an acquired taste...</p>
                 <p>Looking down upon those that dwell in my waste.</p>
                 <p>Night after night and day by day,</p>
-                <p>I think of ways to hurt you in my own way.</p>
+                <p>I think of ways to hurt you: my own way.</p>
             </div>
             <div className={classes.stanza}>
                 <p>I am one of the fallen that has risen...</p>
