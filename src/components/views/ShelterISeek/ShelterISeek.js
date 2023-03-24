@@ -62,7 +62,7 @@ function ShelterISeek() {
                 <p>Of those who've tried, all have lost:</p>
                 <p>It's a mind-blowing holocaust.</p>
                 <p>Fear and agony fill my brain.</p>
-                <p>I must find a way home to end this pain.</p>
+                <p>I must find a way home to end this brutal pain.</p>
             </div>
             <div className={classes.date}>early summer '91</div>
         </Card>
