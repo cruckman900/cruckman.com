@@ -179,7 +179,7 @@
   }
 }
 
-@media (max-width: 800px) and (min-width: 340px) {
+@media (max-width: 1024px) and (min-width: 340px) {
   .App {
     display: flex;
   }
@@ -195,6 +195,12 @@
     width: 100vw;
     left: 0rem;
   }
+  .RightShow {
+    display: inline-block;
+  }
+  .RightHide {
+    display: none;
+  }
 }
 
 @media (max-width: 560px) and (min-width: 340px) {
@@ -209,6 +215,12 @@
   
   .buttonHolder {
     display: inline-block;
+  }
+  .RightShow {
+    display: inline-block;
+  }
+  .RightHide {
+    display: none;
   }
 }
 
