@@ -48,8 +48,8 @@ function App() {
                                 <FontAwesomeIcon icon={!show ? faChevronRight : faChevronLeft} className={classes.chevron} fontSize="1.0rem" />
                             </Button>                        
                         </Col>
-                        <Col lg="10" className={`${classes.Body} ${classes.ColRight} ${show ? classes.Right : classes.Left}`}>
-                            <MainContentWindow className={show && classes.RightHide} />
+                        <Col lg="10" className={`${classes.Body} ${classes.ColRight} ${show ? classes.Right : classes.Left} ${show ? classes.RightHide : classes.RightShow}`}>
+                            <MainContentWindow />
                         </Col>
                     </Row>
                     <Row>
