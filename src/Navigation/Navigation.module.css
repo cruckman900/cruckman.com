@@ -36,6 +36,11 @@
     color: #eebb5a;
 }
 
+/* .ddlink:active {
+    color: #260000 !important;
+    background: #eebb5a !important;
+} */
+
 .floatright {
     position: absolute;
     right: 8px;
