@@ -100,6 +100,9 @@
     .ImgWrapper {
         width: 21rem;
     }
+    .Image {
+        width: 86px;
+    }
 
     .ImgWidth {
         width: 20.5rem;
@@ -110,4 +113,7 @@
     .Request {
         margin-top: 8px;
     }
+}
+
+@media (max-width: 1106px) and (min-width: 300px) {
 }
