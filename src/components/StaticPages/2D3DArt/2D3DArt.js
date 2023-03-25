@@ -10,7 +10,7 @@ import female1 from "../../../assets/images/3DModels/female1.png";
 import car1 from "../../../assets/images/3DModels/car1.png";
 import missile1 from "../../../assets/images/3DModels/missile1.png";
 import halberd1 from "../../../assets/images/3DModels/halberd1.png";
-import styles from './2D3DArt.module.css';
+import classes from './2D3DArt.module.css';
 
 function Art2D3D() {
     return (
@@ -19,12 +19,12 @@ function Art2D3D() {
                 <p>
                     Over the years, I have had the opportunity to use a wide range of software packages to create 
                     all sorts of things.  Those packages include 
-                    <a href="https://www.adobe.com/products/photoshop.html" className={styles.link} alt="Adobe Photoshop" target="_blank" rel="noreferrer">Adobe Photoshop</a>, 
-                    <a href="https://www.adobe.com/products/illustrator.html" className={styles.link} alt="Adobe Illustrator" target="_blank" rel="noreferrer">Adobe Illustrator</a>, 
-                    <a href="https://www.gimp.org" className={styles.link} alt="GIMP" target="_blank" rel="noreferrer">GIMP</a>, 
-                    <a href="https://www.autodesk.com" className={styles.link} alt="3D Studio Max" target="_blank" rel="noreferrer">3D Studio Max</a>,
-                    <a href="https://www.blender.org" className={styles.link} alt="Blender" target="_blank" rel="noreferrer">Blender</a>, 
-                    <a href="https://www.wings3d.com" className={styles.link} alt="Wings3D" target="_blank" rel="noreferrer">Wings3D</a>, 
+                    <a href="https://www.adobe.com/products/photoshop.html" className={classes.link} alt="Adobe Photoshop" target="_blank" rel="noreferrer">Adobe Photoshop</a>, 
+                    <a href="https://www.adobe.com/products/illustrator.html" className={classes.link} alt="Adobe Illustrator" target="_blank" rel="noreferrer">Adobe Illustrator</a>, 
+                    <a href="https://www.gimp.org" className={classes.link} alt="GIMP" target="_blank" rel="noreferrer">GIMP</a>, 
+                    <a href="https://www.autodesk.com" className={classes.link} alt="3D Studio Max" target="_blank" rel="noreferrer">3D Studio Max</a>,
+                    <a href="https://www.blender.org" className={classes.link} alt="Blender" target="_blank" rel="noreferrer">Blender</a>, 
+                    <a href="https://www.wings3d.com" className={classes.link} alt="Wings3D" target="_blank" rel="noreferrer">Wings3D</a>, 
                     and others.  I haven't done a whole lot of work or devoted very much time in
                     creating many things, but I have a decent amount of knowledge about the workings of each software
                     package.
@@ -140,6 +140,7 @@ function Art2D3D() {
                         I started this model in 2004.  I've only recently started back to finishing it.  I just procrastinate with 
                         this model too much.  The smaller and more intricate the parts are, the less I feel motivated to work on them."
                     ImageSrc={female1}
+                    Blur="true"
                     AltText="Female 1"
                     NumObjects="4"
                     NumEdges=""
@@ -149,7 +150,7 @@ function Art2D3D() {
                 >
                 </ModelInfo>
             </div>
-            <div className={styles.bottomText}>
+            <div className={classes.bottomText}>
                 <p>
                     I have tried texture mapping objects.  As you can see above, I only used materials in my modelling.
                     I have a model I created in Blender that has textures, but they are very basic (like cylinders and cubes).

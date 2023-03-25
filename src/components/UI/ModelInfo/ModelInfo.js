@@ -3,6 +3,7 @@ import Card from '../Card/Card';
 import Label from '../Label/Label';
 import Button from '../Button/Button';
 import classes from './ModelInfo.module.css';
+import RequiresLogin from '../../StaticPages/2D3DArt/RequiresLogin';
 
 function ModelInfo(props) {
     const paymentTypes = [
@@ -30,7 +31,8 @@ function ModelInfo(props) {
         >
             <div className={classes.container}>
                 <div className={classes.ImgWrapper}>
-                    <img src={props.ImageSrc} alt={props.AltText} className={classes.ImgWidth} />
+                    {props.Blur && <RequiresLogin />}
+                    <img src={props.ImageSrc} alt={props.AltText} className={`${classes.ImgWidth} ${props.Blur && classes.blur}`} />
                 </div>
                 <div className={classes.ModelInfo}>
                     <Label>Attributes</Label>

@@ -12,6 +12,10 @@
     color: #B18030;
 }
 
+.blur {
+    filter: blur(1px);
+}
+
 @media (max-width: 1106px) and (min-width: 300px) {
     .Image {
         width: 86px;

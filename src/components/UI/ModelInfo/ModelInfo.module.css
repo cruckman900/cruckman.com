@@ -2,6 +2,10 @@
     box-shadow: 2px 2px 3px #000000;
 }
 
+.blur {
+    filter: blur(5px);
+}
+
 .description {
     clear: both;
     padding: 2px 8px;
