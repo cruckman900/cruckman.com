@@ -4,13 +4,15 @@ import lolly_livro2 from "../../../assets/images/loly_livro2.png";
 import Dropdown from "react-bootstrap/Dropdown";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
 
-import CWInfo from '../../views/CWInfo';//'../../views/CWInfo/CWInfo';
+import CWInfo from '../../views/CWInfo';
 import Ellowyn from '../../views/Ellowyn/Ellowyn';
-import Volcano from '../../views/Volcano/Volcano';
-import Resurrection from '../../views/Resurrection/Resurrection';
-import ShelterISeek from '../../views/ShelterISeek/ShelterISeek';
-import PetrifiedStatesIssue1 from '../../views/PetrifiedStates/PetrifiedStatesIssue1';
-import PetrifiedStatesIssue2 from '../../views/PetrifiedStates/PetrifiedStatesIssue2';
+import Volcano from '../../views/Volcano';
+import Resurrection from '../../views/Resurrection';
+import ShelterISeek from '../../views/ShelterISeek';
+import AgonyHasAName from '../../views/AgonyHasAName';
+import Distortion from '../../views/Distortion';
+import PetrifiedStatesIssue1 from '../../views/PetrifiedStatesIssue1';
+import PetrifiedStatesIssue2 from '../../views/PetrifiedStatesIssue2';
 import { FormGroup } from "react-bootstrap";
 
 import classes from './CreativeWriting.module.css';
@@ -24,6 +26,8 @@ function CreativeWriting() {
         '#Ellowyn': Ellowyn,
         '#Resurrection': Resurrection,
         '#ShelterISeek': ShelterISeek,
+        '#AgonyHasAName': AgonyHasAName,
+        '#Distortion': Distortion,
         '#PetrifiedStates1': PetrifiedStatesIssue1,
         '#PetrifiedStates2': PetrifiedStatesIssue2,        
     };
@@ -44,7 +48,9 @@ function CreativeWriting() {
                         <Dropdown.Menu className={classes.menu}>
                             <Dropdown.Item href="#Volcano" className={classes.ddlItem}>Volcano</Dropdown.Item>
                             <Dropdown.Item href="#Resurrection" className={classes.ddlItem}>Resurrection</Dropdown.Item>
-                            <Dropdown.Item href="#ShelterISeek" className={classes.ddlItem}>ShelterISeek</Dropdown.Item>
+                            <Dropdown.Item href="#ShelterISeek" className={classes.ddlItem}>Shelter I Seek</Dropdown.Item>
+                            <Dropdown.Item href="#AgonyHasAName" className={classes.ddlItem}>Agony Has a Name</Dropdown.Item>
+                            <Dropdown.Item href="#Distortion" className={classes.ddlItem}>Distortion</Dropdown.Item>
                         </Dropdown.Menu>
                     </Dropdown>
                     <Dropdown as={ButtonGroup} size="sm" onSelect={(e) =>  {setVal(e)}}>
