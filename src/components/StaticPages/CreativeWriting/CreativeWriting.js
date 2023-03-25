@@ -1,7 +1,6 @@
 import { React, useState, useEffect } from "react";
 import DefaultPage from "../../UI/DefaultPage/DefaultPage";
 import lolly_livro2 from "../../../assets/images/loly_livro2.png";
-import classes from './CreativeWriting.module.css';
 import Dropdown from "react-bootstrap/Dropdown";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
 
@@ -13,6 +12,8 @@ import ShelterISeek from '../../views/ShelterISeek/ShelterISeek';
 import PetrifiedStatesIssue1 from '../../views/PetrifiedStates/PetrifiedStatesIssue1';
 import PetrifiedStatesIssue2 from '../../views/PetrifiedStates/PetrifiedStatesIssue2';
 import { FormGroup } from "react-bootstrap";
+
+import classes from './CreativeWriting.module.css';
 
 function CreativeWriting() {
     const [val, setVal] = useState('#CWInfo');
@@ -39,7 +40,7 @@ function CreativeWriting() {
             <div>
                 <FormGroup>
                     <Dropdown as={ButtonGroup} size="sm" onSelect={(e) => {setVal(e)}}>
-                        <Dropdown.Toggle id="poems" variant="warning" className={classes.dropdown}>Poems</Dropdown.Toggle>
+                        <Dropdown.Toggle id="poems" className={classes.dropDownToggle}>Poems</Dropdown.Toggle>
                         <Dropdown.Menu className={classes.menu}>
                             <Dropdown.Item href="#Volcano" className={classes.ddlItem}>Volcano</Dropdown.Item>
                             <Dropdown.Item href="#Resurrection" className={classes.ddlItem}>Resurrection</Dropdown.Item>
@@ -47,13 +48,13 @@ function CreativeWriting() {
                         </Dropdown.Menu>
                     </Dropdown>
                     <Dropdown as={ButtonGroup} size="sm" onSelect={(e) =>  {setVal(e)}}>
-                    <Dropdown.Toggle id="stories" variant="warning" className={classes.dropdown}>Stories</Dropdown.Toggle>
-                        <Dropdown.Menu className={classes.menu}>
-                            <Dropdown.Item href="#Ellowyn" className={classes.ddlItem}>Ellowyn</Dropdown.Item>
-                        </Dropdown.Menu>
-                    </Dropdown>
+                        <Dropdown.Toggle id="stories" className={classes.dropDownToggle}>Stories</Dropdown.Toggle>
+                            <Dropdown.Menu className={classes.menu}>
+                                <Dropdown.Item href="#Ellowyn" className={classes.ddlItem}>Ellowyn</Dropdown.Item>
+                            </Dropdown.Menu>
+                        </Dropdown>
                     <Dropdown as={ButtonGroup} size="sm" onSelect={(e) => {setVal(e)}}>
-                    <Dropdown.Toggle id="comics" variant="warning" className={classes.dropdown}>Comics</Dropdown.Toggle>
+                    <Dropdown.Toggle id="comics" className={classes.dropDownToggle}>Comics</Dropdown.Toggle>
                         <Dropdown.Menu className={classes.menu}>
                             <Dropdown.Item href="#PetrifiedStates1" className={classes.ddlItem}>Petrified States (Issue 1)</Dropdown.Item>
                             <Dropdown.Item href="#PetrifiedStates2" className={classes.ddlItem}>Petrified States (Issue 2)</Dropdown.Item>

@@ -16,7 +16,7 @@ function ShelterISeek() {
                 <p>Welcome to the forbidden land.</p>
                 <p>A place where alone, you cannot stand.</p>
                 <p>Of those who've tried, all have lost:</p>
-                <p>It's a mind-blowing holocaust.</p>
+                <p>It's a mind-altering holocaust.</p>
                 <p>Fear and agony fill my brain.</p>
                 <p>Death is for the weak... I have found my pain.</p>
             </div>
@@ -28,7 +28,7 @@ function ShelterISeek() {
             </div>
             <div className={classes.stanza}>
                 <p>Shelter I seek from dangers untold.</p>
-                <p>The reek of death: I feel the bitter cold.</p>
+                <p>The reek of death: I can feel the bitter cold.</p>
                 <p>Trying to cling to memories oh so priceless,</p>
                 <p>My body wears weak and I feel so lifeless.</p>
             </div>
@@ -60,11 +60,11 @@ function ShelterISeek() {
                 <p>Welcome to the forbidden land:</p>
                 <p>A place, where alone, you cannot stand.</p>
                 <p>Of those who've tried, all have lost:</p>
-                <p>It's a mind-blowing holocaust.</p>
+                <p>It's a mind-altering holocaust.</p>
                 <p>Fear and agony fill my brain.</p>
                 <p>I must find a way home to end this brutal pain.</p>
             </div>
-            <div className={classes.date}>early summer '91</div>
+            <div className={classes.date}>early summer '99</div>
         </Card>
     );
 }

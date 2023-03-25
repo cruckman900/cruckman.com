@@ -1,22 +1,22 @@
-.dropdown {
+.dropDownToggle {
     font-size: .8rem;
-    border: none;
-    border-radius: 4px;
+    border: none !important;
+    border-radius: 4p !important;
     margin-left: 8px;
-    background-color: #d0b670;
-    color: #260000;
+    background: #d0b670 !important;
+    color: #260000 !important;
 }
 
-.dropdown:hover {
-    background-color: #b18030;
+.dropDownToggle:hover {
+    background: #b18030 !important;
 }
 
 .menu {
-    min-width: 200px;
-    background: #260000;
+    min-width: 200px !important;
+    background: #260000 !important;
 }
 
 .ddlItem {
-    color: #d0b670;
-    font-size: .7rem;
+    color: #d0b670 !important;
+    font-size: .7rem !important;
 }

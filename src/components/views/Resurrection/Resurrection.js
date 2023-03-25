@@ -30,7 +30,7 @@ function Resurrection() {
                 <p>Time has finally come to pay the toll.</p>
                 <p>Give in to your doom and hand over your soul!</p>
             </div>
-            <div className={classes.date}>early summer '91</div>
+            <div className={classes.date}>early summer '99</div>
         </Card>
     );
 }

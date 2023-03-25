@@ -146,8 +146,8 @@
     background: url('./assets/images/dragon900.png'), #260000;
     background-size: 38rem;
     background-repeat: no-repeat;
-    background-position: top right;
-    /* background-position: 25% 60%; */
+    /* background-position: top right; */
+    background-position: bottom right;
     background-attachment: fixed;
   }
   
@@ -208,6 +208,10 @@
   .RowBody {
     width: 100vw;
     height: 100vh
+  }
+
+  .Body {
+    background-position: bottom right;
   }
   
   .Right {
