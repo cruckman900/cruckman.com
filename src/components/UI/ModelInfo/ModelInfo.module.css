@@ -94,18 +94,15 @@
 @media (max-width: 1106px) and (min-width: 340px) {
     .ModelInfo {
         margin-left: 0;
+        width: 100%;
         display: block;
     }
 
-    .ImgWrapper {
+    /* .ImgWrapper {
         width: 21rem;
-    }
-    .Image {
-        width: 86px;
-    }
-
+    } */
     .ImgWidth {
-        width: 20.5rem;
+        width: 18rem;
     }
     .container {
         display: block;
