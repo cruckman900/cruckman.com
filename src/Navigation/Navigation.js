@@ -67,7 +67,7 @@ const Navigation = () => {
                     activeKey={location.pathname} 
                     justify
                   >
-                    <Nav.Link as={Link} to={"/"} href="#">
+                    <Nav.Link as={Link} to={"/"} eventKey="/" href="#">
                       <span className={styles.ddlink}><FontAwesomeIcon icon={myIcons['house']} fontSize="1.0rem" />&nbsp;&nbsp;HOME</span>
                     </Nav.Link>
                     <Nav.Link as={Link} to={"/resume"} href="/resume">

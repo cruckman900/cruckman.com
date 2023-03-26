@@ -25,50 +25,15 @@
     display: none;
 }
 
-/* @media (max-width: 1024px) and (min-width: 800px) {
-    .wrapperDiv {
-       display: flex;
-       position: absolute;
-       min-width: 100vw;
-       margin: 0px;
-       background: #260000;
-    }
-   
-    .scrollable {
-       display: inline-flex;
-    }
-   
-    .login {
-        display: block;
-    }
-
-    .login, .textGame, .weather {
-       display: inline-flex;
-       padding: 4px;
-       background: #260000;
-    }
-   } */
-
 @media (max-width: 1024px) and (min-width: 340px) {
     .wrapperDiv {
        display: inline-block;
        position: absolute;
        min-width: 100vw;
        margin: 0px;
-       background: #260000;
     }
 
     .scrollable {
         display: inline-block;
-    }
-   
-    .login, .textGame, .weather {
-       background: #260000;
-    }
-   }
-      
-@media (max-width: 339px) and (min-width: 0px) {
-    .textGame, .weather {
-        display: none;
     }
 }
