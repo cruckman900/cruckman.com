@@ -1,4 +1,4 @@
-import { React, useState } from 'react';
+import { React, useEffect, useState } from 'react';
 import classes from './Card.module.css';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -22,6 +22,13 @@ const Card = (props) => {
         setArrow('up');
         setContainerStyle('inline-block');
     }
+
+    useEffect(() => {
+        if(!props.expanded) {
+            setArrow("down");
+            setContainerStyle("none");
+        }
+    }, []);
 
     return (
         <div className={`${classes.card} ${classes.cardOuterDiv}`}>

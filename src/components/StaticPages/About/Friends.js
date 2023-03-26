@@ -12,7 +12,7 @@ function Friends() {
                 I know that this may be hard to believe, but I do have friends and aquaintances!  hehehaha  I will be listing
                 some of the skilled people that I know that allow me to post information.  I'm talking... highly skilled people!!
             </p>
-            <Card header="Cassie Lightfritz">
+            <Card header="Cassie Lightfritz" showToggle={false} expanded={true}>
                 <p>
                     I met Cassie in 2008 when I got hired on at Wheeling Jesuit University (now just Wheeling University).
                     I worked for sponsored programs, Center for Educational Technology and Challenger Learning Center.
@@ -35,7 +35,7 @@ function Friends() {
                     </a>
                 </p> 
             </Card>
-            <Card header="Silas Amunga">
+            <Card header="Silas Amunga" showToggle={false} expanded={true}>
                     <div>
                         <img src={dragon1} alt="Dragon by Silas Amunga" className={styles.bodyImage} />
                         I don't know too much about Silas yet, but he was referred to me by Cassie.  I contracted him to design the amazing

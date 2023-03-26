@@ -101,7 +101,7 @@ function TextGame(props) {
     }
 
     return (
-        <Card showToggle={false}
+        <Card showToggle={false} expanded={true}
             header="Text-based Game"
         >
             <div className={classes.container}>

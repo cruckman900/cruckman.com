@@ -102,9 +102,6 @@ const Navigation = () => {
                         <NavItem className={styles.ddlink} icon={myIcons['code']} fontSize="1.0rem"><div className={styles.floatright}>SOFTWARE DEV</div></NavItem>
                       </NavDropdown.Item>
                       <NavDropdown.Divider />
-                      <NavDropdown.Item as={Link} to={"/GitHubLinks/GitHubLinks"} eventKey="/GitHubLinks/GitHubLinks" href="#GitHubLinks">
-                        <NavItem className={styles.ddlink} icon={myIcons['codeBranch']} fontSize="1.0rem">GitHub LINKS</NavItem>
-                      </NavDropdown.Item>
                       <NavDropdown.Item as={Link} to={"/YouTubeLinks/YouTubeLinks"} eventKey="/YouTubeLinks/YouTubeLinks" href="#YouTubeLinks">
                         <NavItem className={styles.ddlink} icon={myIcons['video']} fontSize="1.0rem">YouTube LINKS</NavItem>
                       </NavDropdown.Item>
@@ -127,6 +124,10 @@ const Navigation = () => {
                       </NavDropdown.Item>
                       <NavDropdown.Item as={Link} to="/About/ThisSite" eventKey="/About/ThisSite" href="#ThisSite">
                         <NavItem className={styles.ddlink} icon={myIcons['image']} fontSize="1.0rem"><div className={styles.floatright}>THIS SITE</div></NavItem>
+                      </NavDropdown.Item>
+                      <NavDropdown.Divider />
+                      <NavDropdown.Item as={Link} to={"/GitHubLinks/GitHubLinks"} eventKey="/GitHubLinks/GitHubLinks" href="#GitHubLinks">
+                        <NavItem className={styles.ddlink} icon={myIcons['codeBranch']} fontSize="1.0rem">GitHub LINKS</NavItem>
                       </NavDropdown.Item>
                     </NavDropdown>
                 </Nav>

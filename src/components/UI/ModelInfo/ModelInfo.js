@@ -26,7 +26,7 @@ function ModelInfo(props) {
     }
     
     return (
-        <Card showToggle={true}
+        <Card showToggle={true} expanded={true}
             header={props.Title}
         >
             <div className={classes.container}>

@@ -15,3 +15,8 @@
     height: 160px;
     border-radius: 8px;
 }
+
+.code {
+    color: #cc0000;
+    font-size: 14pt;
+}
