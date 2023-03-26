@@ -9,8 +9,7 @@ function Friends() {
     return (
         <DefaultPage image={lolly_friends} title="Friends and Family">
             <p>
-                I know that this may be hard to believe, but I do have friends and aquaintances!  hehehaha  I will be listing
-                some of the skilled people that I know that allow me to post information.  I'm talking... highly skilled people!!
+                I will be listing some of the skilled people that I know that allow me to post information.
             </p>
             <Card header="Cassie Lightfritz" showToggle={false} expanded={true}>
                 <p>
