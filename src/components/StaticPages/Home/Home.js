@@ -8,7 +8,7 @@ export default class Home extends Component {
     render() {
         return (
             <DefaultPage image={lolly} title="Welcome to cruckman.com!">
-                <Card>
+                <Card showToggle={false} expanded={true}>
                     I hope to populate this site with a lot of interesting things. I will share with you tidbits
                     of information about what I have found while building this site. ReactJS is new to me, and
                     I am developing this site as I progress through a Udemy course on React using what I learn in 
@@ -16,34 +16,34 @@ export default class Home extends Component {
                 </Card>
                 <div></div>
                 <div className={styles.bodyDiv}>
-                    A friend of mine told me that this site looks like a 'throw-back Thursday' site.  Little
-                    does he know that that is exactly what I was aiming to achieve.  hehehaha
+                    A friend of mine told me that this site looks like a 'Throw-back Thursday' site.  Little
+                    does he know that that is exactly what I was aiming to achieve.  
                     I want something that looks retro, because everything on this site will be aiming at what
-                    things were like in the 90's and early 2k era.  Text-based games, early metal music, etc.
+                    things were like in the 90's and early 2k era.  Text-based games or side-scrollers, early metal music, etc.
                 </div>
                 <div className={styles.bodyDiv}>
-                    The little pink-haired cartoon girl comes from a friend that makes 'chibi' versions of people's
-                    characters in a game called Perfect World International (PWI).  I began playing this game around 
-                    2006, shortly after quitting World of Warcraft (WoW).  Money was tight, so I had to quit playing
-                    a game that was subscription-based and looked up games that were free-to-play while maintaining
-                    a similar game style equivalent to WoW.
-                </div>
-                <div className={styles.bodyDiv}>
-                    One thing that you should be aware of is that I have a Login/Register link.
-                    Why would a personal website need a login?  I plan on placing things here
-                    that not all eyes coming upon my page need to see.  I'll have graphics, writings,
-                    code samples, etc that should only be seen if you are wanting that material.  I will have
-                    items that can be purchased, shared, and/or used in whole, or in part by anyone
-                    wishing to use them.
+                    I plan on placing things here that not all eyes coming upon my page need to see just coming to the site.  
+                    I'll have graphics, writings, code samples, etc that should only be seen if you are wanting that material.  
+                    A lot of stuff will be available to be seen by anyone coming to the site, but some stuff and/or functionality
+                    will require being logged into the site.
+                    I will have items that can be purchased, shared, and/or used in whole, or in part by anyone
+                    wishing to use them.  Eventually, I want to start creating YouTube tutorials using various software.  I know that
+                    there are plenty of tutorials out there, but, I have time to kill.
                 </div>
                 <div className={styles.bodyDiv}>
                     This will also be a place where you can share materials in order to participate
-                    in things that are far larger than 1 person can partake... like building a game!
+                    in things that are far larger than 1 person can partake... like building a game!  Either we can gather
+                    people to create something or you can have your portfolio linked from my page if you are looking to
+                    contract out 'things'.
                 </div>
                 <div className={styles.bodyDiv}>
-                    And finally, I (and possibly you), hope to have people coming around asking for help,
-                    or contract works that fit my (or maybe your) skill sets.  Or maybe, we can all just hang out
-                    and chat for a while.
+                    <i>
+                        The little pink-haired cartoon girl comes from a friend that makes 'chibi' versions of people's
+                        characters in a game called Perfect World International (PWI).  I began playing this game around 
+                        2006, shortly after quitting World of Warcraft (WoW).  Money was tight, so I had to quit playing
+                        a game that was subscription-based and looked up games that were free-to-play while maintaining
+                        a similar game style equivalent to WoW.
+                    </i>
                 </div>
             </DefaultPage>
         )
