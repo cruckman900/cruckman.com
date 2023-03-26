@@ -37,9 +37,10 @@
 
 .playButton {
     display: inline;
+    text-align: start;
     margin: 1px;
     width: 100%;
-    font-size: .65rem;
+    font-size: .55rem;
     background: #d0b670;
     background: linear-gradient(0deg, #b08030, #d0b670, 80%, #b08030);
     border: solid 1px #260000;

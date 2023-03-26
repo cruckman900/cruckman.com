@@ -144,6 +144,7 @@ export default [
         options: [
             {
                 text: `Grab the knife and square off against the other 2 men.`,
+                setState: {knife: true},
                 nextText: 16
             },
             {
@@ -199,15 +200,19 @@ export default [
     {
         id: 13,
         text: `As you emerge from the last line of trees and brush, you come to a small group of grass huts and huge bonfire surrounded
-            by people.  Women, men, children all huddle around the fire.`,
+            by people.`,
         options: [
             {
-                text: `As you approach, the group of people start to notice you as you get closer.  Introduce yourself and look non-threating.`,
+                text: `The group of people start to notice you as you get closer.  Introduce yourself and look non-threating.`,
                 nextText: 23
             },
             {
                 text: `Stay near the bushes and trees in case the tribe sees you as a direct threat.`,
                 nextText: 24
+            },
+            {
+                text: `Run back into the forest hoping that they don't follow you.`,
+                nextText: 25
             }
         ]
     },
@@ -220,5 +225,5 @@ export default [
                 nextText: 0
             }
         ]
-    },
+    }
 ];

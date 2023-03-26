@@ -45,7 +45,7 @@ function TextGame(props) {
     const showTextNode = (textNodeIndex) => {
         const textNode = textNodes.find(textNode => textNode.id === textNodeIndex);
         
-        if (!textNode.options) {
+        if (!textNode) {
             gameOver("You'll have to try again when I've had time to work more on the game! Thanks for trying it out!")
             return;
         }
