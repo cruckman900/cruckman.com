@@ -1,13 +1,20 @@
 import React, { Component } from "react";
 import styles from './Home.module.css';
 import DefaultPage from "../../UI/DefaultPage/DefaultPage";
+import Card from "../../UI/Card/Card";
 import lolly from "../../../assets/images/lolly.png";
 
 export default class Home extends Component {
     render() {
         return (
             <DefaultPage image={lolly} title="Welcome to cruckman.com!">
-                <div>I hope to populate this site with a lot of interesting things.</div>
+                <Card>
+                    I hope to populate this site with a lot of interesting things. I will share with you tidbits
+                    of information about what I have found while building this site. ReactJS is new to me, and
+                    I am developing this site as I progress through a Udemy course on React using what I learn in 
+                    the tutorial to make this site run.
+                </Card>
+                <div></div>
                 <div className={styles.bodyDiv}>
                     A friend of mine told me that this site looks like a 'throw-back Thursday' site.  Little
                     does he know that that is exactly what I was aiming to achieve.  hehehaha
