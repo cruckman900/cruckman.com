@@ -4,7 +4,7 @@ import classes from './Writings.module.css';
 
 function CWInfo(props) {
     return (
-        <Card
+        <Card showToggle={false} expanded={true}
             header="Creative Writing Info"
         >
             <div className={classes.stanza}>

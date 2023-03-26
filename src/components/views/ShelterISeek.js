@@ -4,8 +4,9 @@ import classes from './Writings.module.css';
 
 function ShelterISeek() {
     return (
-        <Card className={classes.Card}>
-            <div className={`${classes.header}`}>Shelter I Seek</div>
+        <Card showToggle={false} expanded={true}
+            header="Shelter I Seek"
+        >
             <div className={classes.stanza}>
                 <p>Shelter I seek, from dangers untold.</p>
                 <p>The reek of death, I can feel the bitter cold.</p>

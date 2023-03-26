@@ -5,8 +5,9 @@ import styles from './Ellowyn.module.css';
 
 function Ellowyn() {
     return (
-        <Card className={`${classes.Card}`}>
-            <div className={`${classes.header}`}>Ellowyn &mdash; The Dragon Whisperer</div>
+        <Card showToggle={false} expanded={true}
+            header="Ellowyn &mdash; The Dragon Whisperer"
+        >
             <div className={styles.sectionTitle}>The Princess of Night</div>
             <div className={classes.stanza}>
                 Ellowyn was a winged, dark elf princess in a time where war ravaged the human world.

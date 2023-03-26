@@ -4,8 +4,9 @@ import classes from './Writings.module.css';
 
 function Volcano() {
     return (
-        <Card className={classes.Card}>
-            <div className={`${classes.header}`}>Volcano</div>
+        <Card showToggle={false} expanded={true}
+            header="Volcano"
+        >
             <div className={classes.stanza}>
                 <p>Ready to erupt,</p>
                 <p>The lava is coming.</p>

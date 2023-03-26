@@ -4,8 +4,9 @@ import classes from './Writings.module.css';
 
 function Resurrection() {
     return (
-        <Card className={classes.Card}>
-            <div className={`${classes.header}`}>Agony Has a Name</div>
+        <Card showToggle={false} expanded={true}
+            header="Agony Has a Name"
+        >
             <div className={classes.stanza}>
                 <p>You always take advantage of my nightmares</p>
                 <p>And you smash all of my hopeless dreams.</p>
