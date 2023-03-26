@@ -128,20 +128,87 @@ export default [
         text: `You hear some noises coming from the wilderness behind you.  You feel safe with your handful of rocks.`,
         options: [
             {
-                text: `Throw a rock in the direction of the noises`,
+                text: `Throw a rock in the direction of the noises.`,
                 nextText: 14
             },
             {
-                text: `You start rethinking yourself with your handful of rocks.  Something nice and heavy would make you feel safer`,
+                text: `You start rethinking yourself with your handful of rocks.  Something nice and heavy would make you feel safer.`,
                 nextText: 15
             }
         ]
     },
     {
         id: 9,
-        text: ``,
+        text: `You lunge toward the man with the knife in a furious flurry of blows and quickly subdue him.  The other 2 men 
+            just watch in awe.`,
         options: [
-
+            {
+                text: `Grab the knife and square off against the other 2 men.`,
+                nextText: 16
+            },
+            {
+                text: `Look up to see the sight of the other 2 men and then turn away and walk toward the glowing light behind you.`,
+                nextText: 17
+            }
+        ]
+    },
+    {
+        id: 10,
+        text: `You opt to go for the biggest of the 3 men.  The man in the knife seems afraid to fight, but the other 2 are looking at you
+            like a piece of meat.`,
+        options: [
+            {
+                text: `Unphased, you go for one's throat and mash him into the ground.  Not bad for a bean pole like you!  As you get up, 
+                    the other guy comes at you.`,
+                nextText: 18
+            },
+            {
+                text: `Look up at the other guy, nod, and walk away to head toward the lit area of the forest around you.`,
+                nextText: 19
+            }
+        ]
+    },
+    {
+        id: 11,
+        text: `As you lay in wait for the men in black (not the movie) to pass you by, a large, seemingly poisonous snake approaches you.`,
+        options: [
+            {
+                text: `Attempt to communicate to the snake that you are not a threat.`,
+                nextText: 20
+            },
+            {
+                text: `Snap its neck!!!`,
+                nextText: 21
+            }
+        ]
+    },
+    {
+        id: 12,
+        text: `Just as you get to a circlet of bushes hiding you from the men you hear talking, you contemplate your next course of action.`, 
+        options: [
+            {
+                text: `Wait where you are and see if you can figure out what they are talking about.`,
+                nextText: 2
+            },
+            {
+                text: `Walk out behind the bushes, introduce yourself and inquire as to whether they know what happened to you.`,
+                nextText: 22
+            }
+        ]
+    },
+    {
+        id: 13,
+        text: `As you emerge from the last line of trees and brush, you come to a small group of grass huts and huge bonfire surrounded
+            by people.  Women, men, children all huddle around the fire.`,
+        options: [
+            {
+                text: `As you approach, the group of people start to notice you as you get closer.  Introduce yourself and look non-threating.`,
+                nextText: 23
+            },
+            {
+                text: `Stay near the bushes and trees in case the tribe sees you as a direct threat.`,
+                nextText: 24
+            }
         ]
     },
     {

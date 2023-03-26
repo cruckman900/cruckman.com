@@ -23,7 +23,7 @@ function Resurrection() {
                 <p>An end to your reign must be found.</p>
                 <p>The torment has become too much to bear.</p>
                 <p>I thought it would be ok without you around.</p>
-                <p>Now that I think abou tit, I don't think you care.</p>
+                <p>Now that I think about it, I don't think you care.</p>
             </div>
             <div className={classes.stanza}>
                 <p>But I care. There was something special going on.</p>

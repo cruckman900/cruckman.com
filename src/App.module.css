@@ -64,7 +64,7 @@
 
 .Body {
   background: url('./assets/images/dragon900.png');
-  background-size: 54rem;
+  background-size: 59rem;
   background-repeat: no-repeat;
   background-position: top right;
   background-attachment: fixed;
@@ -88,7 +88,7 @@
   color: #260000;
   font-weight: 100;
   font-size: 1rem;
-  min-height: 80vh;
+  min-height: 96vh;
   width: calc(100vw - 340px - var(--scrollbar-width)) !important;
   overflow: auto;
 }
