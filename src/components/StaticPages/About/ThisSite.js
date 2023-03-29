@@ -91,7 +91,7 @@ function ThisSite() {
                         badly chopped off at the right edge of the screen.  Setting the <code className={styles.code}>drop</code> direction 
                         to <code className={styles.code}>start</code> now has the dropdown loading off to the before the dropdown link instead
                         of directly below it.  No more cutoff menu options!  Check here for this and other options available to you for 
-                        Dropdown items <a href="https://react-bootstrap.github.io/components/dropdowns/" alt="Components/Dropdowns" target="_blank" rel="noreferrer">Components/Dropdowns</a>
+                        Dropdown items <a href="https://react-bootstrap.github.io/components/dropdowns/" className={styles.link} alt="Components/Dropdowns" target="_blank" rel="noreferrer">Components/Dropdowns</a>
                     </p>
                 </Card>
             </Card>
