@@ -93,6 +93,9 @@ function ThisSite() {
                         of directly below it.  No more cutoff menu options!  Check here for this and other options available to you for 
                         Dropdown items <a href="https://react-bootstrap.github.io/components/dropdowns/" className={styles.link} alt="Components/Dropdowns" target="_blank" rel="noreferrer">Components/Dropdowns</a>
                     </p>
+                    <p>
+                        Check out my GitHub repository for Navigation.js to see this in code.
+                    </p>
                 </Card>
             </Card>
         </DefaultPage>
