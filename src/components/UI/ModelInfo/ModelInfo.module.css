@@ -36,18 +36,19 @@
 }
 
 .ModelInfo {
-    float: inline-end;
+    display: inline;
+    /* float: inline-end; */
     margin-left: 12px;
-    width: 100vw;
+    width: 100%;
 }
 
 .ObjectDetail {
-    float: left;
-    display: block;
+    /* float: left; */
+    display: inline-block;
 }
 
 .Request {
-    display: block;
+    display: inline;
     width: 100%;
 }
 

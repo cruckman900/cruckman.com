@@ -20,7 +20,7 @@ function Resurrection() {
                 <p>You begin to sing!</p>
             </div>
             <div className={classes.stanza}>
-                <p>Keep yp with the band...</p>
+                <p>Keep up with the band...</p>
                 <p>Play the fastest lead!</p>
                 <p>Feel the power in your hand...</p>
                 <p>Touch the music being freed!</p>
