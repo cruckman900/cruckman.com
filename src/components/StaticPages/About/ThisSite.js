@@ -72,7 +72,7 @@ function ThisSite() {
                     </p>
                 </Card>
             </Card>
-            <Card header="DropDown" showToggle={true} expanded={false}>
+            <Card header="Dropdown" showToggle={true} expanded={false}>
                 <Card header="Styling" showToggle={false} expanded={true}>
                     <p>
                         This was a head-scratcher for sure.  Seemingly, you can style this object rather easily, but
@@ -82,6 +82,16 @@ function ThisSite() {
                     </p>
                     <p>
                         Check out my GitHub repository in the files related to CreativeWriting.js and its .css file for a better understanding.
+                    </p>
+                </Card>
+                <Card header="Dropdown Direction" showToggle={false} expanded={true}>
+                    <p>
+                        I didn't have to look too hard for this, but it was a fix that I didn't think about when designing the menu system.
+                        Look at what my app looks like in landscape mode on a smart phone, the About menu would expand normally, but was 
+                        badly chopped off at the right edge of the screen.  Setting the <code className={styles.code}>drop</code> direction 
+                        to <code className={styles.code}>start</code> now has the dropdown loading off to the before the dropdown link instead
+                        of directly below it.  No more cutoff menu options!  Check here for this and other options available to you for 
+                        Dropdown items <a href="https://react-bootstrap.github.io/components/dropdowns/" alt="Components/Dropdowns" target="_blank" rel="noreferrer">Components/Dropdowns</a>
                     </p>
                 </Card>
             </Card>

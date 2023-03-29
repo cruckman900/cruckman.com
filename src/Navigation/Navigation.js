@@ -77,6 +77,7 @@ const Navigation = () => {
                       menuVariant='dark'
                       eventKey="Interests"
                       activeKey={location.pathname}
+                      drop="start"
                       title={<span className={styles.ddlink}><FontAwesomeIcon icon={myIcons['icons']} fontSize="1.0rem" />&nbsp;&nbsp;INTERESTS</span>}
                       id={`offcanvasNavbarDropdown-expand-${expand}`}
                     >
@@ -110,6 +111,7 @@ const Navigation = () => {
                       menuVariant='dark'
                       title={<span className={styles.ddlink}><FontAwesomeIcon icon={myIcons['question']} fontSize="1.0rem" />&nbsp;&nbsp;ABOUT</span>}
                       activeKey={location.pathname}
+                      drop="start"
                       id={`offcanvasNavbarDropdown-expand-${expand}`}
                     >
                       <NavDropdown.Item as={Link} to="/About/Me" eventKey="/About/Me" href="#Me" style={{minWidth:'250px', width: '15vw'}}>
