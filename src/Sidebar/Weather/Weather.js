@@ -47,7 +47,7 @@ function Weather(props) {
             } else {
                 setIsDaytime(false);
             }
-        }, 6000);
+        }, 30000);
 
         return () => {
             clearTimeout(identifier);
@@ -81,7 +81,7 @@ function Weather(props) {
             } else {
                 console.log("weather api", "not getting data");
             }
-        }, 60000);
+        }, 30000);
 
         return () => {
             clearTimeout(identifier);
