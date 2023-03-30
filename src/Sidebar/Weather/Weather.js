@@ -8,8 +8,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCoffee } from '@fortawesome/free-solid-svg-icons/faCoffee';
 import { faSun, faMoon, faCloudSun, faCloudMoon, faCloudSunRain, faCloudMoonRain, faSmog, faSnowflake, faCloudBolt } from "@fortawesome/free-solid-svg-icons";
 
-import { faChevronUp, faChevronDown } from '@fortawesome/free-solid-svg-icons';
-
 function Weather(props) {
     const url = 'https://api.open-meteo.com/v1/forecast';
     const lat = 'latitude=40.183277';
@@ -35,9 +33,7 @@ function Weather(props) {
         cloudMoonRain: faCloudMoonRain,
         cloudBolt: faCloudBolt,
         smog: faSmog,
-        snowflake: faSnowflake,
-        up: faChevronUp, 
-        down: faChevronDown    
+        snowflake: faSnowflake
     };
 
     const [isDaytime, setIsDaytime] = useState('sun');
@@ -145,10 +141,10 @@ function Weather(props) {
     }
 
     function tempColor(temp) {
-        if (temp > 72) return 'red';
+        if (temp >= 72) return 'red';
         if (temp < 72 && temp > 64) return 'orangered';
-        if (temp > 50 && temp < 65) return 'goldenrod';
-        if (temp < 51) return 'darkblue';
+        if (temp >= 50 && temp <= 64) return 'goldenrod';
+        if (temp < 49) return 'darkblue';
     }
 
     useEffect(() => {
