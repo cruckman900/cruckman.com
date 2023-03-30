@@ -15,7 +15,7 @@ function GitHubLinks() {
                 I have created.
             </p>
 
-            <Card header="My Marvel Comic Collection">
+            <Card header="My Marvel Comic Collection" showToggle={false} expanded={true}>
                 <p>
                     It's an older project.  I am not sure if it will be helpful as a teaching tool.  What you could do
                     is download it and either upgrade it, or develop in it as is.  A challenging exercise for someone, would
@@ -35,7 +35,7 @@ function GitHubLinks() {
                 </p>
             </Card>
 
-            <Card header="cruckman.com">
+            <Card header="cruckman.com" showToggle={false} expanded={true}>
                 <p>
                     I am currently teaching myself ReactJS.  My site consists of everything that I have learned so far, and as I learn more about React,
                     I will be adding content to my site that incorporates it!  So, if you keep checking in GitHub for changes, take a look!  
