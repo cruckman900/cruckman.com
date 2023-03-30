@@ -1,6 +1,6 @@
 import React from "react";
 import { Nav, Navbar, NavDropdown, Offcanvas }from 'react-bootstrap';
-import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 import { Container } from 'react-bootstrap';
 

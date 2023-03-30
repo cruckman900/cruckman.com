@@ -112,31 +112,31 @@ function Weather(props) {
 
     function getWeatherInterpretation(code) {
         switch(code) {
-            case 1: setObj({text: 'Mainly Clear', icon: isDaytime && 'sun' || 'moon', className: classes.iconHot}); break;
-            case 2: setObj({text: 'Partly Cloudy', icon: isDaytime && 'cloudSun' || 'cloudMoon', className: classes.iconSlightGrey}); break;
+            case 1: setObj({text: 'Mainly Clear', icon: isDaytime ? 'sun' : 'moon', className: classes.iconHot}); break;
+            case 2: setObj({text: 'Partly Cloudy', icon: isDaytime ? 'cloudSun' : 'cloudMoon', className: classes.iconSlightGrey}); break;
             case 3: setObj({text: 'Overcast', icon: 'cloud', className: classes.iconGrey}); break;
             case 45: setObj({text: 'Fog', icon: 'smog', className: classes.iconGrey}); break;
-            case 51: setObj({text: 'Light Drizzle', icon: isDaytime && 'cloudSunRain' || 'cloudMoonRain', className: classes.iconGrey}); break;
-            case 53: setObj({text: 'Moderate Drizzle', icon: isDaytime && 'cloudSunRain' || 'cloudMoonRain', className: classes.iconGrey}); break;
-            case 55: setObj({text: 'Dense Drizzle', icon: isDaytime && 'cloudSunRain' || 'cloudMoonRain', className: classes.iconGrey}); break;
-            case 56: setObj({text: 'Light Freezing Drizzle', icon: isDaytime && 'cloudSunRain' || 'cloudMoonRain', className: classes.iconGrey}); break;
-            case 57: setObj({text: 'Dense Freezing Drizzle', icon: isDaytime && 'cloudSunRain' || 'cloudMoonRain', className: classes.iconGrey}); break;
-            case 61: setObj({text: 'Slight Rain', icon: isDaytime && 'cloudSunRain' || 'cloudMoonRain', className: classes.iconGrey}); break;
-            case 63: setObj({text: 'Moderate Rain', icon: isDaytime && 'cloudSunRain' || 'cloudMoonRain', className: classes.iconGrey}); break;
-            case 65: setObj({text: 'Heavy Rain', icon: isDaytime && 'cloudSunRain' || 'cloudMoonRain', className: classes.iconGrey}); break;
-            case 66: setObj({text: 'Light Freezing Rain', icon: isDaytime && 'cloudSunRain' || 'cloudMoonRain', className: classes.iconGrey}); break;
-            case 67: setObj({text: 'Heavy Freezing Rain', icon: isDaytime && 'cloudSunRain' || 'cloudMoonRain', className: classes.iconGrey}); break;
+            case 51: setObj({text: 'Light Drizzle', icon: isDaytime ? 'cloudSunRain' : 'cloudMoonRain', className: classes.iconGrey}); break;
+            case 53: setObj({text: 'Moderate Drizzle', icon: isDaytime ? 'cloudSunRain' : 'cloudMoonRain', className: classes.iconGrey}); break;
+            case 55: setObj({text: 'Dense Drizzle', icon: isDaytime ? 'cloudSunRain' : 'cloudMoonRain', className: classes.iconGrey}); break;
+            case 56: setObj({text: 'Light Freezing Drizzle', icon: isDaytime ? 'cloudSunRain' : 'cloudMoonRain', className: classes.iconGrey}); break;
+            case 57: setObj({text: 'Dense Freezing Drizzle', icon: isDaytime ? 'cloudSunRain' : 'cloudMoonRain', className: classes.iconGrey}); break;
+            case 61: setObj({text: 'Slight Rain', icon: isDaytime ? 'cloudSunRain' : 'cloudMoonRain', className: classes.iconGrey}); break;
+            case 63: setObj({text: 'Moderate Rain', icon: isDaytime ? 'cloudSunRain' : 'cloudMoonRain', className: classes.iconGrey}); break;
+            case 65: setObj({text: 'Heavy Rain', icon: isDaytime ? 'cloudSunRain' : 'cloudMoonRain', className: classes.iconGrey}); break;
+            case 66: setObj({text: 'Light Freezing Rain', icon: isDaytime ? 'cloudSunRain' : 'cloudMoonRain', className: classes.iconGrey}); break;
+            case 67: setObj({text: 'Heavy Freezing Rain', icon: isDaytime ? 'cloudSunRain' : 'cloudMoonRain', className: classes.iconGrey}); break;
             case 71: setObj({text: 'Slight Snow Fall', icon: 'snowflake', className: classes.iconBlue}); break;
             case 73: setObj({text: 'Moderate Snow Fall', icon: 'snowflake', className: classes.iconBlue}); break;
             case 75: setObj({text: 'Heavy Snow Fall', icon: 'snowflake', className: classes.iconBlue}); break;
             case 77: setObj({text: 'Snow Grains', icon: 'snowflake', className: classes.iconBlue}); break;
-            case 80: setObj({text: 'Slight Rain Showers', icon: isDaytime && 'cloudSunRain' || 'cloudMoonRain', className: classes.iconGrey}); break;
-            case 81: setObj({text: 'Moderate Rain Showers', icon: isDaytime && 'cloudSunRain' || 'cloudMoonRain', className: classes.iconGrey}); break;
-            case 82: setObj({text: 'Violent Rain Showers', icon: isDaytime && 'cloudSunRain' || 'cloudMoonRain', className: classes.iconGrey}); break;
+            case 80: setObj({text: 'Slight Rain Showers', icon: isDaytime ? 'cloudSunRain' : 'cloudMoonRain', className: classes.iconGrey}); break;
+            case 81: setObj({text: 'Moderate Rain Showers', icon: isDaytime ? 'cloudSunRain' : 'cloudMoonRain', className: classes.iconGrey}); break;
+            case 82: setObj({text: 'Violent Rain Showers', icon: isDaytime ? 'cloudSunRain' : 'cloudMoonRain', className: classes.iconGrey}); break;
             case 85: setObj({text: 'Slight Snow Showers', icon: 'snowflake', className: classes.iconBlue}); break;
             case 86: setObj({text: 'Heavy Snow Showers', icon: 'snowflake', className: classes.iconBlue}); break;
             case 95: setObj({text: 'Slight or Moderate Thunderstorm', icon: 'cloudBolt', className: classes.iconGrey}); break;
-            default: setObj({text: 'Clear Sky', icon: isDaytime && 'sun' || 'moon', className: classes.iconHot});
+            default: setObj({text: 'Clear Sky', icon: isDaytime ? 'sun' : 'moon', className: classes.iconHot});
         }
     }
 
