@@ -52,7 +52,7 @@ function Weather(props) {
         return () => {
             clearTimeout(identifier);
         }
-    }, [isDaytime]);
+    }, []);
 
     function getForecast() {
         axios({
