@@ -70,18 +70,16 @@ const Navigation = () => {
                     <Nav.Link as={Link} to={"/"} eventKey="/" href="#">
                       <span className={styles.ddlink}><FontAwesomeIcon icon={myIcons['house']} fontSize="1.0rem" />&nbsp;&nbsp;HOME</span>
                     </Nav.Link>
-                    <Nav.Link as={Link} to={"/resume"} href="/resume">
+                    <Nav.Link as={Link} to={"/resume"} href="#Resume">
                       <span className={styles.ddlink}><FontAwesomeIcon icon={myIcons['book']} fontSize="1.0rem" />&nbsp;&nbsp;R&#201;SUM&#201;</span>
                     </Nav.Link>
                     <NavDropdown
                       menuVariant='dark'
-                      eventKey="Interests"
-                      activeKey={location.pathname}
                       drop="start"
                       title={<span className={styles.ddlink}><FontAwesomeIcon icon={myIcons['icons']} fontSize="1.0rem" />&nbsp;&nbsp;INTERESTS</span>}
                       id={`offcanvasNavbarDropdown-expand-${expand}`}
                     >
-                      <NavDropdown.Item as={Link} to="/2D3DArt/2D3DArt" eventKey="/2D3DArt/2D3DArt" href="/2D3DArt" style={{minWidth:'250px', width: '15vw'}}>
+                      <NavDropdown.Item as={Link} to="/2D3DArt/2D3DArt" eventKey="/2D3DArt/2D3DArt" href="#2D3DArt" style={{minWidth:'250px', width: '15vw'}}>
                         <NavItem className={styles.ddlink} icon={myIcons['image']} fontSize="1.0rem"><div className={styles.floatright}>2D/3D Art</div></NavItem>
                       </NavDropdown.Item>
                       <NavDropdown.Item as={Link} to={"/Music/Music"} eventKey="/Music/Music" href="#Music">
@@ -110,7 +108,6 @@ const Navigation = () => {
                     <NavDropdown
                       menuVariant='dark'
                       title={<span className={styles.ddlink}><FontAwesomeIcon icon={myIcons['question']} fontSize="1.0rem" />&nbsp;&nbsp;ABOUT</span>}
-                      activeKey={location.pathname}
                       drop="start"
                       id={`offcanvasNavbarDropdown-expand-${expand}`}
                     >
