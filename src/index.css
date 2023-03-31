@@ -32,9 +32,10 @@ code {
 
 .dropdown-toggle.nav-link::before {
   color: #eebb5a !important;
+  margin-right: .5rem !important;
 }
 
 .dropdown-item.active, .nav-link.active {
-  background: #b18030 !important;
+  background: #260000 !important;
   border: solid 1px #eebb5a !important;
 }
