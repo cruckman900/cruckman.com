@@ -54,7 +54,7 @@
 }
 
 .RowBody {
-  padding-top: 4rem;
+  padding-top: 4.5rem;
   position: fixed;
   overflow: auto;
   height: 96vh;
@@ -95,8 +95,6 @@
 
 .ColLeft {
   position: fixed;
-  /* background: linear-gradient(180deg, #000000, #260000 20%, #000000 );
-  background-attachment: fixed; */
   color: #b18030;
 }
 
