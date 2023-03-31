@@ -28,3 +28,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.dropdown-toggle.nav-link::before {
+  color: #eebb5a !important;
+}
+
+.dropdown-item.active, .nav-link.active {
+  background: #b18030 !important;
+  border: solid 1px #eebb5a !important;
+}

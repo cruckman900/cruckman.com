@@ -69,7 +69,7 @@ const Navigation = () => {
                     <Nav.Link as={Link} to={"/"} eventKey="/" href="#">
                       <span className={styles.ddlink}><FontAwesomeIcon icon={myIcons['house']} fontSize="1.0rem" />&nbsp;&nbsp;HOME</span>
                     </Nav.Link>
-                    <Nav.Link as={Link} to={"/resume"} href="#Resume">
+                    <Nav.Link as={Link} to={"/resume"} href="/resume">
                       <span className={styles.ddlink}><FontAwesomeIcon icon={myIcons['book']} fontSize="1.0rem" />&nbsp;&nbsp;R&#201;SUM&#201;</span>
                     </Nav.Link>
                     <NavDropdown
