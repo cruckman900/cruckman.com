@@ -101,7 +101,6 @@ function Weather(props) {
     };
 
     function getWeatherInterpretation(code) {
-        console.log(code);
         switch(code) {
             case 0: setObj({text: 'Clear Sky', icon: isDaytime ? 'sun' : 'moon', className: classes.iconHot}); break;
             case 1: setObj({text: 'Mainly Clear', icon: isDaytime ? 'sun' : 'moon', className: classes.iconHot}); break;
