@@ -55,27 +55,21 @@ function Weather(props) {
         })
         .then((response) => {
             setData(response.data.current_weather);
-           })
+            getWeatherInterpretation(data.weathercode);
+        })
         .catch((error) => {
             setData(error);
         });
     };
 
     useEffect(() => {
-        const identifier = setInterval(getForecast, 15000);
-        getWeatherInterpretation(data);
-        clearInterval(identifier);
+        getForecast()
     }, []);
 
     useEffect(() => {
         const identifier = setTimeout(() => {
             getTimeOfDay();
             getForecast();
-            if(!data === null) {
-                getWeatherInterpretation(data.weathercode);
-            } else {
-                console.log("weather api", "not getting data");
-            }
         }, 30000);
 
         return () => {
@@ -109,7 +103,7 @@ function Weather(props) {
         switch(code) {
             case 1: setObj({text: 'Mainly Clear', icon: isDaytime ? 'sun' : 'moon', className: classes.iconHot}); break;
             case 2: setObj({text: 'Partly Cloudy', icon: isDaytime ? 'cloudSun' : 'cloudMoon', className: classes.iconSlightGrey}); break;
-            case 3: setObj({text: 'Overcast', icon: 'cloud', className: classes.iconGrey}); break;
+            case 3: setObj({text: 'Overcast', icon: isDaytime ? 'cloudSun' : 'cloudMoon', className: classes.iconGrey}); break;
             case 45: setObj({text: 'Fog', icon: 'smog', className: classes.iconGrey}); break;
             case 51: setObj({text: 'Light Drizzle', icon: isDaytime ? 'cloudSunRain' : 'cloudMoonRain', className: classes.iconGrey}); break;
             case 53: setObj({text: 'Moderate Drizzle', icon: isDaytime ? 'cloudSunRain' : 'cloudMoonRain', className: classes.iconGrey}); break;
