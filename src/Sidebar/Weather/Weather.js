@@ -21,7 +21,7 @@ function Weather(props) {
     const APIURL = `${url}?${lat}&${lng}&${currWeather}&${hourly}&${tempUnit}&${windUnit}&${precipUnit}`;
 
     const [data, setData] = useState(null);
-    const [obj, setObj] = useState({text: 'Oops!', icon: 'coffee', className: 'hot'});
+    const [obj, setObj] = useState({text: 'Loading', icon: 'coffee', className: classes.iconSlightGrey});
 
     const myIcons = {
         coffee: faCoffee,
@@ -37,6 +37,11 @@ function Weather(props) {
     };
 
     const [isDaytime, setIsDaytime] = useState(true);
+
+    useEffect(() => {
+        getTimeOfDay();
+        getForecast();
+    }, []);
 
     useEffect(() => {
         const identifier = setTimeout(() => {
@@ -66,7 +71,7 @@ function Weather(props) {
     function getTimeOfDay() {
         const today = new Date();
         const hour = today.getHours();
-        if (hour > 6 && hour < 17) {
+        if (hour >= 6 && hour <= 18) {
             setIsDaytime(true);
             return;
         }
@@ -91,12 +96,14 @@ function Weather(props) {
         } else if (code < 360) {
             return 'SE';
         } else {
-            return 'NaN';
+            return 'N/A';
         };
     };
 
     function getWeatherInterpretation(code) {
+        console.log(code);
         switch(code) {
+            case 0: setObj({text: 'Clear Sky', icon: isDaytime ? 'sun' : 'moon', className: classes.iconHot}); break;
             case 1: setObj({text: 'Mainly Clear', icon: isDaytime ? 'sun' : 'moon', className: classes.iconHot}); break;
             case 2: setObj({text: 'Partly Cloudy', icon: isDaytime ? 'cloudSun' : 'cloudMoon', className: classes.iconSlightGrey}); break;
             case 3: setObj({text: 'Overcast', icon: isDaytime ? 'cloudSun' : 'cloudMoon', className: classes.iconGrey}); break;
@@ -121,14 +128,14 @@ function Weather(props) {
             case 85: setObj({text: 'Slight Snow Showers', icon: 'snowflake', className: classes.iconBlue}); break;
             case 86: setObj({text: 'Heavy Snow Showers', icon: 'snowflake', className: classes.iconBlue}); break;
             case 95: setObj({text: 'Slight or Moderate Thunderstorm', icon: 'cloudBolt', className: classes.iconGrey}); break;
-            default: setObj({text: 'Clear Sky', icon: isDaytime ? 'sun' : 'moon', className: classes.iconHot});
+            default: setObj({text: 'Loading', icon: 'coffee', className: classes.iconHot});
         }
     }
 
     function tempColor(temp) {
         if (temp >= 72) return 'red';
         if (temp < 72 && temp > 64) return 'orangered';
-        if (temp >= 50 && temp <= 64) return 'goldenrod';
+        if (temp >= 50 && temp <= 64) return 'yellow';
         if (temp < 49) return 'darkblue';
     }
 
@@ -146,7 +153,7 @@ function Weather(props) {
                     </Col>
                     <Col className={classes.nudgeDown50}>
                         <div className={classes.interpret}>{obj.text}</div>
-                        <div className={classes.windspeed}><span>{data.windspeed} mph</span><span>&nbsp;</span><span>{getDirection(data.winddirection)}</span></div>
+                        <div className={classes.windspeed}><span>{!data.windspeed ? 1000 : data.windspeed} mph</span><span>&nbsp;</span><span>{getDirection(data.winddirection)}</span></div>
                     </Col>
                 </Row>
             </Container>

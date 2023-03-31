@@ -1,11 +1,3 @@
-/* .LeftColumn {
-    background: #b18030;
-    border: solid 1px #b18030;
-    color: #260000;
-    height: 130px
-} */
-
-
 .container {
     margin-top: 1px;
     width: 290px;
@@ -25,18 +17,6 @@
 
 .windspeed {
     color: #260000;
-}
-
-.blue {
-    color: blue;
-}
-
-.orange {
-    color: orange;
-}
-
-.red {
-    color: red;
 }
 
 .iconSlightGrey {
