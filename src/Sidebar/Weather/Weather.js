@@ -38,15 +38,16 @@ function Weather(props) {
 
     const [isDaytime, setIsDaytime] = useState(true);
 
-    function getTimeOfDay() {
-        const today = new Date();
-        const hour = today.getHours();
-        if (hour > 6 && hour < 17) {
-            setIsDaytime(true);
-            return;
+    useEffect(() => {
+        const identifier = setTimeout(() => {
+            getTimeOfDay();
+            getForecast();
+        }, 6000);
+
+        return () => {
+            clearTimeout(identifier);
         }
-        setIsDaytime(false);
-    }
+    }, [data, obj]);
 
     function getForecast() {
         axios({
@@ -62,20 +63,15 @@ function Weather(props) {
         });
     };
 
-    useEffect(() => {
-        getForecast()
-    }, []);
-
-    useEffect(() => {
-        const identifier = setTimeout(() => {
-            getTimeOfDay();
-            getForecast();
-        }, 30000);
-
-        return () => {
-            clearTimeout(identifier);
+    function getTimeOfDay() {
+        const today = new Date();
+        const hour = today.getHours();
+        if (hour > 6 && hour < 17) {
+            setIsDaytime(true);
+            return;
         }
-    }, [data, obj]);
+        setIsDaytime(false);
+    }
 
     function getDirection(code) {
         if (code === 0 || code === 360) {
@@ -135,10 +131,6 @@ function Weather(props) {
         if (temp >= 50 && temp <= 64) return 'goldenrod';
         if (temp < 49) return 'darkblue';
     }
-
-    useEffect(() => {
-        getForecast();
-    }, []);
 
     if (data !== null) return (
     

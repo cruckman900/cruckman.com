@@ -57,7 +57,7 @@ export default function Waveform() {
                 progressColor: '#eebb5a',
                 responsive: true,
                 waveColor: '#260000',
-                cursorColor: 'transparent'
+                cursorColor: '#d0b670'
             }));
         } else {
             console.log("there is no reference to the div element");
@@ -67,16 +67,23 @@ export default function Waveform() {
     useEffect(() => {
         if (waveform) {
             waveform.load(trackRef.current);
+            waveform.on('finish', () => {endedHandler()});
         }
     }, [songChoice]);
 
     const changeHandler = (evt) => {
+        setPlayPause(false);
         setSong(evt);
     }
 
     const handlePlay = () => {
         setPlayPause(!playing);
         waveform.playPause();
+    }
+
+    const endedHandler = () => {
+        changeHandler(songChoice);
+        waveform.load(trackRef.current);
     }
 
     return (
