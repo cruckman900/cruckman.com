@@ -114,7 +114,7 @@ const Navigation = () => {
                         <NavItem className={styles.ddlink} icon={myIcons['image']} fontSize="1.0rem"><div className={styles.floatright}>JUST ME</div></NavItem>
                       </NavDropdown.Item>
                       <NavDropdown.Item as={Link} to="/About/Friends" eventKey="/About/Friends" href="#Friends">
-                        <NavItem className={styles.ddlink} icon={myIcons['image']} fontSize="1.0rem"><div className={styles.floatright}>FRIENDS and FAMILY</div></NavItem>
+                        <NavItem className={styles.ddlink} icon={myIcons['image']} fontSize="1.0rem"><div className={styles.floatright}>FRIENDS/FAMILY</div></NavItem>
                       </NavDropdown.Item>
                       <NavDropdown.Divider />
                       <NavDropdown.Item as={Link} to="/About/Portfolio" eventKey="/About/Portfolio" href="#Portfolio">

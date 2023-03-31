@@ -31,6 +31,8 @@
 }
 
 .ddlink {
+    display: inline-flex;
+    justify-content: left;
     font-family: 'AGoblinAppears';
     font-size: 9pt;
     color: #eebb5a;
@@ -57,12 +59,5 @@ hr {
 
     .onlyMobile {
         display: inline-block;
-    }
-
-    .ddlink {
-        padding: 3px;
-        display: flex;
-        justify-content: left;
-        align-items: top;
     }
 }

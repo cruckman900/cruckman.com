@@ -83,7 +83,7 @@ export default function Waveform() {
 
     const endedHandler = () => {
         changeHandler(songChoice);
-        waveform.load(trackRef.current);
+        waveform.load(trackRef.current)       
     }
 
     return (
