@@ -47,12 +47,12 @@ function Weather(props) {
             } else {
                 setIsDaytime(false);
             }
-        }, 30000);
+        }, 6000);
 
         return () => {
             clearTimeout(identifier);
         }
-    }, []);
+    }, [data]);
 
     function getForecast() {
         axios({

@@ -1,0 +1,29 @@
+.waveformContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+    background: transparent;
+    overflow: hidden;
+}
+
+.playButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 30px;
+    background: #260000;
+    color: #eebb5a;
+    border-radius: 25%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding-bottom: 3px;
+}
+
+.playButton:hover {
+    background: #b18030;
+}

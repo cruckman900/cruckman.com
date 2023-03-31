@@ -1,13 +1,7 @@
 import React from "react";
 
 import DefaultPage from "../../UI/DefaultPage/DefaultPage";
-import Player from '../../UI/Player/Player';
-import MasterOfPuppets from '../../../assets/audio/ChrisRuckman_MasterOfPuppets.mp3';
-import EnterSandman from '../../../assets/audio/ChrisRuckman_EnterSandman.mp3';
-import SetTheWorldAfire from '../../../assets/audio/ChrisRuckman_SetTheWorldAfire.mp3';
-import HighwayToHell from '../../../assets/audio/ChrisRuckman_HighwayToHell.mp3';
-import HotelCalifornia from '../../../assets/audio/ChrisRuckman_HotelSomethingOrOther.mp3';
-import Sanitarium from '../../../assets/audio/ChrisRuckman_WelcomeHome(Sanitarium).mp3';
+import Waveform from "./Waveform";
 
 import guitars from "../../../assets/images/myGuitars.jpg";
 
@@ -45,32 +39,8 @@ function Music() {
                             list as time permits.
                         </p>
                 </div>
-                <div className={styles.Song}>
-                    <div className={styles.songContainer}>
-                        <div className={styles.colText}>AC/DC - Highway To Hell</div>
-                        <div className={styles.float}><Player url={HighwayToHell} /></div>
-                    </div>
-                    <div className={styles.songContainer}>
-                        <div className={styles.colText}>Eagles - Hotel California</div>
-                        <div className={styles.float}><Player url={HotelCalifornia} /></div>
-                    </div>
-                    <div className={styles.songContainer}>
-                        <div className={styles.colText}>MegaDeth - Set The World Afire</div>
-                        <div className={styles.float}><Player url={SetTheWorldAfire} /></div>                
-                    </div>
-                    <div className={styles.songContainer}>
-                        <div className={styles.colText}>Metallica - Master of Puppets</div>
-                        <div className={styles.float}><Player url={MasterOfPuppets} /></div>
-                    </div>
-                    <div className={styles.songContainer}>
-                        <div className={styles.colText}>Metallica - Enter Sandman</div>
-                        <div className={styles.float}><Player url={EnterSandman} /></div>
-                    </div>
-                    <div className={styles.songContainer}>
-                        <div className={styles.colText}>Metallica - Welcome Home (Sanitarium)</div>
-                        <div className={styles.float}><Player url={Sanitarium} /></div>
-                    </div>
-                </div>
+
+                <Waveform />
             </DefaultPage>
         </>
     );

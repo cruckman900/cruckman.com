@@ -35,7 +35,6 @@ const Navigation = () => {
   }
 
   const location = useLocation();
-  console.log('LOCATION', location);
 
   return (
       <>

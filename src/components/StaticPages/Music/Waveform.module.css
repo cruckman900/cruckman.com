@@ -1,0 +1,30 @@
+.wave {
+    display: inline;
+    margin-left: 0.5rem;
+    width: 100%;
+    height: 5rem;
+    overflow: hidden;
+}
+
+.dropDownToggle {
+    font-size: 9pt !important;
+    border: none !important;
+    border-radius: 4p !important;
+    margin-left: 8px;
+    background: #d0b670 !important;
+    color: #260000 !important;
+}
+
+.dropDownToggle:hover {
+    background: #b18030 !important;
+}
+
+.menu {
+    min-width: 200px !important;
+    background: #260000 !important;
+}
+
+.ddlItem {
+    color: #d0b670 !important;
+    font-size: .7rem !important;
+}
