@@ -36,7 +36,7 @@ function Weather(props) {
         snowflake: faSnowflake
     };
 
-    const [isDaytime, setIsDaytime] = useState('sun');
+    const [isDaytime, setIsDaytime] = useState(true);
 
     function getTimeOfDay() {
         const today = new Date();
