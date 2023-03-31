@@ -63,13 +63,13 @@ function Weather(props) {
 
     useEffect(() => {
         const identifier = setInterval(getForecast, 15000);
-        getTimeOfDay();
         getWeatherInterpretation(data);
         clearInterval(identifier);
     }, []);
 
     useEffect(() => {
         const identifier = setTimeout(() => {
+            getTimeOfDay();
             getForecast();
             if(!data === null) {
                 getWeatherInterpretation(data.weathercode);
