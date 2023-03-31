@@ -38,21 +38,15 @@ function Weather(props) {
 
     const [isDaytime, setIsDaytime] = useState('sun');
 
-    useEffect(() => {
-        const identifier = setTimeout(() => {
-            const today = new Date();
-            const hour = today.getHours();
-            if (hour > 6 && hour < 17) {
-                setIsDaytime(true);
-            } else {
-                setIsDaytime(false);
-            }
-        }, 6000);
-
-        return () => {
-            clearTimeout(identifier);
+    function getTimeOfDay() {
+        const today = new Date();
+        const hour = today.getHours();
+        if (hour > 6 && hour < 17) {
+            setIsDaytime(true);
+            return;
         }
-    }, [data]);
+        setIsDaytime(false);
+    }
 
     function getForecast() {
         axios({
@@ -68,7 +62,8 @@ function Weather(props) {
     };
 
     useEffect(() => {
-        const identifier = setInterval(getForecast, 100);
+        const identifier = setInterval(getForecast, 15000);
+        getTimeOfDay();
         getWeatherInterpretation(data);
         clearInterval(identifier);
     }, []);
