@@ -137,17 +137,7 @@
     display: inline-block;
   }
   
-  /* .Body {
-    background: url('./assets/images/dragon900.png'), #260000;
-    background-size: 38rem;
-    background-repeat: no-repeat;
-    background-position: top right;
-    background-attachment: fixed;
-  } */
-  
   .ColLeft {
-    /* background: linear-gradient(180deg, #000000, #260000 20%, #000000 );
-    border: solid 1px #d0b670; */
     height: 91vh;
     z-index: 5;
     position: absolute;
@@ -157,12 +147,6 @@
     display: flex;
     justify-content: center;
   }
-
-  /* .ColRight {
-    left: 20rem;
-    min-width: 20rem;
-    max-width: 70rem;
-  } */
 
   .fixed {
     position: relative;
@@ -202,7 +186,7 @@
   .RightShow {
     display: inline-block;
   }
-  
+
   .RightHide {
     display: none;
   }
@@ -225,9 +209,11 @@
   .buttonHolder {
     display: inline-block;
   }
+
   .RightShow {
     display: inline-block;
   }
+
   .RightHide {
     display: none;
   }
@@ -237,6 +223,7 @@
   * {
     display: none;
   }
+  
   .angry {
     display: block;
     width: calc(100vw - var(--scrollbar-width));
@@ -244,7 +231,7 @@
 }
 
 @media print {
-  .ColLeft {
+  * {
     display: none;
   }
 }
