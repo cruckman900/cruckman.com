@@ -54,20 +54,18 @@
 }
 
 .RowBody {
+  background: url('./assets/images/dragon900.png');
+  background-size: 59rem;
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-attachment: fixed;
+
   padding-top: 4.1rem;
   position: fixed;
   overflow: auto;
   height: 96vh;
   width: calc(100vw - var(--scrollbar-width));
   display: flex;
-}
-
-.Body {
-  background: url('./assets/images/dragon900.png');
-  background-size: 59rem;
-  background-repeat: no-repeat;
-  background-position: top right;
-  background-attachment: fixed;
 }
 
 .Right {
@@ -139,14 +137,13 @@
     display: inline-block;
   }
   
-  .Body {
+  /* .Body {
     background: url('./assets/images/dragon900.png'), #260000;
     background-size: 38rem;
     background-repeat: no-repeat;
-    /* background-position: top right; */
-    background-position: bottom right;
+    background-position: top right;
     background-attachment: fixed;
-  }
+  } */
   
   .ColLeft {
     /* background: linear-gradient(180deg, #000000, #260000 20%, #000000 );
@@ -173,6 +170,7 @@
   }
 
   .RowBody {
+    background-size: 38rem;
     height: 96vh;
   }
 }
@@ -190,17 +188,21 @@
     position: absolute;
     left: 0px;
   }
+
   .Sidebar {
     width: 100vw;
   }
+
   .ColRight {
     position: absolute;
     width: 100vw;
     left: 0rem;
   }
+
   .RightShow {
     display: inline-block;
   }
+  
   .RightHide {
     display: none;
   }
