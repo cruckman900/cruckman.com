@@ -17,7 +17,6 @@
 }
 
 .Hamburger {
-    background: #260000;
     color: #eebb5a;
 }
 
@@ -43,9 +42,9 @@
     color: #eebb5a;
 }
 
-.ddlink:active {
+/* .ddlink:active {
     background: pink;
-}
+} */
 
 .floatright {
     position: absolute;
