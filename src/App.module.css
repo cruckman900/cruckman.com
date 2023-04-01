@@ -54,7 +54,7 @@
 }
 
 .RowBody {
-  padding-top: 4.5rem;
+  padding-top: 4.1rem;
   position: fixed;
   overflow: auto;
   height: 96vh;
@@ -88,7 +88,6 @@
   color: #260000;
   font-weight: 100;
   font-size: 1rem;
-  min-height: 96vh;
   width: calc(100vw - 340px - var(--scrollbar-width)) !important;
   overflow: auto;
 }
