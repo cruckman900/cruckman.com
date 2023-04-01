@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useState } from "react";
 import { Nav, Navbar, NavDropdown, Offcanvas }from 'react-bootstrap';
 import { Link, useLocation } from 'react-router-dom';
 
@@ -7,7 +7,8 @@ import { Container } from 'react-bootstrap';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { 
   faHouse, faBook, faImage, faMusic, faUser, faPersonFalling, faIcons,
-  faPen, faFilm, faGhost, faCode, faCodeBranch, faVideo, faQuestion
+  faPen, faFilm, faGhost, faCode, faCodeBranch, faVideo, faQuestion, faBars,
+  faXmark
 } from '@fortawesome/free-solid-svg-icons';
 import NavItem from '../components/UI/NavItem/NavItem';
 import styles from './Navigation.module.css';
@@ -31,10 +32,16 @@ const Navigation = () => {
     codeBranch: faCodeBranch,
     video: faVideo, 
     question: faQuestion, 
-    icons: faIcons
+    icons: faIcons,
+    bars: faBars,
+    close: faXmark
   }
 
   const location = useLocation();
+  const [show, setShow] = useState(false);
+  const toggleOffcanvas= () => {
+    setShow(!show)
+  }
 
   return (
       <>
@@ -46,18 +53,27 @@ const Navigation = () => {
                   <i>Christopher Ruckman</i>
                 </span>
               </Navbar.Brand>
-              <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
+              <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} onClick={toggleOffcanvas}>
+                <FontAwesomeIcon icon={myIcons['bars']} className={styles.Hamburger} />
+              </Navbar.Toggle>
               <Navbar.Offcanvas
                 style={{backgroundColor: '#444', color: '#eebb5a'}}
                 id={`offcanvasNavbar-expand-${expand}`}
+                show={show}
                 aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
                 placement="end"
               >
-                <Offcanvas.Header closeButton>
+                <Offcanvas.Header>
                   <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`} style={{color: '#eebb5a', fontFamily: 'DragonSlapper', fontSize: '2rem'}}>
                     Main Menu
                   </Offcanvas.Title>
+                  <div onClick={toggleOffcanvas}><FontAwesomeIcon icon={myIcons['close']}></FontAwesomeIcon></div>
                 </Offcanvas.Header>
+                {/* <Offcanvas.Header closeButton style={{color: "#eebb5a"}}>
+                  <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`} style={{color: '#eebb5a', fontFamily: 'DragonSlapper', fontSize: '2rem'}}>
+                    Main Menu
+                  </Offcanvas.Title>
+                </Offcanvas.Header> */}
                 <Offcanvas.Body>
                   <Nav 
                     className="justify-content-end flex-grow-1 pe-3" 

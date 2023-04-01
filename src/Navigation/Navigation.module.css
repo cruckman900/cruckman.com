@@ -16,6 +16,11 @@
     margin-top: -0px;
 }
 
+.Hamburger {
+    background: #260000;
+    color: #eebb5a;
+}
+
 .onlyMobile {
     display: none;
 }
