@@ -43,7 +43,7 @@ function App() {
                     <img src={dragon1} className={classes.spinner} alt="Spinning Dragon" />
                 </div>
                 <div className={classes.loaderContainer2}>LOADING!! the 80's, 90's<br />and early 2000's<br />Please remain calm.</div>
-                <audio id="track" src={audio} ref={trackRef} />
+                <audio id="track" src={audio} ref={trackRef} muted={false} />
                 </>
             ) : (      
                 <Container fluid className={classes.App}>
