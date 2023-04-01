@@ -78,7 +78,7 @@ const Navigation = () => {
                       title={<span className={styles.ddlink}><FontAwesomeIcon icon={myIcons['icons']} fontSize="1.0rem" />&nbsp;&nbsp;INTERESTS</span>}
                       id={`offcanvasNavbarDropdown-expand-${expand}`}
                     >
-                      <NavDropdown.Item as={Link} to="/2D3DArt/2D3DArt" eventKey="/2D3DArt/2D3DArt" href="#2D3DArt" style={{minWidth:'250px', width: '15vw'}}>
+                      <NavDropdown.Item as={Link} to="/2D3DArt/2D3DArt" eventKey="/2D3DArt/2D3DArt" href="#2D3DArt" style={{minWidth: '16rem', maxWidth: '21.25rem'}}>
                         <NavItem className={styles.ddlink} icon={myIcons['image']} fontSize="1.0rem"><div className={styles.floatright}>2D/3D Art</div></NavItem>
                       </NavDropdown.Item>
                       <NavDropdown.Item as={Link} to={"/Music/Music"} eventKey="/Music/Music" href="#Music">
