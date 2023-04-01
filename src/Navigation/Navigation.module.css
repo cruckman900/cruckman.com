@@ -38,6 +38,10 @@
     color: #eebb5a;
 }
 
+.ddlink:active {
+    background: pink;
+}
+
 .floatright {
     position: absolute;
     right: 8px;
