@@ -69,11 +69,6 @@ const Navigation = () => {
                   </Offcanvas.Title>
                   <div onClick={toggleOffcanvas}><FontAwesomeIcon icon={myIcons['close']}></FontAwesomeIcon></div>
                 </Offcanvas.Header>
-                {/* <Offcanvas.Header closeButton style={{color: "#eebb5a"}}>
-                  <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`} style={{color: '#eebb5a', fontFamily: 'DragonSlapper', fontSize: '2rem'}}>
-                    Main Menu
-                  </Offcanvas.Title>
-                </Offcanvas.Header> */}
                 <Offcanvas.Body>
                   <Nav 
                     className="justify-content-end flex-grow-1 pe-3" 
