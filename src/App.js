@@ -11,39 +11,38 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 import dragon1 from './assets/images/dragon1.png';
-import audio from './assets/audio/epic-impact.wav';
+// import audio from './assets/audio/epic-impact.wav';
 import classes from './App.module.css';
 
 function App() {
     const trackRef = useRef();
     const [loading, setLoading] = useState(false);
-
-    useEffect(() => {
-      setLoading(true);
-      setTimeout(() => {
-        setLoading(false);
-      }, 4100);
-    }, []);
-    
     const [show, setShow] = useState(true);
 
     useEffect(() => {
-        if (trackRef.current) {
-            setTimeout(() => {
-                trackRef.current.play();
-            }, 2900);
-        }
-    });
+        setLoading(true);
+        setTimeout(() => {
+            setLoading(false);
+        }, 4100);
+    }, []);
+    
+    // useEffect(() => {
+    //     if (trackRef.current) {
+    //         setTimeout(() => {
+    //             trackRef.current.play();
+    //         }, 2900);
+    //     }
+    // });
   
     return (
         <>
             {loading ? (
                 <>
-                <div className={classes.loaderContainer}>
-                    <img src={dragon1} className={classes.spinner} alt="Spinning Dragon" />
-                </div>
-                <div className={classes.loaderContainer2}>LOADING!! the 80's, 90's<br />and early 2000's<br />Please remain calm.</div>
-                <audio id="track" src={audio} ref={trackRef} muted={false} />
+                    <div className={classes.loaderContainer}>
+                        <img src={dragon1} className={classes.spinner} alt="Spinning Dragon" />
+                    </div>
+                    <div className={classes.loaderContainer2}>LOADING!! the 80's, 90's<br />and early 2000's<br />Please remain calm.</div>
+                    {/* <audio id="track" src={audio} ref={trackRef} muted={false} /> */}
                 </>
             ) : (      
                 <Container fluid className={classes.App}>
