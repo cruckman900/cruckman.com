@@ -24,7 +24,41 @@ function ThisSite() {
                 covers a lot of stuff, but most of the examples are tiny building blocks of a site. I'll put here things that
                 I had to research to figure out.
             </p>
+            <Card header="404 error on browser refresh" showToggle={true} expanded={false}>
+                <Card header=".htaccess" showToggle={false} expanded={true}>
+                    <p>
+                        I put this issue off for a while.  I'd google for the fix, but never tried to implement it until now.
+                        The first "fix" I found was an anwer to a person having the problem.  His answer did say that you need
+                        to add to (or create a new file) .htaccess file a few lines of code.  I tried this using his code and my site stopped
+                        loading.  I googled again, this time adding 2023 to my query.  I found a similar result, but with
+                        different code in the .htaccess file he posted.  This code worked for me.  There were no other tasks that
+                        I had to perform for it to work.  My site is hosted on a server that uses CPanel.  Going to post the .htaccess
+                        code you need if you want to try to use this solution below.
+                    </p>
+                    <p>
+                        <code className={styles.code}>
+                            RewriteEngine On<br />
+                            RewriteCond %{"{DOCUMENT_ROOT}%{REQUEST_URI}"} -f [OR]<br />
+                            RewriteCond %{"{DOCUMENT_ROOT}%{REQUEST_URI}"} -d<br />
+                            RewriteRule ^ - [L]<br />
+                            <br />
+                            RewriteRule ^ /index.html [L]
+                        </code>
+                    </p>
+                </Card>
+            </Card>
             <Card header="NavBar" showToggle={true} expanded={false}>
+                <Card header="Active Links" showToggle={false} expanded={true}>
+                    <p>
+                        This characteristic has a ton of dead-end posts all over the web.  I finally found an article that discusses 
+                        using <code className={styles.code}>activeKey</code> in conjunction with the relative URL to the page.  What you want to 
+                        do is set your <code className={styles.code}>eventKey</code> to be the same 
+                        as the link's relative path.  You import <code className={styles.code}>useLocation</code> from <code className={styles.code}>react-router-dom</code>.
+                    </p>
+                    <p>
+                        Check my GitHub repository and look in the Navigation.js file to see how I implement these things for active links.
+                    </p>
+                </Card>
                 <Card header="Routing" showToggle={false} expanded={true}>
                     <p>
                         The only decent article I could find on how to set up a NavBar with routing had everything all
@@ -54,21 +88,16 @@ function ThisSite() {
                     </p>
                     <p>
                         Check out my GitHub repository to see how I implemented the styles that I DO have working.
-                        Things that I still want to be able to style is the background and font color for active links, both in the
-                        top level menu as well as the dropdown menu items.  Right now, I can't figure out how to change them, so 
-                        they are using the default styles.  I also want to be able to change the color of the carat glyph for the 
-                        dropdown buttons.
-                    </p>
-                </Card>
-                <Card header="Active Links" showToggle={false} expanded={true}>
-                    <p>
-                        This characteristic has a ton of dead-end posts all over the web.  I finally found an article that discusses 
-                        using <code className={styles.code}>activeKey</code> in conjunction with the relative URL to the page.  What you want to 
-                        do is set your <code className={styles.code}>eventKey</code> to be the same 
-                        as the link's relative path.  You import <code className={styles.code}>useLocation</code> from <code className={styles.code}>react-router-dom</code>.
+                        Things that I still want to be able to style is the <s>background and font color for active links, both in the
+                        top level menu as well as the dropdown menu items</s>.  Right now, I can't figure out how to change them, so 
+                        they are using the default styles.  I also want to be able to <s>change the color of the carat glyph for the 
+                        dropdown buttons</s>.
                     </p>
                     <p>
-                        Check my GitHub repository and look in the Navigation.js file to see how I implement these things for active links.
+                        I am slowly solving styling of navbar and other components inside it.  Some can be solved using other elements
+                        to wrap text in, but some of the things that I wanted to fix are the carets for navdropdown, styles for
+                        active menu items, etc.  I was able to finally get these to work by adding the compiled class names in my index.css
+                        file.  So, go to my Github project and check that stuff out!
                     </p>
                 </Card>
             </Card>
@@ -95,6 +124,37 @@ function ThisSite() {
                     </p>
                     <p>
                         Check out my GitHub repository for Navigation.js to see this in code.
+                    </p>
+                </Card>
+            </Card>
+            <Card header="WaveSurfer implementation" showToggle={true} expanded={false}>
+                <Card header="Noob to Pro (kinda)" showToggle={false} expanded={true}>
+                    <p>
+                        I wanted to implement a waveform for my audio files for a while, but for a long time, I just had a button that would
+                        change text from 'Play' to 'Pause', and that was it.  Then, I happened across this Medium article,
+                        <a href="https://medium.com/trackstack/simple-audio-waveform-with-wavesurfer-js-and-react-ae6c0653b240" className={styles.link} alt="WaveSurfer" target="_blank" rel="noreferrer">Wavesurfer.js and React</a>
+                    </p>
+                    <p>
+                        First thing that I did was change from styled components to normal components.  This worked well except for the actual waveform component.
+                        The application needs to append child elements to the div inside the component.  Instead of figuring out how to make that possible,
+                        I just made a standard div with id 'waveform' in my js file.  A small hurdle was being able to access that div in the rest of the code.  I figured
+                        out how to access it using <code className={styles.code}>useRef</code>.
+                    </p>
+                    <p>
+                        Another hurdle was trying to duplicate the code from the link above, but instead of making a class-based component, I made mine with
+                        a function-based component.  So, I had to use <code className={styles.code}>useState and useEffect</code> alot.  Also, I wanted to
+                        be able to perform other operations on my waveform, like loading another song into it.  Also, the sample that I was using as 
+                        reference didn't handle anything after the song was over.  I wanted to have the play/pause button switch state, and I wanted to
+                        start the wave back at the beginning of the song after it played all the way through.  I did this by simply reloading the component
+                        altogether... simple fix.
+                    </p>
+                    <p>
+                        The documentation for WaveSurfer can be found at 
+                        <a href="https://wavesurfer-js.org/" className={styles.link} alt="WaveSurfer.js" target="_blank" rel="noreferrer">WaveSurfer Website</a>
+                    </p>
+                    <p>
+                        There are a few components that I added to my UI folder for this, but the meat and potatoes is in a file called Waveform.js inside of my
+                        Music folder.  Have a look in my GitHub repository.
                     </p>
                 </Card>
             </Card>
