@@ -2,7 +2,6 @@ import React from "react";
 import styles from './LeftbarLabelledContainer.module.css';
 
 const LeftbarLabelledContainer = (props) => {
-    console.log('props', props);
     return (
         <div>
             <div className={props.className}>
