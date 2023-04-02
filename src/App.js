@@ -11,41 +11,51 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 import dragon1 from './assets/images/dragon1.png';
-// import audio from './assets/audio/epic-impact.wav';
+import audio from './assets/audio/cool-impact.wav';
 import classes from './App.module.css';
 
 function App() {
     const trackRef = useRef();
-    const [loading, setLoading] = useState(false);
+    const [loadState, setLoadState] = useState('load');
     const [show, setShow] = useState(true);
 
     useEffect(() => {
-        setLoading(true);
-        setTimeout(() => {
-            setLoading(false);
-        }, 4100);
-    }, []);
-    
-    // useEffect(() => {
-    //     if (trackRef.current) {
-    //         setTimeout(() => {
-    //             trackRef.current.play();
-    //         }, 2900);
-    //     }
-    // });
+        if (loadState === 'loading') {
+            setTimeout(() => {
+                setLoadState('loaded');
+            }, 4100);
+            if (trackRef.current) {
+                setTimeout(() => {
+                    trackRef.current.play();
+                }, 1800);
+            }
+        }
+    }, [loadState]);
   
     return (
         <>
-            {loading ? (
-                <>
-                    <div className={classes.loaderContainer}>
-                        <img src={dragon1} className={classes.spinner} alt="Spinning Dragon" />
-                    </div>
-                    <div className={classes.loaderContainer2}>LOADING!! the 80's, 90's<br />and early 2000's<br />Please remain calm.</div>
-                    {/* <audio id="track" src={audio} ref={trackRef} muted={false} /> */}
-                </>
-            ) : (      
-                <Container fluid className={classes.App}>
+            {
+                loadState === 'load' && 
+                    <>
+                        <div className={classes.loaderContainer}>
+                            <img src={dragon1} className={classes.dragon} alt="Spinning Dragon" />
+                        </div>
+                        <div className={classes.loaderContainer2} onClick={() => {setLoadState('loading')}}>Touch, to enter the dragon!</div>
+                    </>
+            }
+            {
+                loadState === 'loading' &&
+                    <>
+                        <div className={classes.loaderContainer}>
+                            <img src={dragon1} className={`${classes.dragon} ${classes.spinner}`} alt="Spinning Dragon" />
+                        </div>
+                        <div className={classes.loaderContainer2}>LOADING!! the 80's, 90's<br />and early 2000's<br />Please remain calm.</div>
+                        <audio id="track" src={audio} ref={trackRef} muted={false} />
+                    </>
+            }
+            {
+                loadState === 'loaded' && 
+                    <Container fluid className={classes.App}>
                     <Row>
                         <Col lg="12"><Navigation /></Col>
                     </Row>
@@ -66,7 +76,7 @@ function App() {
                         <Col lg="12"><Footer /></Col>
                     </Row>
                 </Container>
-            )}
+            }
             <div className={classes.angry}><img src={dragon1} /></div>
         </>
     );
