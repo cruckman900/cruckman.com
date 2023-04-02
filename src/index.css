@@ -29,7 +29,6 @@ code {
     monospace;
 }
 
-
 .dropdown-toggle.nav-link::before {
   color: #eebb5a !important;
   margin-right: .5rem !important;
@@ -40,6 +39,6 @@ code {
   border: solid 1px #eebb5a !important;
 }
 
-.btn-close {
-  border: solid 1px #eebb5a !important;
+.nav-tabs {
+  border-bottom: solid 1px #eebb5a !important;
 }
