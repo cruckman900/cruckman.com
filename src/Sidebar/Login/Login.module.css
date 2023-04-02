@@ -15,7 +15,7 @@
 } */
 
 .loginLabel {
-    font-size: .5rem;
+    font-size: 8pt;
     font-weight: 300;
     color: #260000;
     text-shadow: none;
@@ -69,7 +69,8 @@
 }
 
 .loginLink:hover {
-    color: #b18030;
+    color: #260000;
+    text-decoration: underline;
 }
 
 .left {
