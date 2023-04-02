@@ -6,6 +6,10 @@ import { Container, Row, Col } from 'react-bootstrap';
 import classes from './Login.module.css';
 
 const LoggedInUser = (props) => {
+    function handleClick(event) {
+        props.changeActive(event.target.name);
+    }
+
     return (
         <Container className={classes.container}>
             <Row>
@@ -17,7 +21,7 @@ const LoggedInUser = (props) => {
                 <Col>
                     <div className={classes.linksContainer}>
                         <a className={`${classes.loginLink} ${classes.left}`}
-                            href="#" alt="Log Out">Log Out</a>
+                            href="#" name="LogOut" onClick={handleClick}>Log Out</a>
                     </div>
                 </Col>
             </Row>

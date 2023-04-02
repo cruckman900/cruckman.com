@@ -6,7 +6,11 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 import classes from './Login.module.css';
 
-const RegisterForm = () => {
+const RegisterForm = (props) => {
+    function handleClick(event) {
+        props.changeActive(event.target.name);
+    }
+
     return (
         <Container className={classes.container}>
             <Row>
@@ -30,10 +34,15 @@ const RegisterForm = () => {
             <Row>
                 <Col>
                     <Button className={classes.Button}>Submit</Button>
-                </Col>
+                    <div className={classes.linksContainer}>
+                        <a className={`${classes.loginLink} ${classes.left}`}
+                            href="#" name="Login" onClick={handleClick}>Back to Login</a>
+                    </div>
+               </Col>
             </Row>
         </Container>
     );
+    
 }
 
 export default RegisterForm;

@@ -6,18 +6,39 @@ import RegisterForm from "./RegisterForm";
 import ForgotForm from "./ForgotForm";
 import LoggedInUser from "./LoggedInUser";
 
-function Login(props) {
+function Login() {
     const [headerText, setHeader] = useState("User Login");
+    const [activeModule, setActiveModule] = useState('Login');
+
+    const myForms = {
+        Login: "User Login",
+        Register: "Register User",
+        Forgot: "Forgot Username/Password",
+        LoggedIn: "User Logged In"
+    }
+
+    function handleChildClick(activeComponent) {
+        setHeader(myForms[activeComponent]);
+        setActiveModule(activeComponent);
+    }
 
     return (
         <Card showToggle={false} expanded={true}
             className={`${classes.Card} ${classes.LeftColumn}`}
             header={headerText}
         >
-            <LoginForm />
-            {/* <RegisterForm />
-            <ForgotForm />
-            <LoggedInUser /> */}
+            {
+                activeModule === 'Login' && <LoginForm changeActive={handleChildClick} />
+            }
+            {
+                activeModule === 'Register' && <RegisterForm changeActive={handleChildClick} />
+            }
+            {
+                activeModule === 'Forgot' && <ForgotForm changeActive={handleChildClick} />
+            }
+            {
+                activeModule === 'LoggedIn' && <LoggedInUser changeActive={handleChildClick} />
+            }
         </Card>
 );
 }
