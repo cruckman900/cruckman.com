@@ -1,6 +1,8 @@
 import React from "react";
 import DefaultPage from "../../UI/DefaultPage/DefaultPage";
 
+import martialarts from "../../../assets/images/martialarts.jpg";
+
 import lollyKarate from "../../../assets/images/loly_karate.png";
 import styles from './MartialArts.module.css';
 
@@ -8,6 +10,7 @@ function MartialArts() {
     return (
         <>
             <DefaultPage image={lollyKarate} title="Martial Arts">
+                <img src={martialarts} alt="Martial Arts" className={styles.bodyImage} />
                 <p>
                     I've been interested in martial arts ever since I was a young kid. Back in the '80s,
                     martial arts shows ran rampant. Since the 2nd grade, I was one of the kids that got picked

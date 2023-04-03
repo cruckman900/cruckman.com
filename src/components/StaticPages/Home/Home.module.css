@@ -11,3 +11,11 @@
 .bodyDiv {
     margin-top: 20px;
 }
+
+.bodyImage {
+    float: left;
+    margin-right: 1rem;
+    width: 320px;
+    height: 200px;
+    border-radius: 8px;
+}

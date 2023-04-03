@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import styles from './Home.module.css';
 import DefaultPage from "../../UI/DefaultPage/DefaultPage";
 import Card from "../../UI/Card/Card";
+import oldcomputer from "../../../assets/images/oldcomputer.jpg";
 import lolly from "../../../assets/images/lolly.png";
 
 export default class Home extends Component {
@@ -16,6 +17,7 @@ export default class Home extends Component {
                 </Card>
                 <div></div>
                 <div className={styles.bodyDiv}>
+                    <img src={oldcomputer} alt="Old Computer" className={styles.bodyImage} />
                     A friend of mine told me that this site looks like a 'Throw-back Thursday' site.  Little
                     does he know that that is exactly what I was aiming to achieve.  
                     I want something that looks retro, because everything on this site will be aiming at what
