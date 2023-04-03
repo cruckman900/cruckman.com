@@ -1,8 +1,12 @@
-import { React } from "react";
+import { React, useState } from "react";
 
 import Label from '../../components/UI/Label/Label';
 import Button from '../../components/UI/Button/Button';
 import { Container, Row, Col } from 'react-bootstrap';
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
+
 
 import classes from './Login.module.css';
 
@@ -20,7 +24,7 @@ const LoginForm = (props) => {
                 </Col>
                 <Col>
                     <Label className={classes.loginLabel}>PASSWORD</Label>
-                    <input className={classes.UserInput} />
+                    <input className={classes.UserInput} type="password" />
                 </Col>
             </Row>
             <Row>
