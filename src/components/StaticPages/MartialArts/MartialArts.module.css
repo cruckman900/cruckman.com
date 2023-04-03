@@ -1,7 +1,8 @@
 .bodyImage {
     float: right;
     margin-right: 1rem;
-    width: 320px;
-    height: 200px;
+    width: 350px;
+    height: 220px;
     border-radius: 8px;
+    padding-bottom: 8px;
 }
