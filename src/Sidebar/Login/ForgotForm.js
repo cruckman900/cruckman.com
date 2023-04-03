@@ -20,16 +20,20 @@ const ForgotForm = (props) => {
                     </div>
                 </Col>
                 <Col>
-                    <Label className={classes.loginLabel}>EMAIL ADDRESS</Label>
-                    <input className={classes.UserInput} />
+                    <div>
+                        <Label className={classes.loginLabel}>EMAIL ADDRESS</Label>
+                        <input className={classes.UserInput} />
+                    </div>
                 </Col>
             </Row>
             <Row>
                 <Col>
-                    <Button className={classes.Button}>Submit</Button>
-                    <div className={classes.linksContainer}>
-                        <a className={`${classes.loginLink} ${classes.left}`}
-                            href="#" name="Login" onClick={handleClick}>Back to Login</a>
+                    <div>
+                        <Button className={classes.Button}>Submit</Button>
+                        <div className={classes.linksContainer}>
+                            <a className={`${classes.loginLink} ${classes.left}`}
+                                href="#" name="Login" onClick={handleClick}>Back to Login</a>
+                        </div>
                     </div>
                 </Col>
             </Row>
