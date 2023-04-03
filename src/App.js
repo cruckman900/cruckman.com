@@ -23,7 +23,7 @@ function App() {
         if (loadState === 'loading') {
             setTimeout(() => {
                 setLoadState('loaded');
-            }, 4100);
+            }, 5000);
             if (trackRef.current) {
                 setTimeout(() => {
                     trackRef.current.play();
