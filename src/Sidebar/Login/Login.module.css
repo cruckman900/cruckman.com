@@ -57,6 +57,11 @@
     font-size: 7pt;
 }
 
+.smallText {
+    font-size: .5rem;
+    color: #260000;
+}
+
 .linksContainer {
     margin-top: 8px;
 }

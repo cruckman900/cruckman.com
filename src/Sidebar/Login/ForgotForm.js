@@ -15,7 +15,7 @@ const ForgotForm = (props) => {
         <Container className={classes.container}>
             <Row>
                 <Col>
-                    <div className={`${classes.linksContainer} ${classes.loginLink}`}>
+                    <div className={`${classes.linksContainer} ${classes.smallText}`}>
                         <p>Please provide the email address that you used to register with.</p>
                     </div>
                 </Col>
