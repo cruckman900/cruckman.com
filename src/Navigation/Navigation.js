@@ -6,7 +6,7 @@ import { Container } from 'react-bootstrap';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { 
-  faHouse, faBook, faImage, faMusic, faUser, faPersonFalling, faIcons,
+  faHouse, faBook, faImage, faMusic, faUser, faHandFist, faIcons,
   faPen, faFilm, faGhost, faCode, faCodeBranch, faVideo, faQuestion, faBars,
   faXmark
 } from '@fortawesome/free-solid-svg-icons';
@@ -22,7 +22,7 @@ const Navigation = () => {
     user: faUser,
     house: faHouse,
     image: faImage,
-    personFalling: faPersonFalling,
+    fist: faHandFist,
     pen: faPen,
     book: faBook,
     film: faFilm,
@@ -96,7 +96,7 @@ const Navigation = () => {
                         <NavItem className={styles.ddlink} icon={myIcons['music']} fontSize="1.0rem"><div className={styles.floatright}>MUSIC (GUITAR)</div></NavItem>
                       </NavDropdown.Item>
                       <NavDropdown.Item as={Link} to={"/MartialArts/MartialArts"} eventKey="/MartialArts/MartialArts" href="#MartialArts">
-                        <NavItem className={styles.ddlink} icon={myIcons['personFalling']} fontSize="1.0rem"><div className={styles.floatright}>MARTIAL ARTS</div></NavItem>
+                        <NavItem className={styles.ddlink} icon={myIcons['fist']} fontSize="1.0rem"><div className={styles.floatright}>MARTIAL ARTS</div></NavItem>
                       </NavDropdown.Item>
                       <NavDropdown.Item as={Link} to={"/CreativeWriting/CreativeWriting"} eventKey="/CreativeWriting/CreativeWriting" href="#CreativeWriting">
                         <NavItem className={styles.ddlink} icon={myIcons['pen']} fontSize="1.0rem"><div className={styles.floatright}>CREATIVE WRITING</div></NavItem>
