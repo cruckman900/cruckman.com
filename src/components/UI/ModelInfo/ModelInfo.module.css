@@ -21,7 +21,7 @@
 
 .Label2 {
     font-weight: 500;
-    font-size: 0.75rem;
+    font-size: 0.6rem;
     color: #260000;
 }
 
@@ -37,7 +37,6 @@
 
 .ModelInfo {
     display: inline;
-    /* float: inline-end; */
     margin-left: 12px;
     width: 100%;
 }
@@ -45,6 +44,8 @@
 .ObjectDetail {
     /* float: left; */
     display: inline-block;
+    font-size: 8pt;
+    padding-bottom: 8px;
 }
 
 .Request {

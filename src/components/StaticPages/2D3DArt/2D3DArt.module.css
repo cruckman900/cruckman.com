@@ -15,3 +15,8 @@
 .blur {
     filter: blur(1px);
 }
+
+.h6 {
+    padding-left: 1rem;
+    font-size: .8rem;
+}

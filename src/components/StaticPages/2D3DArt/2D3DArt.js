@@ -2,7 +2,7 @@ import React from "react";
 import DefaultPage from "../../UI/DefaultPage/DefaultPage";
 import ModelInfo from "../../UI/ModelInfo/ModelInfo";
 
-import lolly_sentada2 from "../../../assets/images/lolly_sentada2.png";
+import lolly_painting2 from "../../../assets/images/lolly_painting2.png";
 import bow1 from "../../../assets/images/3DModels/bow1.png";
 import bow2 from "../../../assets/images/3DModels/bow2.png";
 import sword1 from "../../../assets/images/3DModels/sword1.png";
@@ -14,7 +14,7 @@ import classes from './2D3DArt.module.css';
 
 function Art2D3D() {
     return (
-        <DefaultPage image={lolly_sentada2} title="2D/3D Art (CG)">
+        <DefaultPage image={lolly_painting2} title="2D/3D Art (CG)">
             <div>
                 <p>
                     Over the years, I have had the opportunity to use a wide range of software packages to create 
@@ -54,7 +54,7 @@ function Art2D3D() {
                 </p>
             </div>
             <div>
-                <h6>3D Objects created in Wings3D</h6>
+                <h6 className={classes.h6}>3D Objects created in Wings3D</h6>
                 <ModelInfo
                     Title="Body1.wings"
                     Description="This was one of my first models in Wings3D, and the first 3D object I ever made that I was somewhat proud 
@@ -95,7 +95,7 @@ function Art2D3D() {
                 >
                 </ModelInfo>
                 <hr />
-                <h6>3D Objects created in Blender</h6>
+                <h6 className={classes.h6}>3D Objects created in Blender</h6>
                 <ModelInfo
                     Title="bow1.blend"
                     Description="This was one of my first models in Blender that actually resembled something that could exist in the 
