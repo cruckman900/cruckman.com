@@ -3,6 +3,10 @@
     min-width: 20rem;
 }
 
+.containerStyle {
+    width: 100%;
+}
+
 .header {
     padding-left: 1rem;
     text-align: left;
@@ -33,6 +37,7 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
     border-radius: 5px;
     height: auto;
+    width: 100%;
 }
 
 .cardInnerDiv {
@@ -43,6 +48,7 @@
     border-radius: 4px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
     height: auto;
+    width: 100%;
 }
 
 .icon {

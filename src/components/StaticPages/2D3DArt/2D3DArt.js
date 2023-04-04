@@ -13,6 +13,56 @@ import halberd1 from "../../../assets/images/3DModels/halberd1.png";
 import classes from './2D3DArt.module.css';
 
 function Art2D3D() {
+    const models = [
+        { id: 0, ToolUsed: "Wings3D", LoginRequired: false, Title: "Body1.wings", Blur: false, 
+            Description: `This was one of my first models in Wings3D, and the first 3D object I ever made that I was somewhat proud 
+            of.  Looking at it now... meh.`, 
+            ImgSource: car1, AltText: "Car 1", NumObjects: 17, NumEdges: 16364, NumFaces: 8620, NumVerts: 8870, Price: 0.99 },
+        { id: 1, ToolUsed: "Wings3D", LoginRequired: false, Title: "Missile.wings", Blur: false, 
+            Description: `I made this missile for a mecha robot that I created... I can't find the mecha.  I've done a similar thing
+            for the black bow below.`, 
+            ImgSource: missile1, AltText: "Missile 1", NumObjects: 1, NumEdges: 1522, NumFaces: 496, NumVerts: 242, Price: 1.25 },
+        { id: 2, ToolUsed: "Wings3D", LoginRequired: false, Title:"Halberd2.wings", Blur: false,
+            Description: `My first attempt at making a weapon from the age of dragons or some shit.  I called it a winged halberd.
+            It is kind of fancy, but not absolutely incredible.`, 
+            ImgSource: halberd1, AltText: "Halberd 1", NumObjects: 1, NumEdges: 1522, NumFaces: 764, NumVerts: 760, Price: 0.5 },
+        { id: 3, ToolUsed: "Blender", LoginRequired: false, Title: "bow1.blend", Blur: false, 
+            Description: `This was one of my first models in Blender that actually resembled something that could exist in the 
+            real world. I've added bones to this so that later, it could be animated for a game or something.`, 
+            ImgSource: bow1, AltText: "Bow 1", NumObjects: 3, NumEdges: null, NumFaces: 66256, NumVerts: 66208, Price: 3.00 },
+        { id: 4, ToolUsed: "Blender", LoginRequired: false, Title: "bow2.blend", Blur: false, 
+            Description: `Somewhat pleased with the first bow, I created another one, a little fancier. This bow isn't rigged yet,
+            but I created a separate arrow to add with it. I think I can rig it next time I have an opportunity to work on it.`, 
+            ImgSource: bow2, AltText: "Bow 2", NumObjects: 1, NumEdges: null, NumFaces: 37792, NumVerts: 37776, Price: 7.00},
+        { id: 5, ToolUsed: "Blender", LoginRequired: false, Title: "bastardsword.blend", Blur: false, 
+            Description: `Can't always fight from afar, so here's a pretty plain sword.  It's not the fanciest model I have made,
+            but I was planning to use this with some kind of "aura" surrounding it in a game I am working on.`, 
+            ImgSource: sword1, AltText: "Sword 1", NumObjects: 1, NumEdges: null, NumFaces: 794, NumVerts: 824, Price: 5.00 },
+        { id: 6, ToolUsed: "Blender", LoginRequired: true, Title: "FEM001_ehhc_ba5_exp5.blend", Blur: true, 
+            Description: `And finally, we need someone to use these weapons, she could use some type of clothing or armor... or not.
+            I started this model in 2004.  I've only recently started back to finishing it.  I just procrastinate with 
+            this model too much.  The smaller and more intricate the parts are, the less I feel motivated to work on them.`, 
+            ImgSource: female1, AltText: "Female 1", NumObjects: 4, NumEdges: null, NumFaces: 12522, NumVerts: 11426, Price: 12.00 },
+    ]
+
+    function makeModelInfo(model) {
+        return (
+            <ModelInfo
+                LoginRequired={model.LoginRequired}
+                Title={model.Title}
+                Blur={model.Blur}
+                Description={model.Description}
+                ImageSrc={model.ImgSource}
+                AltText={model.AltText}
+                NumObjects={model.NumObjects}
+                NumEdges={model.NumEdges}
+                NumFaces={model.NumFaces}
+                NumVerts={model.NumVerts}
+                Price={model.NumVerts}
+            />
+        );
+    }
+
     return (
         <DefaultPage image={lolly_painting2} title="2D/3D Art (CG)">
             <div>
@@ -55,100 +105,18 @@ function Art2D3D() {
             </div>
             <div>
                 <h6 className={classes.h6}>3D Objects created in Wings3D</h6>
-                <ModelInfo
-                    Title="Body1.wings"
-                    Description="This was one of my first models in Wings3D, and the first 3D object I ever made that I was somewhat proud 
-                        of.  Looking at it now... meh."
-                    ImageSrc={car1}
-                    AltText="Car 1"
-                    NumObjects="17"
-                    NumEdges="16,364"
-                    NumFaces="8,620"
-                    NumVerts="8,870"
-                    Price="$0.99"
-                >
-                </ModelInfo>
-                <ModelInfo
-                    Title="Missile.wings"
-                    Description="I made this missile for a mecha robot that I created... I can't find the mecha.  I've done a similar thing
-                        for the black bow below."
-                    ImageSrc={missile1}
-                    AltText="Missile 1"
-                    NumObjects="1"
-                    NumEdges="496"
-                    NumFaces="242"
-                    NumVerts="256"
-                    Price="$1.25"
-                >
-                </ModelInfo>
-                <ModelInfo
-                    Title="Halberd2.wings"
-                    Description="My first attempt at making a weapon from the age of dragons or some shit.  I called it a winged halberd.
-                        It is kind of fancy, but not absolutely incredible."
-                    ImageSrc={halberd1}
-                    AltText="Halberd 1"
-                    NumObjects="1"
-                    NumEdges="1,522"
-                    NumFaces="764"
-                    NumVerts="760"
-                    Price="$0.50"
-                >
-                </ModelInfo>
+                {
+                    models.map((model) => {if (model.ToolUsed === "Wings3D") return (
+                        makeModelInfo(model)
+                    )}
+                )}
                 <hr />
                 <h6 className={classes.h6}>3D Objects created in Blender</h6>
-                <ModelInfo
-                    Title="bow1.blend"
-                    Description="This was one of my first models in Blender that actually resembled something that could exist in the 
-                        real world. I've added bones to this so that later, it could be animated for a game or something."
-                    ImageSrc={bow1}
-                    AltText="Bow 1"
-                    NumObjects="3"
-                    NumEdges=""
-                    NumFaces="66,256"
-                    NumVerts="66,208"
-                    Price="$3.00"
-                >
-                </ModelInfo>
-                <ModelInfo
-                    Title="bow2.blend"
-                    Description="Somewhat pleased with the first bow, I created another one, a little fancier. This bow isn't rigged yet,
-                        but I created a separate arrow to add with it. I think I can rig it next time I have an opportunity to work on it."
-                    ImageSrc={bow2}
-                    AltText="Bow 2"
-                    NumObjects="1"
-                    NumEdges=""
-                    NumFaces="37,792"
-                    NumVerts="37,776"
-                    Price="$7.00"
-                >
-                </ModelInfo>
-                <ModelInfo
-                    Title="bastardsword.blend"
-                    Description="Can't always fight from afar, so here's a pretty plain sword"
-                    ImageSrc={sword1}
-                    AltText="Sword 1"
-                    NumObjects="1"
-                    NumEdges=""
-                    NumFaces="794"
-                    NumVerts="824"
-                    Price="$5.00"
-                >
-                </ModelInfo>
-                <ModelInfo
-                    Title="FEM001_ehhc_ba5_exp5.blend"
-                    Description="And finally, we need someone to use these weapons, she could use some type of clothing or armor... or not.
-                        I started this model in 2004.  I've only recently started back to finishing it.  I just procrastinate with 
-                        this model too much.  The smaller and more intricate the parts are, the less I feel motivated to work on them."
-                    ImageSrc={female1}
-                    Blur="true"
-                    AltText="Female 1"
-                    NumObjects="4"
-                    NumEdges=""
-                    NumFaces="12,522"
-                    NumVerts="11,426"
-                    Price="$12.00"
-                >
-                </ModelInfo>
+                {
+                    models.map((model) => {if (model.ToolUsed === "Blender") return (
+                        makeModelInfo(model)
+                    )}
+                )}
             </div>
             <div className={classes.bottomText}>
                 <p>

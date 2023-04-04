@@ -65,7 +65,7 @@ export default [
     {
         id: 4,
         text: `You try to stand your ground. There are 3 men in black robes: 1 has a knife, the other 2 are empty-handed
-            but look much more muscular.`,
+            but look much stronger.`,
         options: [
             {
                 text: `Go for the one with the knife. If you can get the knife, you'll stand a better chance with the other 2.`,
@@ -155,7 +155,7 @@ export default [
     },
     {
         id: 10,
-        text: `You opt to go for the biggest of the 3 men.  The man in the knife seems afraid to fight, but the other 2 are looking at you
+        text: `You opt to go for the biggest of the 3 men.  The man with the knife seems afraid to fight, but the other 2 are looking at you
             like a piece of meat.`,
         options: [
             {
@@ -221,7 +221,7 @@ export default [
         text: `Fine then! I didn't want you to play it anyway! *pbbbbbbbbt!* >:3`,
         options: [
             {
-                text: `Reset this graphically intensive game!`,
+                text: `Reset this graphically intense game!`,
                 nextText: 0
             }
         ]
