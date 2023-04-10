@@ -232,9 +232,3 @@
     width: calc(100vw - var(--scrollbar-width));
   }
 }
-
-@media print {
-  * {
-    display: none;
-  }
-}
