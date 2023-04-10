@@ -14,31 +14,31 @@ import classes from './2D3DArt.module.css';
 
 function Art2D3D() {
     const models = [
-        { id: 0, ToolUsed: "Wings3D", LoginRequired: false, Title: "Body1.wings", Blur: false, 
+        { id: 0, key: 0, ToolUsed: "Wings3D", LoginRequired: false, Title: "Body1.wings", Blur: false, 
             Description: `This was one of my first models in Wings3D, and the first 3D object I ever made that I was somewhat proud 
             of.  Looking at it now... meh.`, 
             ImgSource: car1, AltText: "Car 1", NumObjects: 17, NumEdges: 16364, NumFaces: 8620, NumVerts: 8870, Price: 0.99 },
-        { id: 1, ToolUsed: "Wings3D", LoginRequired: false, Title: "Missile.wings", Blur: false, 
+        { id: 1, key: 1, ToolUsed: "Wings3D", LoginRequired: false, Title: "Missile.wings", Blur: false, 
             Description: `I made this missile for a mecha robot that I created... I can't find the mecha.  I've done a similar thing
             for the black bow below.`, 
             ImgSource: missile1, AltText: "Missile 1", NumObjects: 1, NumEdges: 1522, NumFaces: 496, NumVerts: 242, Price: 1.25 },
-        { id: 2, ToolUsed: "Wings3D", LoginRequired: false, Title:"Halberd2.wings", Blur: false,
+        { id: 2, key: 2, ToolUsed: "Wings3D", LoginRequired: false, Title:"Halberd2.wings", Blur: false,
             Description: `My first attempt at making a weapon from the age of dragons or some shit.  I called it a winged halberd.
             It is kind of fancy, but not absolutely incredible.`, 
             ImgSource: halberd1, AltText: "Halberd 1", NumObjects: 1, NumEdges: 1522, NumFaces: 764, NumVerts: 760, Price: 0.5 },
-        { id: 3, ToolUsed: "Blender", LoginRequired: false, Title: "bow1.blend", Blur: false, 
+        { id: 3, key: 3, ToolUsed: "Blender", LoginRequired: false, Title: "bow1.blend", Blur: false, 
             Description: `This was one of my first models in Blender that actually resembled something that could exist in the 
             real world. I've added bones to this so that later, it could be animated for a game or something.`, 
             ImgSource: bow1, AltText: "Bow 1", NumObjects: 3, NumEdges: null, NumFaces: 66256, NumVerts: 66208, Price: 3.00 },
-        { id: 4, ToolUsed: "Blender", LoginRequired: false, Title: "bow2.blend", Blur: false, 
+        { id: 4, key: 4, ToolUsed: "Blender", LoginRequired: false, Title: "bow2.blend", Blur: false, 
             Description: `Somewhat pleased with the first bow, I created another one, a little fancier. This bow isn't rigged yet,
             but I created a separate arrow to add with it. I think I can rig it next time I have an opportunity to work on it.`, 
             ImgSource: bow2, AltText: "Bow 2", NumObjects: 1, NumEdges: null, NumFaces: 37792, NumVerts: 37776, Price: 7.00},
-        { id: 5, ToolUsed: "Blender", LoginRequired: false, Title: "bastardsword.blend", Blur: false, 
+        { id: 5, key: 5, ToolUsed: "Blender", LoginRequired: false, Title: "bastardsword.blend", Blur: false, 
             Description: `Can't always fight from afar, so here's a pretty plain sword.  It's not the fanciest model I have made,
             but I was planning to use this with some kind of "aura" surrounding it in a game I am working on.`, 
             ImgSource: sword1, AltText: "Sword 1", NumObjects: 1, NumEdges: null, NumFaces: 794, NumVerts: 824, Price: 5.00 },
-        { id: 6, ToolUsed: "Blender", LoginRequired: true, Title: "FEM001_ehhc_ba5_exp5.blend", Blur: true, 
+        { id: 6, key: 6, ToolUsed: "Blender", LoginRequired: true, Title: "FEM001_ehhc_ba5_exp5.blend", Blur: true, 
             Description: `And finally, we need someone to use these weapons, she could use some type of clothing or armor... or not.
             I started this model in 2004.  I've only recently started back to finishing it.  I just procrastinate with 
             this model too much.  The smaller and more intricate the parts are, the less I feel motivated to work on them.`, 
@@ -48,6 +48,7 @@ function Art2D3D() {
     function makeModelInfo(model) {
         return (
             <ModelInfo
+                key={model.key}
                 LoginRequired={model.LoginRequired}
                 Title={model.Title}
                 Blur={model.Blur}
