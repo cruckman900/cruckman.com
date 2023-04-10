@@ -121,7 +121,7 @@ const Navigation = () => {
                       drop="start"
                       id={`offcanvasNavbarDropdown-expand-${expand}`}
                     >
-                      <NavDropdown.Item as={Link} to="/About/Me" eventKey="/About/Me" href="#Me" style={{minWidth:'250px', width: '15vw'}}>
+                      <NavDropdown.Item as={Link} to="/About/Me" eventKey="/About/Me" href="#Me" style={{minWidth:'16rem', width: '100%'}}>
                         <NavItem className={styles.ddlink} icon={myIcons['image']} fontSize="1.0rem"><div className={styles.floatright}>JUST ME</div></NavItem>
                       </NavDropdown.Item>
                       <NavDropdown.Item as={Link} to="/About/Friends" eventKey="/About/Friends" href="#Friends">
