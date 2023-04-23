@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Time.module.css';
 
 const options = { year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric' };
-const interval = 15000;
+const interval = 12000;
 
 function printDate(string) {
     setInterval(() => {

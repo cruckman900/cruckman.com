@@ -43,7 +43,12 @@ function Art2D3D() {
             I started this model in 2004.  I've only recently started back to finishing it.  I just procrastinate with 
             this model too much.  The smaller and more intricate the parts are, the less I feel motivated to work on them.`, 
             ImgSource: female1, AltText: "Female 1", NumObjects: 4, NumEdges: null, NumFaces: 12522, NumVerts: 11426, Price: 12.00 },
-    ]
+    ];
+
+    let USDollar = new Intl.NumberFormat('en-US', {
+        style: 'currency', 
+        currency: 'USD',
+    });
 
     function makeModelInfo(model) {
         return (
@@ -59,7 +64,7 @@ function Art2D3D() {
                 NumEdges={model.NumEdges}
                 NumFaces={model.NumFaces}
                 NumVerts={model.NumVerts}
-                Price={model.NumVerts}
+                Price={USDollar.format(model.Price)}
             />
         );
     }
