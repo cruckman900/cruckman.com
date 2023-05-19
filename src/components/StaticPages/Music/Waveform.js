@@ -13,6 +13,7 @@ import SetTheWorldAfire from '../../../assets/audio/ChrisRuckman_SetTheWorldAfir
 import HighwayToHell from '../../../assets/audio/ChrisRuckman_HighwayToHell.mp3';
 import HotelCalifornia from '../../../assets/audio/ChrisRuckman_HotelSomethingOrOther.mp3';
 import Sanitarium from '../../../assets/audio/ChrisRuckman_WelcomeHome(Sanitarium).mp3';
+import WantedDeadOrAlive from '../../../assets/audio/ChrisRuckman-WantedDeadOrAlive.mp3';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay, faPause } from '@fortawesome/free-solid-svg-icons';
 
@@ -30,7 +31,8 @@ export default function Waveform() {
         '#settheworldafire': SetTheWorldAfire,
         '#highwaytohell': HighwayToHell,
         '#hotelcalifornia': HotelCalifornia,
-        '#sanitarium': Sanitarium
+        '#sanitarium': Sanitarium,
+        '#wanteddeadoralive': WantedDeadOrAlive
     };
 
     const songTitles = {
@@ -39,7 +41,8 @@ export default function Waveform() {
         '#settheworldafire': 'MegaDeth - Set The World Afire',
         '#highwaytohell': 'AC/DC - Highway To Hell',
         '#hotelcalifornia': 'Eagles - Hotel California',
-        '#sanitarium': 'Metallica - (Welcome Home) Sanitarium'
+        '#sanitarium': 'Metallica - (Welcome Home) Sanitarium',
+        '#wanteddeadoralive': 'Bon Jovi - Wanted Dead Or Alive'
     }
 
     useEffect(() => {
@@ -98,6 +101,12 @@ export default function Waveform() {
                         <Dropdown.Item href="#highwaytohell" className={styles.ddlItem}>AC/DC - Highway To Hell</Dropdown.Item>
                         <Dropdown.Item href="#hotelcalifornia" className={styles.ddlItem}>Eagles - Hotel California</Dropdown.Item>
                         <Dropdown.Item href="#sanitarium" className={styles.ddlItem}>Metallica - (Welcome Home) Sanitarium</Dropdown.Item>
+                    </Dropdown.Menu>
+                </Dropdown>
+                <Dropdown as={ButtonGroup} size="sm" onSelect={(e) => {changeHandler(e)}}>
+                    <Dropdown.Toggle id="electric" className={styles.dropDownToggle}>Acoustic Guitar</Dropdown.Toggle>
+                    <Dropdown.Menu className={styles.menu}>
+                        <Dropdown.Item href="#wanteddeadoralive" className={styles.ddlItem}>Bon Jovi - Wanted Dead of Alive</Dropdown.Item>
                     </Dropdown.Menu>
                 </Dropdown>
             </FormGroup>

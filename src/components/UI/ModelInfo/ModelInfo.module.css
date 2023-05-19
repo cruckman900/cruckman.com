@@ -31,25 +31,26 @@
     border: solid 1px #260000;
     padding: 4px;
     display: flex;
-    align-items: stretch;
+    justify-content: space-between;
+    align-content: stretch;
     width: 100%;
 }
 
 .ModelInfo {
-    display: inline;
+    display: block;
     margin-left: 12px;
     width: 100%;
 }
 
 .ObjectDetail {
-    /* float: left; */
-    display: inline-block;
+    float: left;
+    display: block;
     font-size: 8pt;
     padding-bottom: 8px;
 }
 
 .Request {
-    display: inline;
+    display: block;
     width: 100%;
 }
 
@@ -91,28 +92,4 @@
 .PaymentMethodButton_disabled {
     background: #260000;
     color: #d0b670;
-}
-
-@media (max-width: 1106px) and (min-width: 340px) {
-    .ModelInfo {
-        margin-left: 0;
-        width: 100%;
-        display: block;
-    }
-
-    /* .ImgWrapper {
-        width: 21rem;
-    } */
-    .ImgWidth {
-        width: 18rem;
-    }
-    .container {
-        display: block;
-    }
-    .Request {
-        margin-top: 8px;
-    }
-}
-
-@media (max-width: 1106px) and (min-width: 300px) {
 }

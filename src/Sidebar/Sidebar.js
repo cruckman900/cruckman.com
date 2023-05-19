@@ -10,8 +10,8 @@ import classes from './Sidebar.module.css';
 class Sidebar extends React.Component {
     render() {
         return (
-            <div className={classes.wrapperDiv}>
-                <div className={`${classes.scrollable} ${classes.noScrollbars}`}>
+            <div className={`${classes.wrapperDiv} ${classes.scrollable} ${classes.noScrollbars}`}>
+                <div>
                     <Row className={classes.login}><Login /></Row>
                     <Row className={classes.textGame}><TextGame /></Row>
                     <Row className={classes.weather}><Weather /></Row>

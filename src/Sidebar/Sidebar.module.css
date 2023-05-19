@@ -1,20 +1,20 @@
 .wrapperDiv {
     position: fixed;
-    top: 64;
-    left: 8px;
-    min-width: 21rem;
-    max-width: 21rem;
+    top: 4.5rem;
+    left: 0;
+    width: 21rem;
+    height: calc(100vh - 5.5rem);
+}
+
+.login, .textGame, .weather {
+    display: inline-block;
+    padding: 0 .5rem;
+    width: 100%;
 }
 
 .scrollable {
     display: inline-block;
     overflow: scroll;
-}
-
-.login, .textGame, .weather {
-    display: inline-block;
-    padding-left: 8px;
-    width: 100%;
 }
 
 .noScrollbars {
@@ -25,11 +25,10 @@
     display: none;
 }
 
-@media (max-width: 1024px) and (min-width: 340px) {
+@media only screen and (max-width: 767px) and (orientation: portrait) {
     .wrapperDiv {
-       display: inline-block;
-       position: absolute;
-       min-width: 100vw;
-       margin: 0px;
+        position: relative;
+        top: 1rem;
+        width: 100vw;
     }
 }

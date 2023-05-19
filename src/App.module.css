@@ -6,6 +6,28 @@
   height: 100vh;
 }
 
+.wrapperDiv {
+  position: fixed;
+  top: 4.5rem;
+  left: 21rem;
+  bottom: 0;
+  width: calc(100% - 21rem);
+  height: calc(100vh);
+}
+
+.scrollable {
+  display: inline-block;
+  overflow: scroll;
+}
+
+.noScrollbars {
+  -ms-overflow-style: none;
+}
+
+.noScrollbars::-webkit-scrollbar {
+  display: none;
+}
+
 .angry {
   display: none;
 }
@@ -58,7 +80,7 @@
 
 .RowBody {
   background: url('./assets/images/dragon900.png');
-  background-size: 59rem;
+  background-size: calc(100vh - 2.5rem);
   background-repeat: no-repeat;
   background-position: top right;
   background-attachment: fixed;
@@ -74,28 +96,13 @@
 .Right {
   position: absolute;
   right: 0;
-  width: calc(100vw - 340px - var(--scrollbar-width)) !important;
-  color: #260000;
+  width: calc(100vw - 20rem) !important;
 }
 
 .Left {
   position: absolute;
   left: 0;
-  min-width: 100vw;
-  color: #260000;
-}
-
-.ColRight {
-  color: #260000;
-  font-weight: 100;
-  font-size: 1rem;
-  width: calc(100vw - 340px - var(--scrollbar-width)) !important;
-  overflow: auto;
-}
-
-.ColLeft {
-  position: fixed;
-  color: #b18030;
+  width: 100vh;
 }
 
 .buttonHolder {
@@ -119,116 +126,19 @@
 .chevron {
   position: relative;
   left: -3px;
-}
-
-.chevron {
   color: #d0b670;
 }
 
-@media (max-width: 1106px) and (min-width: 340px) {
-  .dragon {
-      width: 256px;
-      height: 256px;
-  }
-
-  .loaderContainer2 {
-    font-size: 16pt;
-    top: 16rem;
-  }
-
-  .buttonHolder {
-    display: inline-block;
-  }
-  
-  .ColLeft {
-    height: 91vh;
-    z-index: 5;
-    position: absolute;
-    top: 61px;
-    left: 0vw;
-    width: 20rem;
-    display: flex;
-    justify-content: center;
-  }
-
-  .fixed {
-    position: relative;
-    height: auto !important;
-  }
-
+@media only screen and (max-width: 767px) and (orientation: portrait) {
   .RowBody {
-    background-size: 38rem;
-    height: 96vh;
-  }
-}
-
-@media (max-width: 1024px) and (min-width: 340px) {
-  .App {
-    display: flex;
-  }
-  
-  .RowBody {
-    height: 96vh;
+    background: transparent;
   }
 
-  .ColLeft {
-    position: absolute;
-    left: 0px;
-  }
-
-  .Sidebar {
-    width: 100vw;
-  }
-
-  .ColRight {
-    position: absolute;
-    width: 100vw;
-    left: 0rem;
-  }
-
-  .RightShow {
-    display: inline-block;
-  }
-
-  .RightHide {
-    display: none;
-  }
-}
-
-@media (max-width: 560px) and (min-width: 340px) {
-  .RowBody {
-    width: 100vw;
-    height: 96vh
-  }
-
-  .Body {
-    background-position: bottom right;
-  }
-  
   .Right {
     display: none;
   }
-  
-  .buttonHolder {
-    display: inline-block;
-  }
 
-  .RightShow {
-    display: inline-block;
-  }
-
-  .RightHide {
-    display: none;
-  }
-}
-
-@media (max-width: 339px) and (min-width: 0px) {
-  * {
-    display: none;
-  }
-  
-  .angry {
+  .Left {
     display: block;
-    width: calc(100vw - var(--scrollbar-width));
   }
 }

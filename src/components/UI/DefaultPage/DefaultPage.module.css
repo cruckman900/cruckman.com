@@ -16,26 +16,25 @@
 
 .body {
     text-align: start;
-    float: left;
     font-family: 'AGoblinAppears';
     font-size: .70rem;
     color: #260000;
-    min-width: 2rem;
-    max-width: 70rem;
-    background: rgba(208, 182, 112, .85);
-    padding: 8px;
+    background: rgba(208, 182, 112, .75);
+    height: calc(100%);
+    padding: .5rem;
     border-radius: 8px;
     border: solid 1px #260000;
     box-shadow: 2px 2px 3px black;
 }
 
-@media (max-width: 1106px) and (min-width: 300px) {
-    /* .body {
-        font-size: 8pt;
-        min-width: 20rem;
-        max-width: 50rem;
-        background: rgba(208, 182, 112, .70);
-    } */
+.link {
+    font-weight: 600;
+    padding: 0 4px;
+    color: #260000;
+}
+
+.link:hover {
+    color: #B18030;
 }
 
 .image {

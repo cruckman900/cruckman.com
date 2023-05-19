@@ -1,4 +1,4 @@
-import { React, useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Button from './components/UI/Button/Button';
 
@@ -59,16 +59,14 @@ function App() {
                     <Row>
                         <Col lg="12"><Navigation /></Col>
                     </Row>
-                    <Row className={classes.RowBody}>
-                        {show &&
-                            <Col lg="2" className={classes.ColLeft}><Sidebar /></Col>
-                        }
+                    <Row className={`${classes.RowBody} ${classes.scrollable} ${classes.noScrollbars}`}>
+                        {show && <Col className={classes.ColLeft}><Sidebar /></Col>}
                         <Col>
                             <Button className={`${classes.buttonHolder}`} onClick={() => setShow((prevState) => !prevState)}>
                                 <FontAwesomeIcon icon={!show ? faChevronRight : faChevronLeft} className={classes.chevron} fontSize="1.0rem" />
                             </Button>                        
                         </Col>
-                        <Col lg="10" className={`${classes.Body} ${classes.ColRight} ${show ? classes.Right : classes.Left} ${show ? classes.RightHide : classes.RightShow}`}>
+                        <Col className={`${classes.Body} ${classes.ColRight} ${show ? classes.Right : classes.Left} ${show ? classes.RightHide : classes.RightShow}`}>
                             <MainContentWindow />
                         </Col>
                     </Row>
