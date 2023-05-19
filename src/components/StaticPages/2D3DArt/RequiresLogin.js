@@ -8,7 +8,7 @@ import classes from "./RequiresLogin.module.css";
 function RequiresLogin() {
     return (
         <div className={classes.requiresLogin}>
-            <FontAwesomeIcon icon={faHand} style={{color: "red"}} fontSize="1.0rem" />&nbsp;&nbsp;In order to see this image, you need to be logged in.
+            <FontAwesomeIcon icon={faHand} style={{color: "red"}}/>&nbsp;&nbsp;Requires Login.
         </div>
     )
 }

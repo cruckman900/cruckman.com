@@ -24,21 +24,6 @@ export default class Home extends Component {
                     things were like in the 90's and early 2k era.  Text-based games or side-scrollers, early metal music, etc.
                 </div>
                 <div className={styles.bodyDiv}>
-                    I plan on placing things here that not all eyes coming upon my page need to see just coming to the site.  
-                    I'll have graphics, writings, code samples, etc that should only be seen if you are wanting that material.  
-                    A lot of stuff will be available to be seen by anyone coming to the site, but some stuff and/or functionality
-                    will require being logged into the site.
-                    I will have items that can be purchased, shared, and/or used in whole, or in part by anyone
-                    wishing to use them.  Eventually, I want to start creating YouTube tutorials using various software.  I know that
-                    there are plenty of tutorials out there, but, I have time to kill.
-                </div>
-                <div className={styles.bodyDiv}>
-                    This will also be a place where you can share materials in order to participate
-                    in things that are far larger than 1 person can partake... like building a game!  Either we can gather
-                    people to create something or you can have your portfolio linked from my page if you are looking to
-                    contract out 'things'.
-                </div>
-                <div className={styles.bodyDiv}>
                     <i>
                         The little pink-haired cartoon girl comes from a friend that makes 'chibi' versions of people's
                         characters in a game called Perfect World International (PWI).  I began playing this game around 

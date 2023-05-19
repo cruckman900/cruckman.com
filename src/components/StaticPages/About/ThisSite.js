@@ -9,19 +9,17 @@ function ThisSite() {
     return (
         <DefaultPage image={lolly_tv2} title="About This Site">
             <p>
-                This website is completely coded from scratch (sorta - I'm not building things that aren't available from React itself).  
-                I am learning ReactJS and building a website from the ground up as I learn React from a course on 
+                I am learning ReactJS and building this site as I learn React from a course on 
                 Udemy <a href="https://www.udemy.com/course-dashboard-redirect/?course_id=1362070" className={styles.link} alt="Udemy Course" target="_blank" rel="noreferrer">
                     React - The Complete Guide (incl Hooks, React Router, Redux)
                 </a>.
             </p>
             <p>
-                All of the pages on this site are currently static 'html' in files.  I will soon be converting the site to be a little more data-driven.  That 
+                All of the pages on this site are currently static 'html' in files.  I hope to convert the site to be a little more data-driven.  That 
                 is a little way down the road yet.
             </p>
             <p>
-                I've had to scour the web to find information about a lot of things on this site. The tutorial I am watching
-                covers a lot of stuff, but most of the examples are tiny building blocks of a site. I'll put here things that
+                The tutorial I am watching covers a lot of stuff, but most of the examples are tiny building blocks of a site. I'll put here things that
                 I had to research to figure out.
             </p>
             <Card header="404 error on browser refresh" showToggle={true} expanded={false}>

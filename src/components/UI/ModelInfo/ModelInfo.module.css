@@ -19,6 +19,10 @@
     padding: 4px;
 }
 
+.ImgWidth {
+    width: 200px;
+}
+
 .Label2 {
     font-weight: 500;
     font-size: 0.6rem;
@@ -47,49 +51,4 @@
     display: block;
     font-size: 8pt;
     padding-bottom: 8px;
-}
-
-.Request {
-    display: block;
-    width: 100%;
-}
-
-.PaymentDetail {
-    margin-top: 20px;
-}
-
-.PaymentMethod {
-    width: 15rem;
-    display: block;
-    background: linear-gradient(0deg, #b08030, #d0b670, 80%, #b08030);
-    color: #260000;
-}
-
-.PaymentMethodInput {
-    width: 80%;
-    display: block;
-    background: #d0b670;
-    margin: 2px 0px;
-    border: solid 1px #260000;
-    border-radius: 8px;
-    padding: 2px 8px;
-    font-size: 7pt;
-}
-
-.PaymentMethodButton {
-    width: 40%;
-    margin: 2px;
-    background: linear-gradient(0deg, #b08030, #d0b670, 80%, #b08030);
-    color: #260000;
-    border: solid 1px #260000;
-    border-radius: 8px;
-}
-
-.PaymentMethodButton:hover {
-    border: solid 1px #eebb5a;
-}
-
-.PaymentMethodButton_disabled {
-    background: #260000;
-    color: #d0b670;
 }

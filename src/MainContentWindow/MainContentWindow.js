@@ -4,7 +4,7 @@ import { Routes, Route, Link } from 'react-router-dom';
 import Home from '../components/StaticPages/Home/Home';
 import Resume from '../components/StaticPages/Resume/Resume';
 import Me from '../components/StaticPages/About/Me';
-import Friends from '../components/StaticPages/About/Friends';
+import Contacts from '../components/StaticPages/About/Contacts';
 import Portfolio from '../components/StaticPages/About/Portfolio';
 import ThisSite from '../components/StaticPages/About/ThisSite';
 import Art2D3D from '../components/StaticPages/2D3DArt/2D3DArt';
@@ -25,7 +25,7 @@ class MainContentWindow extends Component {
                 <Route exact path="/" element={ <Home /> } />
                 <Route path="/resume" element={ <Resume /> } />
                 <Route path="/about/me" element={ <Me /> } />
-                <Route path="/about/friends" element={ <Friends /> } />
+                <Route path="/about/contacts" element={ <Contacts /> } />
                 <Route path="/about/portfolio" element={ <Portfolio /> } />
                 <Route path="/about/thissite" element={ <ThisSite /> } />
                 <Route path="/2d3dart/2d3dart" element={ <Art2D3D /> } />

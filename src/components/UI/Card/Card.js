@@ -32,11 +32,11 @@ const Card = (props) => {
 
     return (
         <div className={`${classes.card} ${classes.cardOuterDiv}`}>
-            <div className={classes.header}>
+            <div className={`${classes.header} ${props.showToggle && classes.hasDropdownFeature}`} onClick={rollupHandler}>
                 <span className={classes.headerLeft}>{props.header}</span>
                 {props.showToggle &&
                     <span className={classes.headerRight}>
-                        <span className={classes.icon} onClick={rollupHandler}>
+                        <span className={classes.icon}>
                             <FontAwesomeIcon icon={myIcons[arrow]} fontSize="1.0rem" />
                         </span>
                     </span>

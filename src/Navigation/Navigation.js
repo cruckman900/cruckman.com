@@ -124,8 +124,8 @@ const Navigation = () => {
                       <NavDropdown.Item as={Link} to="/About/Me" eventKey="/About/Me" href="#Me" style={{minWidth:'16rem', width: '100%'}}>
                         <NavItem className={styles.ddlink} icon={myIcons['image']} fontSize="1.0rem"><div className={styles.floatright}>JUST ME</div></NavItem>
                       </NavDropdown.Item>
-                      <NavDropdown.Item as={Link} to="/About/Friends" eventKey="/About/Friends" href="#Friends">
-                        <NavItem className={styles.ddlink} icon={myIcons['image']} fontSize="1.0rem"><div className={styles.floatright}>FRIENDS/FAMILY</div></NavItem>
+                      <NavDropdown.Item as={Link} to="/About/Contacts" eventKey="/About/Contacts" href="#Contacts">
+                        <NavItem className={styles.ddlink} icon={myIcons['image']} fontSize="1.0rem"><div className={styles.floatright}>CONTACTS</div></NavItem>
                       </NavDropdown.Item>
                       <NavDropdown.Divider />
                       <NavDropdown.Item as={Link} to="/About/Portfolio" eventKey="/About/Portfolio" href="#Portfolio">

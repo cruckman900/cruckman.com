@@ -18,6 +18,10 @@
     border-top-left-radius: 8px;
 }
 
+.hasDropdownFeature {
+    cursor: pointer;
+}
+
 .headerLeft {
     display: inline;
     align-items: center;
