@@ -20,6 +20,7 @@
     font-size: .70rem;
     color: #260000;
     background: rgba(208, 182, 112, .75);
+    min-height: calc(100vh - 12rem);
     height: calc(100%);
     padding: .5rem;
     border-radius: 8px;
