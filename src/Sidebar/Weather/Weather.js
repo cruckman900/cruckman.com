@@ -41,6 +41,7 @@ function Weather(props) {
     useEffect(() => {
         getTimeOfDay();
         getForecast();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     useEffect(() => {
@@ -52,6 +53,7 @@ function Weather(props) {
         return () => {
             clearTimeout(identifier);
         }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [data, obj]);
 
     function getForecast() {

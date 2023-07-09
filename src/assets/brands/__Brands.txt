@@ -1,0 +1,95 @@
+.ENV			#ECD53F			Framework/Library
+.NET			#512BD4			Framework/Library
+Adobe Illustrator	#FF9A00			Tool
+Adobe Photoshop		#21ABFF			Tool
+Android			#3DDC84			Operating System
+Android Studio		#3DDC84			Tool
+Angular			#DD0031			Framework/Library
+AnyDesk			#EF443B			Tool
+Audacity		#0000CC			Tool
+AWS Lambda		#FF9900			Framework/Library
+Axios			#5A29E4			Framework/Library
+Blender			#F5792A			Tool
+Bootstrap		#7952B3			Framework/Library
+C Sharp			#239120			Programming Language
+CircleCI		#343434			Tool
+Confluence		#172B4D			Tool
+cPanel			#FF6C2C			Tool
+CSS3			#1572B6			Programming Language
+Discord			#5865F2			Tool
+Docker			#2496ED			Tool
+Express			#000000			Framework/Library
+Figma			#F24E1E			Tool
+Font Awesome		#52BDD7			Asset
+GIMP			#5C5543			Tool
+Git			#F05032			Tool
+GitHub			#181717			Tool
+Google Analytics	#E37400			Tool
+GoToMeeting		#F68D2E			Tool
+Gradle			#02303A			Framework/Library
+GraphQL			#E10098			Framework/Library
+Handlebars.js		#000000			Framework/Library
+HTML5			#E34F26			Programming Language
+IntelliJ IDEA		#000000			Tool
+iOS			#000000			Operating System
+JavaScript		#F7DF1E			Programming Language
+JetBrains		#000000			Framework/Library
+Jetpack Compose		#4285F4			Framework/Library
+Jira			#0052CC			Tool
+Jira Software		#0052CC			Tool
+Joomla			#5891CD			Tool
+jQuery			#0769AD			Programming Language
+JSFiddle		#0084FF			Tool
+JSON			#000000			Programming Language
+JUnit5			#25A162			Tool
+Kotlin			#7F52FF			Programming Language
+LinkedIn		#0A66C2			Tool
+macOS			#000000			Operating System
+MariaDB			#003545			Tool
+Material Design		#757575			Tool
+Microsoft Office	#D83B01			Tool
+Microsoft SQL Server	#CC2927			Tool
+MongoDB			#47A248			Programming Language
+MySQL			#4479A1			Programming Language
+Next.js			#000000			Framework/Library
+Node.js			#339933			Framework/Library
+Nodemon			#76D048			Framework/Library
+Notepad++		#90E59A			Tool
+npm			#CB3037			Tool
+NuGet			#004880			Tool
+OpenAI			#412991			Framework/Library
+OpenGL			#5586A4			Framework/Library
+PayPal			#00457C			Tool
+PHP			#777BB4			Programming Language
+phpMyAdmin		#6C78AF			Tool
+PowerShell		#5391FE			Tool
+Pug			#A86454			Framework/Library
+Python			#3776AB			Programming Language
+React			#61DAFB			Framework/Library
+React Router		#CA4245			Framework/Library
+Redux			#764ABC			Framework/Library
+RSS			#FFA500			Tool
+Sequelize		#52B0E7			Framework/Library
+Serverless		#FD5750			Framework/Library
+Sketch			#F7B00			Tool
+Skype			#00AFF0			Tool
+Slack			#4A154B			Tool
+Socket.io		#010101			Framework/Library
+Stack Overflow		#F58025			Tool
+styled-components	#DB7093			Framework/Library
+Sublime Text		#FF9800			Tool
+SVG			#FFB13B			Asset
+Swift			#F05138			Programming Language
+TeamViewer		#004680			Tool
+TypeScript		#3178C6			Framework/Library
+Ubuntu			#E95420			Operating System
+Unity			#FFFFFF			Tool
+Visual Studio		#5C2D91			Tool
+Visual Studio Code	#007ACC			Tool
+VLC media player	#FF8800			Tool
+VMware			#607078			Tool
+Windows			#0078D6			Operating System
+XAML			#0C54C2			Framework/Library
+Xcode			#147EFB			Tool
+YouTube			#FF0000			Tool
+Zoom			#2D8CFF			Tool

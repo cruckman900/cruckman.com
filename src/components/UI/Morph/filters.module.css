@@ -1,0 +1,163 @@
+/* Operating Systems */
+
+.filter-android {
+    filter: invert(67%) sepia(99%) saturate(306%) hue-rotate(89deg) brightness(90%) contrast(95%);
+}
+
+.filter-ios {
+    filter: invert(0%) sepia(0%) saturate(12%) hue-rotate(257deg) brightness(104%) contrast(104%);
+}
+
+.filter-macos {
+    filter: invert(0%) sepia(0%) saturate(12%) hue-rotate(257deg) brightness(104%) contrast(104%);    
+}
+
+.filter-ubuntu {
+    filter: invert(43%) sepia(75%) saturate(3086%) hue-rotate(348deg) brightness(94%) contrast(95%);
+}
+
+.filter-windows {
+    filter: invert(30%) sepia(70%) saturate(1635%) hue-rotate(184deg) brightness(101%) contrast(105%);
+}
+
+/* Tools */
+
+.filter-adobeillustrator {
+    filter: invert(66%) sepia(49%) saturate(3483%) hue-rotate(359deg) brightness(101%) contrast(107%);
+}
+
+.filter-adobephotoshop {
+    filter: invert(52%) sepia(60%) saturate(1838%) hue-rotate(177deg) brightness(101%) contrast(101%);
+}
+
+.filter-androidstudio {
+    filter: invert(67%) sepia(99%) saturate(306%) hue-rotate(89deg) brightness(90%) contrast(95%);
+}
+
+.filter-anydesk {
+    filter: invert(29%) sepia(58%) saturate(2641%) hue-rotate(342deg) brightness(103%) contrast(87%);
+}
+
+.filter-audacity {
+    filter: invert(15%) sepia(75%) saturate(4559%) hue-rotate(239deg) brightness(75%) contrast(161%);
+}
+
+.filter-blender {
+    filter: invert(68%) sepia(86%) saturate(3806%) hue-rotate(344deg) brightness(101%) contrast(92%);
+}
+
+.filter-circleci {
+    filter: invert(15%) sepia(88%) saturate(0%) hue-rotate(223deg) brightness(105%) contrast(96%);
+}
+
+.filter-confluence {
+    filter: invert(17%) sepia(10%) saturate(3412%) hue-rotate(179deg) brightness(91%) contrast(98%);
+}
+
+.filter-cpanel {
+    filter: invert(42%) sepia(96%) saturate(580%) hue-rotate(336deg) brightness(105%) contrast(101%);
+}
+
+.filter-discord {
+    filter: invert(39%) sepia(45%) saturate(1750%) hue-rotate(212deg) brightness(94%) contrast(103%);
+}
+
+.filter-docker {
+    filter: invert(65%) sepia(60%) saturate(5900%) hue-rotate(183deg) brightness(99%) contrast(88%);
+}
+
+.filter-figma {
+    filter: invert(43%) sepia(82%) saturate(3842%) hue-rotate(350deg) brightness(97%) contrast(96%);
+}
+
+.filter-gimp {
+    filter: invert(33%) sepia(16%) saturate(562%) hue-rotate(6deg) brightness(93%) contrast(89%);
+}
+
+.filter-git {
+    filter: invert(35%) sepia(71%) saturate(2199%) hue-rotate(345deg) brightness(101%) contrast(88%);
+}
+
+.filter-github {
+    filter: invert(15%) sepia(3%) saturate(195%) hue-rotate(314deg) brightness(95%) contrast(116%);
+}
+
+.filter-googleanalytics {
+    filter: invert(53%) sepia(78%) saturate(3410%) hue-rotate(9deg) brightness(96%) contrast(103%);
+}
+
+.filter-gotomeeting {
+    filter: invert(73%) sepia(99%) saturate(2721%) hue-rotate(339deg) brightness(99%) contrast(95%);
+}
+
+/* Programming Languages */
+
+.filter-csharp {
+    filter: invert(42%) sepia(88%) saturate(516%) hue-rotate(71deg) brightness(88%) contrast(90%);
+}
+
+.filter-css3 {
+    filter: invert(31%) sepia(99%) saturate(792%) hue-rotate(175deg) brightness(95%) contrast(93%);
+}
+
+.filter-html5 {
+    filter: invert(57%) sepia(71%) saturate(6339%) hue-rotate(349deg) brightness(94%) contrast(89%);
+}
+
+.filter-javascript {
+    filter: invert(87%) sepia(79%) saturate(2493%) hue-rotate(338deg) brightness(101%) contrast(94%);
+}
+
+.filter-json {
+    filter: invert(0%) sepia(0%) saturate(12%) hue-rotate(257deg) brightness(104%) contrast(104%);
+}
+
+.filter-kotlin {
+    filter: invert(28%) sepia(97%) saturate(1347%) hue-rotate(237deg) brightness(107%) contrast(102%);
+}
+
+/* Frameworks and Libraries */
+
+.filter-dotenv {
+    filter: invert(82%) sepia(100%) saturate(392%) hue-rotate(336deg) brightness(93%) contrast(99%);
+}
+
+.filter-dotnet {
+    filter: invert(28%) sepia(74%) saturate(7469%) hue-rotate(252deg) brightness(83%) contrast(101%);
+}
+
+.filter-angular {
+    filter: invert(13%) sepia(50%) saturate(6922%) hue-rotate(333deg) brightness(98%) contrast(128%);
+}
+
+.filter-awslambda {
+    filter: invert(58%) sepia(71%) saturate(694%) hue-rotate(356deg) brightness(96%) contrast(113%);
+}
+
+.filter-axios {
+    filter: invert(20%) sepia(73%) saturate(3737%) hue-rotate(251deg) brightness(86%) contrast(110%);
+}
+
+.filter-bootstrap {
+    filter: invert(37%) sepia(21%) saturate(1570%) hue-rotate(222deg) brightness(96%) contrast(92%);
+}
+
+.filter-express {
+    filter: invert(0%) sepia(0%) saturate(12%) hue-rotate(257deg) brightness(104%) contrast(104%);
+}
+
+.filter-gradle {
+    filter: invert(14%) sepia(20%) saturate(3525%) hue-rotate(155deg) brightness(95%) contrast(98%);
+}
+
+.filter-graphql {
+    filter: invert(13%) sepia(86%) saturate(6219%) hue-rotate(311deg) brightness(91%) contrast(105%);
+}
+
+.filter-handlebarsjs {
+    filter: invert(0%) sepia(0%) saturate(12%) hue-rotate(257deg) brightness(104%) contrast(104%);
+}
+
+.filter-pug {
+    filter: invert(45%) sepia(27%) saturate(748%) hue-rotate(325deg) brightness(93%) contrast(92%);
+}
